@@ -26,6 +26,8 @@ Material:
     m_Floats:
     - _Fade: 1
     - _FadeFey: 1
-    - _FadeFeyScale: 38.5
-    m_Colors: []
+    - _FadeFeyScale: 77.9
+    m_Colors:
+    - Color_F7C10128: {r: 1.254902, g: 0.1254902, b: 1.0196079, a: 0.31764707}
+    - _Color: {r: 3.6705883, g: 0.0627451, b: 2.0078433, a: 0}
   m_BuildTextureStacks: []
