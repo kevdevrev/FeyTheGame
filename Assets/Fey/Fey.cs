@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine;
 
 public class Fey : MonoBehaviour
@@ -10,6 +11,8 @@ public class Fey : MonoBehaviour
     private SpriteRenderer _fey_sprite;
     //get Fey's animation script
     private Fey_Animation _fey_animation;
+    //get fey's hitbox manager
+    private Fey_HitBoxManager _feyHitBoxManager;
     [SerializeField]
     public float fey_speed;
     [SerializeField]
@@ -28,6 +31,8 @@ public class Fey : MonoBehaviour
         _fey_sprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
         //Get the animation script handler
         _fey_animation = GetComponent<Fey_Animation>();
+        //get fey hitbox manager
+        _feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
         fey_speed = 2.0f;
     }
 
@@ -47,13 +52,15 @@ public class Fey : MonoBehaviour
     {
         if (horizontalInput > 0)
         {
-            _fey_sprite.flipX = false;
+            //_fey_sprite.flipX = false;
+            _fey_sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+
 
         }
         else if (horizontalInput < 0)
         {
-            _fey_sprite.flipX = true;
-
+            //_fey_sprite.flipX = true;
+            _fey_sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
     }
     
@@ -109,4 +116,5 @@ public class Fey : MonoBehaviour
         jumpCooldown = false;
 
     }
+    
 }
