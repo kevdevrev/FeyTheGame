@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: d272c36f00855a54ca12ae488efa36a3
+guid: 8521752821902a74e9d8bfdae8271821
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -137537642248213176
-    second: spinSprite_0
+      213: -1241613203545279480
+    second: spinSprite3_0
   - first:
-      213: -8106576690497277605
-    second: spinSprite_1
+      213: -4872885823063591126
+    second: spinSprite3_1
   - first:
-      213: 2604811044019315203
-    second: spinSprite_2
+      213: -769699174217268469
+    second: spinSprite3_2
   - first:
-      213: -5183696124163481895
-    second: spinSprite_3
+      213: -1403507767987299810
+    second: spinSprite3_3
+  - first:
+      213: 3794582400763258987
+    second: spinSprite3_4
+  - first:
+      213: -3658091827918451679
+    second: spinSprite3_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,85 +107,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: spinSprite_0
+      name: spinSprite3_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
+        width: 79
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84dec8a3e3e571ef0800000000000000
-      internalID: -137537642248213176
+      spriteID: 804bf36ae57e4cee0800000000000000
+      internalID: -1241613203545279480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinSprite_1
+      name: spinSprite3_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 79
         y: 0
-        width: 64
+        width: 79
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b51b2725377af7f80800000000000000
-      internalID: -8106576690497277605
+      spriteID: a27f14d5928006cb0800000000000000
+      internalID: -4872885823063591126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinSprite_2
+      name: spinSprite3_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 158
         y: 0
-        width: 64
+        width: 79
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30229c9f7d5262420800000000000000
-      internalID: 2604811044019315203
+      spriteID: b034ed8ddaa7155f0800000000000000
+      internalID: -769699174217268469
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spinSprite_3
+      name: spinSprite3_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 237
         y: 0
-        width: 64
+        width: 79
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9de9aa7e6dfcf08b0800000000000000
-      internalID: -5183696124163481895
+      spriteID: e1a9d910f1db58ce0800000000000000
+      internalID: -1403507767987299810
       vertices: []
       indices: 
       edges: []
@@ -193,7 +199,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 443a48e94457fae479d06dff46fa4334, type: 3}
+      name: _Emission
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

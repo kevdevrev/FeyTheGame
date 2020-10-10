@@ -1,19 +1,19 @@
 fileFormatVersion: 2
-guid: fbc1e6cec1b6fe84ea75c0d6d472ec7b
+guid: 20f8d3cc32c32be49b8a7d1b70e28432
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1170488218285022089
-    second: idleSprite_0
+      213: 4818632480048269044
+    second: buddy_sprite_0
   - first:
-      213: 4264759537455784466
-    second: idleSprite_1
+      213: -6920101978578550700
+    second: buddy_sprite_1
   - first:
-      213: 245166015459212899
-    second: idleSprite_2
+      213: -2212653967414439355
+    second: buddy_sprite_2
   - first:
-      213: 8449493547295849491
-    second: idleSprite_3
+      213: -2849616261494119516
+    second: buddy_sprite_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -101,85 +101,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idleSprite_0
+      name: buddy_sprite_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 23
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 98b98a045d86e3010800000000000000
-      internalID: 1170488218285022089
+      spriteID: 4f6cf6cd5b83fd240800000000000000
+      internalID: 4818632480048269044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleSprite_1
+      name: buddy_sprite_1
       rect:
         serializedVersion: 2
-        x: 64
+        x: 23
         y: 0
-        width: 64
-        height: 64
+        width: 23
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 212e28224387f2b30800000000000000
-      internalID: 4264759537455784466
+      spriteID: 450095d2aebd6ff90800000000000000
+      internalID: -6920101978578550700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleSprite_2
+      name: buddy_sprite_2
       rect:
         serializedVersion: 2
-        x: 128
+        x: 46
         y: 0
-        width: 64
-        height: 64
+        width: 23
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36eb17e2131076300800000000000000
-      internalID: 245166015459212899
+      spriteID: 542576590f21b41e0800000000000000
+      internalID: -2212653967414439355
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idleSprite_3
+      name: buddy_sprite_3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 69
         y: 0
-        width: 64
-        height: 64
+        width: 23
+        height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31c368a2d91a24570800000000000000
-      internalID: 8449493547295849491
+      spriteID: 4a3677bab112478d0800000000000000
+      internalID: -2849616261494119516
       vertices: []
       indices: 
       edges: []
@@ -193,7 +193,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: 83a7aadbdcf918e478d7b12acc2955b4, type: 3}
+      name: _Emission
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

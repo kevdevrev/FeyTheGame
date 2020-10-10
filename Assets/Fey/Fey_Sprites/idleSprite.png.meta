@@ -1,43 +1,19 @@
 fileFormatVersion: 2
-guid: 54a8e65143761e94dbedd648fa5568be
+guid: 97ccb1ca70b206c4ebe066e5dc076366
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3884069552359842562
-    second: jumpSprite_0
+      213: 1170488218285022089
+    second: idleSprite_0
   - first:
-      213: -6700513882169814409
-    second: jumpSprite_1
+      213: 4264759537455784466
+    second: idleSprite_1
   - first:
-      213: -7045991116975665649
-    second: jumpSprite_2
+      213: 245166015459212899
+    second: idleSprite_2
   - first:
-      213: -8683343008223286862
-    second: jumpSprite_3
-  - first:
-      213: 7961469064941236843
-    second: jumpSprite_4
-  - first:
-      213: -7918130306868076414
-    second: jumpSprite_5
-  - first:
-      213: 3493066427398965506
-    second: jumpSprite_6
-  - first:
-      213: 6510077781522182812
-    second: jumpSprite_7
-  - first:
-      213: -7479176628640374671
-    second: jumpSprite_8
-  - first:
-      213: 3434811438167477725
-    second: jumpSprite_9
-  - first:
-      213: -3947009623292285712
-    second: jumpSprite_10
-  - first:
-      213: -4828571447465225016
-    second: jumpSprite_11
+      213: 8449493547295849491
+    second: idleSprite_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,91 +101,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: jumpSprite_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: efc5ea02253091ac0800000000000000
-      internalID: -3884069552359842562
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpSprite_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 772d1b0002ef203a0800000000000000
-      internalID: -6700513882169814409
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpSprite_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0e8b1e096c973e90800000000000000
-      internalID: -7045991116975665649
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpSprite_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b9aaf35a819e7780800000000000000
-      internalID: -8683343008223286862
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: jumpSprite_4
+      name: idleSprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -217,20 +109,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b627512dee1dc7e60800000000000000
-      internalID: 7961469064941236843
+      spriteID: 98b98a045d86e3010800000000000000
+      internalID: 1170488218285022089
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumpSprite_5
+      name: idleSprite_1
       rect:
         serializedVersion: 2
         x: 64
@@ -238,20 +130,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 280afdd10762d1290800000000000000
-      internalID: -7918130306868076414
+      spriteID: 212e28224387f2b30800000000000000
+      internalID: 4264759537455784466
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumpSprite_6
+      name: idleSprite_2
       rect:
         serializedVersion: 2
         x: 128
@@ -259,20 +151,20 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 20945fd986dd97030800000000000000
-      internalID: 3493066427398965506
+      spriteID: 36eb17e2131076300800000000000000
+      internalID: 245166015459212899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: jumpSprite_7
+      name: idleSprite_3
       rect:
         serializedVersion: 2
         x: 192
@@ -280,14 +172,14 @@ TextureImporter:
         width: 64
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c92facb1041785a50800000000000000
-      internalID: 6510077781522182812
+      spriteID: 31c368a2d91a24570800000000000000
+      internalID: 8449493547295849491
       vertices: []
       indices: 
       edges: []
@@ -301,7 +193,9 @@ TextureImporter:
     indices: 
     edges: []
     weights: []
-    secondaryTextures: []
+    secondaryTextures:
+    - texture: {fileID: 2800000, guid: c90bd29a32e8e61478850ff809af3b0c, type: 3}
+      name: _Emission
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
