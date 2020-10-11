@@ -33,7 +33,6 @@ public class Fey : MonoBehaviour
         _fey_animation = GetComponent<Fey_Animation>();
         //get fey hitbox manager
         _feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
-        fey_speed = 2.0f;
     }
 
     // Update is called once per frame
