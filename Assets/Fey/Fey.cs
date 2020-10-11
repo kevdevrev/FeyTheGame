@@ -51,6 +51,8 @@ public class Fey : MonoBehaviour
 
         }
 
+        // modified engine code, for this to work you need the modified Light2D.cs script!!!
+        // Message Kevin for it!!!
         _feyLight.lightCookieSprite = _fey_sprite.sprite;
 
 
@@ -101,7 +103,7 @@ public class Fey : MonoBehaviour
         //raycasts on layer 8 (floor) 1<<8
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.9f, 1 << 8);
         // draws the ray in our scene view
-        Debug.DrawRay(transform.position, Vector2.down, Color.red);
+        // Debug.DrawRay(transform.position, Vector2.down, Color.red);
         //This means we hit something, which can only be our layer 8 (floor)
         if (hit.collider != null)
         {
