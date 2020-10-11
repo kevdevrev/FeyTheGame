@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Fey : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class Fey : MonoBehaviour
     private float jumpForce = 5.0f;
     private bool jumpCooldown = false;
     private bool grounded = true;
+    private Light2D _feyLight;
 
 
     
@@ -33,6 +35,10 @@ public class Fey : MonoBehaviour
         _fey_animation = GetComponent<Fey_Animation>();
         //get fey hitbox manager
         _feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
+        //get fey light
+        _feyLight = transform.GetChild(0).transform.GetChild(2).GetComponent<Light2D>();
+
+
     }
 
     // Update is called once per frame
@@ -44,6 +50,9 @@ public class Fey : MonoBehaviour
             _fey_animation.animateAttack();
 
         }
+
+        _feyLight.lightCookieSprite = _fey_sprite.sprite;
+
 
     }
 
