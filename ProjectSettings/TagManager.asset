@@ -14,9 +14,9 @@ TagManager:
   - 
   - 
   - Floor
-  - 
-  - 
-  - 
+  - Fey
+  - SpinAttack
+  - Buddy
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 2607534357
+    locked: 0
+  - name: Walls
+    uniqueID: 4040187959
+    locked: 0
+  - name: Platform
+    uniqueID: 3645086973
+    locked: 0
+  - name: Lightning
+    uniqueID: 1602403831
+    locked: 0
+  - name: Fey
+    uniqueID: 750507977
     locked: 0
