@@ -15427,8 +15427,8 @@ Tilemap:
   - first: {x: 29, y: 6, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 12
-      m_TileSpriteIndex: 12
+      m_TileIndex: 10
+      m_TileSpriteIndex: 10
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -17669,11 +17669,11 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 12eefa9eafa95f7498e6a7acda7d9ae7, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 55d366bade3749843a89b45774d22b59, type: 2}
-  - m_RefCount: 242
+  - m_RefCount: 243
     m_Data: {fileID: 11400000, guid: 044a906ec95673043b5d54f0787296aa, type: 2}
   - m_RefCount: 18
     m_Data: {fileID: 11400000, guid: 87d0c7c8b6fcd28408ee63512b97acfe, type: 2}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: d29f8476a660bf74c89d7e6221f36a38, type: 2}
   - m_RefCount: 52
     m_Data: {fileID: 11400000, guid: ca4abc33ca841cc4fb126d42c2bcda13, type: 2}
@@ -17706,11 +17706,11 @@ Tilemap:
     m_Data: {fileID: -4246480298842986503, guid: e940e4c1c00b83d4ba4b7f129aaf682d, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 3149796617796037829, guid: e940e4c1c00b83d4ba4b7f129aaf682d, type: 3}
-  - m_RefCount: 242
+  - m_RefCount: 243
     m_Data: {fileID: -9006063639203406184, guid: e940e4c1c00b83d4ba4b7f129aaf682d, type: 3}
   - m_RefCount: 18
     m_Data: {fileID: -2375627447600952168, guid: e940e4c1c00b83d4ba4b7f129aaf682d, type: 3}
-  - m_RefCount: 12
+  - m_RefCount: 11
     m_Data: {fileID: 7705377650390505815, guid: e940e4c1c00b83d4ba4b7f129aaf682d, type: 3}
   - m_RefCount: 52
     m_Data: {fileID: 6209976688428791216, guid: e940e4c1c00b83d4ba4b7f129aaf682d, type: 3}
@@ -17846,6 +17846,18 @@ CompositeCollider2D:
         Y: -60000000
       - X: 300000000
         Y: -60000000
+      - X: 300000000
+        Y: 59999900
+      - X: 300000041
+        Y: 59999900
+      - X: 300000100
+        Y: 59999959
+      - X: 300000100
+        Y: 70000041
+      - X: 300000041
+        Y: 70000100
+      - X: 300000000
+        Y: 70000100
       - X: 300000000
         Y: 190000000
       - X: -70000000
