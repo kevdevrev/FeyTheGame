@@ -22,7 +22,6 @@ public class Enemy : MonoBehaviour
     protected Transform feyLocation;
     
     protected Rigidbody2D rigid;
-
     [SerializeField]
     protected float attackCooldown;
 
@@ -44,42 +43,18 @@ public class Enemy : MonoBehaviour
     
     public virtual void WayPointLogic()
     {
-        //Debug.Log("In waypoint logic");
-        if (transform.position == pointA.position)
-        {
-            sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
-        }
-        else if(transform.position == pointB.position)
-        {
-            sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
 
-        }
-        //way point code
-        if (transform.position == pointA.position && !anim.GetBool("InCombat") && !anim.GetBool("Chase"))
-        {
-            destination = pointB.position;
-            anim.SetTrigger("Idle");
 
-        }
-        else if (transform.position == pointB.position && !anim.GetBool("InCombat") && !anim.GetBool("Chase"))
-        {
-            destination = pointA.position;
-            anim.SetTrigger("Idle");
-
-        }
-
-        if (inCombat == false)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, destination, speed * Time.deltaTime);
-        }
-        
         //check to see if Fey is far away enough to justify walking
-        float feysDistanceAway = Vector3.Distance(feyLocation.position, transform.position);
-        if (feysDistanceAway > 5f)
+        float feys_X_DistanceAway = Mathf.Abs(feyLocation.position.x - transform.position.x);
+        float feys_Y_DistanceAway = Mathf.Abs(feyLocation.position.y - transform.position.y);
+        
+
+        if (feys_X_DistanceAway > 5f && feys_Y_DistanceAway < 1f)
         {
             inCombat = false;
             anim.SetBool("InCombat", false);
-        }else if (feysDistanceAway < 5f && feysDistanceAway > enemyAttackRange)
+        }else if (feys_X_DistanceAway < 5f && feys_X_DistanceAway > enemyAttackRange && feys_Y_DistanceAway < 1f)
         {
             anim.SetBool("Chase", true);
             inCombat = true;
@@ -92,23 +67,28 @@ public class Enemy : MonoBehaviour
                 transform.position =
                     Vector3.MoveTowards(transform.position, feyCurLocation, speed * Time.deltaTime);
             }
-        }else if (feysDistanceAway < enemyAttackRange)
+        }else if (feys_X_DistanceAway < enemyAttackRange && feys_Y_DistanceAway < 1f)
         {
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);
             }
 
+        //no 360 no scope
         if (anim.GetBool("Chase") || anim.GetBool("InCombat"))
         {
-            float facingDirection = feyLocation.position.x - transform.position.x;
-            if (facingDirection > 0)
+            if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
-                sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                float facingDirection = feyLocation.position.x - transform.position.x;
+                if (facingDirection > 0)
+                {
+                    sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                }
+                else if (facingDirection < 0)
+                {
+                    sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                }
             }
-            else if (facingDirection < 0)
-            {
-                sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
-            }
+
         }
     }
     
