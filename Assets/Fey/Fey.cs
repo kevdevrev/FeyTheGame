@@ -51,7 +51,6 @@ public class Fey : MonoBehaviour, IDamage
         if (Input.GetMouseButtonDown(0) && OnGround() == true)
         {
             _fey_animation.animateAttack();
-
         }
 
         // modified engine code, for this to work you need the modified Light2D.cs script!!!

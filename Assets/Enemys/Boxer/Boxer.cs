@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Boxer : Enemy, IDamage
 {
-    private Transform glove;
 
     public override void Init()
     {
@@ -17,6 +16,7 @@ public class Boxer : Enemy, IDamage
         Debug.Log("I took " + dmgTaken);
         Health = Health - dmgTaken;
         anim.SetTrigger("Hit");
+        rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
         inCombat = true;
         anim.SetBool("InCombat", true);
         if(Health<1)
@@ -25,7 +25,7 @@ public class Boxer : Enemy, IDamage
             anim.SetBool("Disabled",true);
             disabled = true;
             Debug.Log("I am now disabled maybe? " + disabled);
-            glove.GetComponent<SpriteRenderer>().enabled=true;
+            //glove.GetComponent<SpriteRenderer>().enabled=true;
 
         }
     }

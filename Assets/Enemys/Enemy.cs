@@ -20,6 +20,9 @@ public class Enemy : MonoBehaviour
 
     protected bool inCombat = false;
     protected Transform feyLocation;
+    
+    protected Rigidbody2D rigid;
+
     [SerializeField]
     protected float attackCooldown;
 
@@ -35,6 +38,7 @@ public class Enemy : MonoBehaviour
         anim = GetComponentInChildren<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
         feyLocation = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        rigid = GetComponent<Rigidbody2D>();
         disabled = false;
     }
     
@@ -117,15 +121,12 @@ public class Enemy : MonoBehaviour
     public virtual void Update()
     {
         Debug.Log("Am I disabled?" + disabled);
-        if (!disabled)
-        {
-            //if idle, we want to prevent movement, so we do nothing, so just return
+        //if idle, we want to prevent movement, so we do nothing, so just return
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
             {
                 return;
             }
             WayPointLogic();
-        }
         
     }
     
