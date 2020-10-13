@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 8b309e0371949114aaab03badee800a8
+guid: 9674e7a41e51eb74184d8fc8b5859095
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4215590886670730711
-    second: enemy2SpriteBox2_0
+      213: -7022960443777383350
+    second: Boxer_Move_0
   - first:
-      213: 2869604683691536709
-    second: enemy2SpriteBox2_1
+      213: -2840624576138510613
+    second: Boxer_Move_1
   - first:
-      213: 4490426313021548559
-    second: enemy2SpriteBox2_2
+      213: 7534113186458846374
+    second: Boxer_Move_2
   - first:
-      213: 2666134080854541600
-    second: enemy2SpriteBox2_3
-  - first:
-      213: -9198923105504252679
-    second: enemy2SpriteBox2_4
-  - first:
-      213: -9045727975672098366
-    second: enemy2SpriteBox2_5
-  - first:
-      213: 8603019284822646873
-    second: enemy2SpriteBox2_6
-  - first:
-      213: -5567563041792984403
-    second: enemy2SpriteBox2_7
+      213: 3280240827324545380
+    second: Boxer_Move_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,7 +60,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 0
+  spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -113,91 +101,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: enemy2SpriteBox2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 92afd997c663f75c0800000000000000
-      internalID: -4215590886670730711
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy2SpriteBox2_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5413b398142e2d720800000000000000
-      internalID: 2869604683691536709
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy2SpriteBox2_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f0867bdb0f2315e30800000000000000
-      internalID: 4490426313021548559
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy2SpriteBox2_3
-      rect:
-        serializedVersion: 2
-        x: 192
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 025c5ec12d2000520800000000000000
-      internalID: 2666134080854541600
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: enemy2SpriteBox2_4
+      name: Boxer_Move_0
       rect:
         serializedVersion: 2
         x: 0
@@ -211,14 +115,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9fc294c6c2cd65080800000000000000
-      internalID: -9198923105504252679
+      spriteID: a4487058fae698e90800000000000000
+      internalID: -7022960443777383350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy2SpriteBox2_5
+      name: Boxer_Move_1
       rect:
         serializedVersion: 2
         x: 64
@@ -232,14 +136,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c1504b155e177280800000000000000
-      internalID: -9045727975672098366
+      spriteID: beef40f8ff21498d0800000000000000
+      internalID: -2840624576138510613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy2SpriteBox2_6
+      name: Boxer_Move_2
       rect:
         serializedVersion: 2
         x: 128
@@ -253,14 +157,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95060b37570146770800000000000000
-      internalID: 8603019284822646873
+      spriteID: 6a44770960c8e8860800000000000000
+      internalID: 7534113186458846374
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: enemy2SpriteBox2_7
+      name: Boxer_Move_3
       rect:
         serializedVersion: 2
         x: 192
@@ -274,8 +178,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: daaf55569ea0cb2b0800000000000000
-      internalID: -5567563041792984403
+      spriteID: 469b96a27a1c58d20800000000000000
+      internalID: 3280240827324545380
       vertices: []
       indices: 
       edges: []

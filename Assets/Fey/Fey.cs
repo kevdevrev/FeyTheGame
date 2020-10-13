@@ -65,7 +65,17 @@ public class Fey : MonoBehaviour, IDamage
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
-        throw new System.NotImplementedException();
+       Debug.Log("I took " + dmgTaken);
+        Health = Health - dmgTaken;
+        //toggle injured animation
+        //_anim.SetTrigger("Hit");
+
+        if (Health < 1)
+        {
+            //TODO we don't want to destroy, this is temporary
+            //anim.SetBool("Disabled", true);
+
+        }
     }
     
     private void FlipFey(float horizontalInput)
