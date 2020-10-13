@@ -4,7 +4,7 @@ using Cinemachine;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
 
-public class Fey : MonoBehaviour
+public class Fey : MonoBehaviour, IDamage
 {
     //get Fey's Rigid Body
     private Rigidbody2D _fey_rigid;
@@ -12,14 +12,17 @@ public class Fey : MonoBehaviour
     private SpriteRenderer _fey_sprite;
     //get Fey's animation script
     private Fey_Animation _fey_animation;
-    //get fey's hitbox manager
-    private Fey_HitBoxManager _feyHitBoxManager;
+    //get fey's hitbox manager NO LONGER USED
+    //private Fey_HitBoxManager _feyHitBoxManager;
     [SerializeField]
     public float fey_speed;
     [SerializeField]
     private float jumpForce = 5.0f;
+    //lets our logic know if Fey is able to jump or if it is on cooldown.
     private bool jumpCooldown = false;
-    private bool grounded = true;
+    //used to handle condition checks if fey is on the ground (jump, spin, etc)
+    private bool touchingGround = true;
+    //handles Fey's custom sprite lighting
     private Light2D _feyLight;
 
 
@@ -33,8 +36,8 @@ public class Fey : MonoBehaviour
         _fey_sprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
         //Get the animation script handler
         _fey_animation = GetComponent<Fey_Animation>();
-        //get fey hitbox manager
-        _feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
+        //get fey hitbox manager No Longer Used
+        //_feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
         //get fey light
         _feyLight = transform.GetChild(0).transform.GetChild(2).GetComponent<Light2D>();
 
@@ -58,14 +61,19 @@ public class Fey : MonoBehaviour
 
     }
 
+    //TODO Implement contracted functions
+    public int Health { get; set; }
+    public void Damage(int dmgTaken)
+    {
+        throw new System.NotImplementedException();
+    }
+    
     private void FlipFey(float horizontalInput)
     {
         if (horizontalInput > 0)
         {
             //_fey_sprite.flipX = false;
             _fey_sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
-
-
         }
         else if (horizontalInput < 0)
         {
@@ -77,7 +85,7 @@ public class Fey : MonoBehaviour
     private void Movement()
     {
 
-        grounded = OnGround();
+        touchingGround = OnGround();
         //get a/d or joystick horizontal values (0.0f to 1.0f)
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         //Change Fey's movement Velocity, we don't want to change y.
