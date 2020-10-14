@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -10,11 +11,27 @@ public class MainMenuController : MonoBehaviour
     public GameObject mainMenu;
     public GameObject optionsMenu;
     public AudioMixer audioMixer;
+    private Fey_Animation _fey_animation;
+
+    private void Start()
+    {
+        _fey_animation = transform.GetChild(0).GetComponent<Fey_Animation>();
+
+    }
+
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            _fey_animation.animateAttack();
+        }
+    }
 
     // Set up build indexes in file -> build settings. This will go to next index when start button is pressed.
     public  void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        _fey_animation.animateAttack();
+        StartCoroutine(StartLoadTime());
     }
 
     public void QuitGame()
@@ -41,5 +58,10 @@ public class MainMenuController : MonoBehaviour
         audioMixer.SetFloat("volume", volume);
     }
 
+    IEnumerator StartLoadTime()
+    {
+        yield return new WaitForSeconds(0.4f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
+    }
 }
