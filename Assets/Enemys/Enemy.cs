@@ -44,7 +44,7 @@ public class Enemy : MonoBehaviour
     public virtual void WayPointLogic()
     {
 
-
+        
         //check to see if Fey is far away enough to justify walking
         float feys_X_DistanceAway = Mathf.Abs(feyLocation.position.x - transform.position.x);
         float feys_Y_DistanceAway = Mathf.Abs(feyLocation.position.y - transform.position.y);
