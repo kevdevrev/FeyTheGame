@@ -24,8 +24,7 @@ public class Fey : MonoBehaviour, IDamage
     private bool touchingGround = true;
     //handles Fey's custom sprite lighting
     private Light2D _feyLight;
-    [SerializeField]
-    private float punchForce;
+    [SerializeField] private float punchForce = 5;
 
     
     // Start is called before the first frame update
