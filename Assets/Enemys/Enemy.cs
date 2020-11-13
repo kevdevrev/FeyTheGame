@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
+    public bool inAttackAnimation = false;
+
+    public bool getInAttack()
+    {
+        return inAttackAnimation;
+    }
+
+    public void setInAtack()
+    {
+        inAttackAnimation = true;
+    }
+    public void setNotInAtack()
+    {
+        inAttackAnimation = false;
+    }
+    
     //protected gives access to children
     [SerializeField]
     protected int health;
@@ -101,13 +117,16 @@ public class Enemy : MonoBehaviour
     public virtual void Update()
     {
         Debug.Log("Am I disabled?" + disabled);
-        //if idle, we want to prevent movement, so we do nothing, so just return
+        if (!disabled)
+        {
+            //if idle, we want to prevent movement, so we do nothing, so just return
             if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
             {
                 return;
             }
+
             WayPointLogic();
-        
+        }
     }
     
 }

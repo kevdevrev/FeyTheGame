@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Boxer : Enemy, IDamage
+public class F_Type : Enemy, IDamage
 {
-
 
     public override void Init()
     {
@@ -31,7 +30,4 @@ public class Boxer : Enemy, IDamage
 
         }
     }
-    
-
-
 }
