@@ -4,22 +4,13 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public bool inAttackAnimation = false;
-
-    public bool getInAttack()
-    {
-        return inAttackAnimation;
-    }
-
-    public void setInAtack()
-    {
-        inAttackAnimation = true;
-    }
-    public void setNotInAtack()
-    {
-        inAttackAnimation = false;
-    }
     
+
+    public void ToggleCooldown()
+    {
+        this.StartCoroutine(ResetAttackCooldown());
+    }
+
     //protected gives access to children
     [SerializeField]
     protected int health;
@@ -30,8 +21,9 @@ public class Enemy : MonoBehaviour
 
     [SerializeField] public float maxXDistanceAway = 5f;
     [SerializeField] public float maxYDistanceAway = 1f;
-    
 
+    protected bool attackOnCooldown = false;
+    
     [SerializeField]
     protected float enemyAttackRange;
     protected Vector3 destination;
@@ -43,7 +35,7 @@ public class Enemy : MonoBehaviour
     
     protected Rigidbody2D rigid;
     [SerializeField]
-    protected float attackCooldown;
+    protected float attackCooldownTimer = 1f;
 
     protected bool disabled;
     private void Start()
@@ -87,11 +79,29 @@ public class Enemy : MonoBehaviour
                 transform.position =
                     Vector3.MoveTowards(transform.position, feyCurLocation, speed * Time.deltaTime);
             }
-        }else if (feys_X_DistanceAway < enemyAttackRange && feys_Y_DistanceAway < maxYDistanceAway)
+        }
+        else if (feys_X_DistanceAway < enemyAttackRange && feys_Y_DistanceAway < maxYDistanceAway)
         {
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);
+            //anim.SetBool("CanAttack", attackOnCooldown);
+            
+            Debug.Log("Attack on cooldown: " + attackOnCooldown);
+            
+            if (!attackOnCooldown)
+            {
+                Debug.Log("Hitting");
+                anim.SetTrigger("AttackTrigger");
+                StartCoroutine(ResetAttackCooldown());
             }
+            else
+            {
+                Debug.Log("On cd to hit");
+                // anim.SetBool("AttackBool", false);
+
+            }
+            Debug.Log(attackOnCooldown);
+        }
 
         //no 360 no scope
         if (anim.GetBool("Chase") || anim.GetBool("InCombat"))
@@ -108,7 +118,6 @@ public class Enemy : MonoBehaviour
                     sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
                 }
             }
-
         }
     }
     
@@ -132,5 +141,13 @@ public class Enemy : MonoBehaviour
             WayPointLogic();
         }
     }
-    
+    IEnumerator ResetAttackCooldown()
+    {
+        attackOnCooldown = true;
+        //anim.ResetTrigger("AttackTrigger");
+        Debug.Log("In coruten");
+        yield return new WaitForSeconds(attackCooldownTimer);
+        attackOnCooldown = false;
+
+    }
 }

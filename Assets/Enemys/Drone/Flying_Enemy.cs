@@ -55,10 +55,11 @@ public class Flying_Enemy : Enemy, IDamage
             if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
                 float desiredY = transform.position.y;
-                if (transform.position.y < feyLocation.position.y - 1f)
+                if (transform.position.y < feyLocation.position.y)
                 {
-                    desiredY = Random.Range(1f,2f) + feyLocation.position.y;
+                    desiredY = Random.Range(1f,4f) + feyLocation.position.y;
                 }
+                
 
                 Vector3 feyCurLocation =
                     new Vector3(feyLocation.position.x, desiredY, transform.position.z);
@@ -70,6 +71,22 @@ public class Flying_Enemy : Enemy, IDamage
         {
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);
+            if (transform.position.y < feyLocation.position.y)
+            {
+                float desiredY = Random.Range(0.1f,4f) + feyLocation.position.y;
+                Vector3 feyCurLocation =
+                    new Vector3(feyLocation.position.x, desiredY, transform.position.z);
+                transform.position =
+                    Vector3.MoveTowards(transform.position, feyCurLocation, speed * Time.deltaTime);
+            }
+            else if (transform.position.y > feyLocation.position.y + 2f)
+            {
+                float desiredY = Random.Range(0.1f,2f) + feyLocation.position.y;
+                Vector3 feyCurLocation =
+                    new Vector3(feyLocation.position.x, desiredY, transform.position.z);
+                transform.position =
+                    Vector3.MoveTowards(transform.position, feyCurLocation, speed * Time.deltaTime);
+            }
         }
 
         //no 360 no scope

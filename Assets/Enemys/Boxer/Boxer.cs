@@ -17,6 +17,7 @@ public class Boxer : Enemy, IDamage
     {
         Debug.Log("I took " + dmgTaken);
         Health = Health - dmgTaken;
+        // if hit this is the hit response
         anim.SetTrigger("Hit");
         rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
         inCombat = true;
