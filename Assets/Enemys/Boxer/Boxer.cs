@@ -5,13 +5,11 @@ using UnityEngine;
 public class Boxer : Enemy, IDamage
 {
 
-
     public override void Init()
     {
         base.Init();
         Health = base.health;
     }
-
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
