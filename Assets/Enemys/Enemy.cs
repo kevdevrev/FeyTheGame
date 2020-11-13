@@ -28,6 +28,10 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     protected Transform pointA, pointB;
 
+    [SerializeField] public float maxXDistanceAway = 5f;
+    [SerializeField] public float maxYDistanceAway = 1f;
+    
+
     [SerializeField]
     protected float enemyAttackRange;
     protected Vector3 destination;
@@ -66,11 +70,11 @@ public class Enemy : MonoBehaviour
         float feys_Y_DistanceAway = Mathf.Abs(feyLocation.position.y - transform.position.y);
         
 
-        if (feys_X_DistanceAway > 5f && feys_Y_DistanceAway < 1f)
+        if (feys_X_DistanceAway > maxXDistanceAway && feys_Y_DistanceAway < maxYDistanceAway)
         {
             inCombat = false;
             anim.SetBool("InCombat", false);
-        }else if (feys_X_DistanceAway < 5f && feys_X_DistanceAway > enemyAttackRange && feys_Y_DistanceAway < 1f)
+        }else if (feys_X_DistanceAway < maxXDistanceAway && feys_X_DistanceAway > enemyAttackRange && feys_Y_DistanceAway < maxYDistanceAway)
         {
             anim.SetBool("Chase", true);
             inCombat = true;
@@ -83,7 +87,7 @@ public class Enemy : MonoBehaviour
                 transform.position =
                     Vector3.MoveTowards(transform.position, feyCurLocation, speed * Time.deltaTime);
             }
-        }else if (feys_X_DistanceAway < enemyAttackRange && feys_Y_DistanceAway < 1f)
+        }else if (feys_X_DistanceAway < enemyAttackRange && feys_Y_DistanceAway < maxYDistanceAway)
         {
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);

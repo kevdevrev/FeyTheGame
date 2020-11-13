@@ -20,10 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/liberated.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/liberated.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floater.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floater.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterAngry.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterAngry.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterIdleRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterIdleRed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterLiberated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterLiberated.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterLiberatedGlow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Crusher/floaterLiberatedGlow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/Attack.anim" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +57,11 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
       </list>
     </option>
   </component>
@@ -101,6 +113,7 @@
       <workItem from="1603752878949" duration="2412000" />
       <workItem from="1604537204066" duration="2043000" />
       <workItem from="1605211514607" duration="3780000" />
+      <workItem from="1605299103337" duration="1581000" />
     </task>
     <servers />
   </component>
@@ -133,5 +146,24 @@
       <screen x="3840" y="0" width="1463" height="777" />
     </state>
     <state x="4081" y="36" key="SettingsEditor/3840.0.1463.777/0.0.1920.1040@3840.0.1463.777" timestamp="1605221469063" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs</url>
+          <line>19</line>
+          <properties documentPath="C:\Users\galea\OneDrive\Documents\Games\FeyTheGame\Assets\Enemys\Drone\Flying_Enemy.cs" initialLine="18">
+            <startOffsets>
+              <option value="387" />
+            </startOffsets>
+            <endOffsets>
+              <option value="410" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
