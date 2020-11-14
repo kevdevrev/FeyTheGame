@@ -38,7 +38,7 @@ public class Bullet_Drone : MonoBehaviour
         destroyTime -= Time.deltaTime;
         if (destroyTime < 0)
         {
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
