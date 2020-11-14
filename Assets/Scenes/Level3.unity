@@ -11842,6 +11842,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6117884427394420574, guid: 859cddffc7981eb4db953d58f8f60191, type: 3}
       propertyPath: m_ApplyToSortingLayers.Array.data[3]
+      value: -254779337
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117884427394420574, guid: 859cddffc7981eb4db953d58f8f60191, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[0]
+      value: -1687432939
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117884427394420574, guid: 859cddffc7981eb4db953d58f8f60191, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[1]
+      value: 750507977
+      objectReference: {fileID: 0}
+    - target: {fileID: 6117884427394420574, guid: 859cddffc7981eb4db953d58f8f60191, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[2]
       value: 1602403831
       objectReference: {fileID: 0}
     - target: {fileID: 8100078413338625786, guid: 859cddffc7981eb4db953d58f8f60191, type: 3}
