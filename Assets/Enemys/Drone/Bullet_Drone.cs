@@ -8,8 +8,6 @@ public class Bullet_Drone : MonoBehaviour
     Rigidbody2D rb2d;
     SpriteRenderer sprite;
 
-    protected Transform feyLocation;
-
     float destroyTime;
 
     public int damage = 1;
@@ -23,12 +21,6 @@ public class Bullet_Drone : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
-    }
-
-    private void Start()
-    {
-        feyLocation = GameObject.FindWithTag("Fey").GetComponent<Transform>();
-
     }
 
     // Update is called once per frame
@@ -68,7 +60,6 @@ public class Bullet_Drone : MonoBehaviour
 
     public void Shoot()
     {
-        
         float horizontalInput = Input.GetAxisRaw("Horizontal");
 
         if (horizontalInput > 0)
@@ -81,13 +72,10 @@ public class Bullet_Drone : MonoBehaviour
             //_fey_sprite.flipX = true;
             bulletDirection.x = -1;
         }
-        
-        Vector2 moveDirection = bulletDirection * (feyLocation.transform.position - transform.position).normalized * bulletSpeed;
         // flip the bullet sprite for the highlight pixels
         //sprite.flipX = (bulletDirection.x < 0);
         // give it speed and how long it'll last
-        rb2d.velocity = bulletDirection * bulletSpeed; 
-            //new Vector2(moveDirection.x,moveDirection.y);
+        rb2d.velocity = bulletDirection * bulletSpeed;
         destroyTime = destroyDelay;
     }
 
