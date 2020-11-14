@@ -5,30 +5,28 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    private Rigidbody2D rigid_bullet;
+    Rigidbody2D rb2d;
+    SpriteRenderer sprite;
 
-    private SpriteRenderer bullet_sprite;
-
-    private float destroyTime;
+    float destroyTime;
 
     public int damage = 1;
 
-    [SerializeField] private float bulletSpeed;
-    [SerializeField] private Vector2 bulletDirection;
-    [SerializeField] private float destroyDelay;
-    
-    
+    [SerializeField] float bulletSpeed;
+    [SerializeField] Vector2 bulletDirection;
+    [SerializeField] float destroyDelay;
+
+    // Start is called before the first frame update
     void Awake()
     {
-        rigid_bullet = GetComponent<Rigidbody2D>();
-        bullet_sprite = GetComponent<SpriteRenderer>();
-        
-        
+        rb2d = GetComponent<Rigidbody2D>();
+        sprite = GetComponent<SpriteRenderer>();
     }
-    
+
+    // Update is called once per frame
     void Update()
     {
-        // maybe make into corutine
+        // remove this bullet once its time is up
         destroyTime -= Time.deltaTime;
         if (destroyTime < 0)
         {
@@ -38,34 +36,59 @@ public class Bullet : MonoBehaviour
 
     public void SetBulletSpeed(float speed)
     {
+        // set bullet speed
         this.bulletSpeed = speed;
     }
 
     public void SetBulletDirection(Vector2 direction)
     {
+        // set bullet direction vector
         this.bulletDirection = direction;
     }
 
     public void SetDamageValue(int damage)
     {
+        // how much damage does this bullet cause
         this.damage = damage;
     }
 
-    public void SetDestroyOnDelay(float delay)
+    public void SetDestroyDelay(float delay)
     {
+        // the time this bullet will last if it doesn't collide
         this.destroyDelay = delay;
     }
 
     public void Shoot()
     {
-        //if our bullet is traveling left, we do this to flip the sprite
-        bullet_sprite.flipX = (bulletDirection.x < 0);
-        rigid_bullet.velocity = bulletDirection * bulletSpeed;
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        if (horizontalInput > 0)
+        {
+            //_fey_sprite.flipX = false;
+            bulletDirection.x = 1;
+        }
+        else if (horizontalInput < 0)
+        {
+            //_fey_sprite.flipX = true;
+            bulletDirection.x = -1;
+        }
+        // flip the bullet sprite for the highlight pixels
+        //sprite.flipX = (bulletDirection.x < 0);
+        // give it speed and how long it'll last
+        rb2d.velocity = bulletDirection * bulletSpeed;
         destroyTime = destroyDelay;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Destroy(gameObject);
+        if (!other.CompareTag("Player"))
+        {
+            if (other.CompareTag("Enemy"))
+            {
+                Destroy(gameObject);
+            }
+            
+        }
+        
     }
 }

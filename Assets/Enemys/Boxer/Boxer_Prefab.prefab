@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 8464847301151558291}
   m_Layer: 0
   m_Name: Boxer_Sprite
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,13 +102,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcdb22ce4c410340aca290a7e1232ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inAttackAnimation: 0
   health: 10
   speed: 2
   pointA: {fileID: 0}
   pointB: {fileID: 0}
+  maxXDistanceAway: 5
+  maxYDistanceAway: 1
   enemyAttackRange: 1
-  attackCooldown: 0
+  attackCooldownTimer: 1
 --- !u!210 &8464847301151558295
 SortingGroup:
   m_ObjectHideFlags: 0

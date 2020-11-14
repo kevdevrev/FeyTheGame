@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4679591023337841346}
   m_Layer: 9
   m_Name: Fey_Sprite
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

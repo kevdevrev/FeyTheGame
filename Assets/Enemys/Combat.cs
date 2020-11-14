@@ -10,9 +10,13 @@ public class Combat : MonoBehaviour
     [SerializeField] public int damageDealt;
     //cooldown before object can take damage again
     private bool _immunity = false;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        //Debug.Log("hit: " + other.name);
+        if (!(other.CompareTag("Player") && this.CompareTag("Player")) && !(other.CompareTag("Enemy") && this.CompareTag("Enemy")))
+        {
+
+            //Debug.Log("hit: " + other.name);
         //call our interface in order to access its methods related to the object this is attached to
         //should be attached to the fight hitbox.
         IDamage hit = other.GetComponent<IDamage>();
@@ -24,6 +28,7 @@ public class Combat : MonoBehaviour
                 _immunity = true;
                 StartCoroutine(EnemyImmunityCoolDown());
             }
+        } 
         }
     }
 

@@ -20,11 +20,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Sprite.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/boxer_attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/boxer_attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Bullet.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fey_Sprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fey_Sprite.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,20 +47,22 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PauseAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fey/Buddy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Enemys/IDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/PauseAnimation.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +114,7 @@
       <workItem from="1603752878949" duration="2412000" />
       <workItem from="1604537204066" duration="2043000" />
       <workItem from="1605211514607" duration="3780000" />
-      <workItem from="1605299103337" duration="6693000" />
+      <workItem from="1605299103337" duration="14880000" />
     </task>
     <servers />
   </component>
@@ -128,14 +139,19 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="309" y="208" key="RiderGenerateDialog" timestamp="1602560230987">
+    <state x="309" y="208" key="RiderGenerateDialog" timestamp="1605313467882">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="309" y="208" key="RiderGenerateDialog/3840.0.1463.777/0.0.1920.1040/6400.0.1920.1040@0.0.1920.1040" timestamp="1602560230987" />
+    <state x="309" y="208" key="RiderGenerateDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605313467882" />
     <state x="4081" y="36" key="SettingsEditor" timestamp="1605221469063">
       <screen x="3840" y="0" width="1463" height="777" />
     </state>
     <state x="4081" y="36" key="SettingsEditor/3840.0.1463.777/0.0.1920.1040@3840.0.1463.777" timestamp="1605221469063" />
+    <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog" timestamp="1605316701025">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

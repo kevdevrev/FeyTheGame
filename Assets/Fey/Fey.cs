@@ -9,7 +9,7 @@ public class Fey : MonoBehaviour, IDamage
     //get Fey's Rigid Body
     private Rigidbody2D _fey_rigid;
     //get Fey's Sprite
-    private SpriteRenderer _fey_sprite;
+    public SpriteRenderer _fey_sprite;
     //get Fey's animation script
     private Fey_Animation _fey_animation;
     //get fey's hitbox manager NO LONGER USED
@@ -25,6 +25,7 @@ public class Fey : MonoBehaviour, IDamage
     //handles Fey's custom sprite lighting
     private Light2D _feyLight;
     [SerializeField] private float punchForce = 5;
+    protected Animator anim;
 
     
     // Start is called before the first frame update
@@ -40,6 +41,8 @@ public class Fey : MonoBehaviour, IDamage
         //_feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
         //get fey light
         _feyLight = transform.GetChild(0).transform.GetChild(2).GetComponent<Light2D>();
+        
+        anim = GetComponentInChildren<Animator>();
 
 
     }
@@ -51,6 +54,10 @@ public class Fey : MonoBehaviour, IDamage
         if (Input.GetMouseButtonDown(0) && OnGround() == true)
         {
             _fey_animation.animateAttack();
+        }
+        
+        {
+            
         }
 
         // modified engine code, for this to work you need the modified Light2D.cs script!!!
@@ -67,7 +74,7 @@ public class Fey : MonoBehaviour, IDamage
        Debug.Log("I took " + dmgTaken);
         Health = Health - dmgTaken;
         //toggle injured animation
-        //_anim.SetTrigger("Hit");
+        anim.SetTrigger("Hit");
         _fey_rigid.AddForce(new Vector2(punchForce, punchForce), ForceMode2D.Impulse);
 
         if (Health < 1)
