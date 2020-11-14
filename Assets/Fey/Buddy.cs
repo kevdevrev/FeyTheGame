@@ -7,6 +7,8 @@ public class Buddy : MonoBehaviour
     [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private float fireRate = 0.9f;
+    private int counter;
     protected Animator anim;
     protected SpriteRenderer _buddy_sprite;
 
@@ -15,14 +17,23 @@ public class Buddy : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         _buddy_sprite = GetComponentInChildren<SpriteRenderer>();
-        
+        counter = 0;
+
     }
 
     // Update is called once per frame
     void Update()
     {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
-        ShootTheBullet();
+        if (counter < 5)
+        {
+            ShootTheBullet();
+            counter++;
+        }
+        else
+        {
+            StartCoroutine(FireCooldown());
+        }
         DetectIfEnemyNearby(enemys);
     }
 
@@ -62,7 +73,7 @@ public class Buddy : MonoBehaviour
             bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
             //bullet.GetComponent<Bullet>().SetBulletDirection(new Vector2(_buddy_sprite.transform.localRotation.x, _buddy_sprite.transform.localRotation.y));
             bullet.GetComponent<Bullet>().Shoot();
-            Debug.Log("Shooting!");
+            //Debug.Log("Shooting!");
         }
     }
     
@@ -73,5 +84,10 @@ public class Buddy : MonoBehaviour
         yield return new WaitForSeconds(4f);
         anim.SetBool("InCombat", false);
 
+    }    
+    IEnumerator FireCooldown()
+    {
+        yield return new WaitForSeconds(3f);
+        counter = 0;
     }
 }

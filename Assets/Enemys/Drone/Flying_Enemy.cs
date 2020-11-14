@@ -4,6 +4,36 @@ using UnityEngine;
 
 public class Flying_Enemy : Enemy, IDamage
 {
+    [SerializeField] public int bulletDamage;
+    [SerializeField] public int bulletSpeed;
+    [SerializeField] private float fireRate = 0.9f;
+    private float nextFire;
+    [SerializeField] private GameObject beamPrefab;
+
+    void Awake()
+    {
+        nextFire = Time.time;
+    }
+    
+    
+
+    private void CheckIfTimeToFire()
+    {
+        if (Time.time > nextFire)
+        {
+            Debug.Log("Shooting from enemy!");
+            GameObject bullet = Instantiate(beamPrefab, transform.position, Quaternion.identity);
+            bullet.name = beamPrefab.name;
+            bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);
+            bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
+            //bullet.GetComponent<Bullet>().SetBulletDirection(new Vector2(_buddy_sprite.transform.localRotation.x, _buddy_sprite.transform.localRotation.y));
+            bullet.GetComponent<Bullet>().Shoot();
+            //Instantiate(beamPrefab, transform.position, Quaternion.identity);
+            nextFire = Time.time + fireRate;
+            anim.SetTrigger("AttackTrigger");
+
+        }
+    }
 
     public override void Init()
     {
@@ -34,18 +64,15 @@ public class Flying_Enemy : Enemy, IDamage
 
     public override void WayPointLogic()
     {
-        //check to see if Fey is far away enough to justify walking
         float feys_X_DistanceAway = Mathf.Abs(feyLocation.position.x - transform.position.x);
         float feys_Y_DistanceAway = Mathf.Abs(feyLocation.position.y - transform.position.y);
-
+        
 
         if (feys_X_DistanceAway > maxXDistanceAway && feys_Y_DistanceAway < maxYDistanceAway)
         {
             inCombat = false;
             anim.SetBool("InCombat", false);
-        }
-        else if (feys_X_DistanceAway < maxXDistanceAway && feys_X_DistanceAway > enemyAttackRange &&
-                 feys_Y_DistanceAway < maxYDistanceAway)
+        }else if (feys_X_DistanceAway < maxXDistanceAway && feys_X_DistanceAway > enemyAttackRange && feys_Y_DistanceAway < maxYDistanceAway)
         {
             anim.SetBool("Chase", true);
             inCombat = true;
@@ -54,15 +81,7 @@ public class Flying_Enemy : Enemy, IDamage
             //Debug.Log("Fey is nearby lets chase her");
             if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
-                float desiredY = transform.position.y;
-                if (transform.position.y < feyLocation.position.y)
-                {
-                    desiredY = Random.Range(1f,4f) + feyLocation.position.y;
-                }
-                
-
-                Vector3 feyCurLocation =
-                    new Vector3(feyLocation.position.x, desiredY, transform.position.z);
+                Vector3 feyCurLocation = new Vector3(feyLocation.position.x, transform.position.y, transform.position.z);
                 transform.position =
                     Vector3.MoveTowards(transform.position, feyCurLocation, speed * Time.deltaTime);
             }
@@ -81,12 +100,15 @@ public class Flying_Enemy : Enemy, IDamage
             }
             else if (transform.position.y > feyLocation.position.y + 2f)
             {
-                float desiredY = Random.Range(0.1f,2f) + feyLocation.position.y;
+                float desiredY = Random.Range(0.1f,1f) + feyLocation.position.y;
                 Vector3 feyCurLocation =
                     new Vector3(feyLocation.position.x, desiredY, transform.position.z);
                 transform.position =
                     Vector3.MoveTowards(transform.position, feyCurLocation, speed * Time.deltaTime);
             }
+            
+            CheckIfTimeToFire();
+
         }
 
         //no 360 no scope
@@ -107,4 +129,5 @@ public class Flying_Enemy : Enemy, IDamage
 
         }
     }
+    
 }

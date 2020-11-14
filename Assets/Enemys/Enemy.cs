@@ -90,9 +90,7 @@ public class Enemy : MonoBehaviour
             
             if (!attackOnCooldown)
             {
-                Debug.Log("Hitting");
-                anim.SetTrigger("AttackTrigger");
-                StartCoroutine(ResetAttackCooldown());
+                Attack();
             }
             else
             {
@@ -124,7 +122,9 @@ public class Enemy : MonoBehaviour
     //virtual keyword lets us overwrite this.
     public virtual void Attack()
     {
-        
+        Debug.Log("Hitting");
+        anim.SetTrigger("AttackTrigger");
+        StartCoroutine(ResetAttackCooldown());
     }
 
     public virtual void Update()

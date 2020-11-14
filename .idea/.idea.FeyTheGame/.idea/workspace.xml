@@ -22,18 +22,10 @@
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Fey_Sprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Fey_Sprite.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level_1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +48,14 @@
         <option value="$PROJECT_DIR$/Assets/PauseAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
       </list>
     </option>
   </component>
@@ -114,7 +107,7 @@
       <workItem from="1603752878949" duration="2412000" />
       <workItem from="1604537204066" duration="2043000" />
       <workItem from="1605211514607" duration="3780000" />
-      <workItem from="1605299103337" duration="14880000" />
+      <workItem from="1605299103337" duration="19681000" />
     </task>
     <servers />
   </component>
@@ -152,24 +145,5 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\galea\OneDrive\Documents\Games\FeyTheGame\Assets\Enemys\Drone\Flying_Enemy.cs" initialLine="18">
-            <startOffsets>
-              <option value="387" />
-            </startOffsets>
-            <endOffsets>
-              <option value="410" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
