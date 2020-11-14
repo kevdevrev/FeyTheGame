@@ -13,7 +13,7 @@ public class Combat : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (!(other.CompareTag("Player") && this.CompareTag("Player")) && !(other.CompareTag("Enemy") && this.CompareTag("Enemy")))
+        if (!(other.CompareTag("Player") && this.CompareTag("Player"))  && !(other.CompareTag("Player") && this.CompareTag("Fey")) && !(other.CompareTag("Fey") && this.CompareTag("Player")) && !(other.CompareTag("Enemy") && this.CompareTag("Enemy")))
         {
 
             //Debug.Log("hit: " + other.name);

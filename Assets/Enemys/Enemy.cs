@@ -48,7 +48,7 @@ public class Enemy : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         sprite = GetComponentInChildren<SpriteRenderer>();
-        feyLocation = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        feyLocation = GameObject.FindWithTag("Fey").GetComponent<Transform>();
         rigid = GetComponent<Rigidbody2D>();
         disabled = false;
     }

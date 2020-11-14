@@ -27,7 +27,7 @@ public class Bullet_Drone : MonoBehaviour
 
     private void Start()
     {
-        feyLocation = GameObject.FindWithTag("Player").GetComponent<Transform>();
+        feyLocation = GameObject.FindWithTag("Fey").GetComponent<Transform>();
 
     }
 
@@ -95,7 +95,7 @@ public class Bullet_Drone : MonoBehaviour
     {
         if (!other.CompareTag("Enemy"))
         {
-            if (other.CompareTag("Player"))
+            if (other.CompareTag("Fey"))
             {
                 Destroy(gameObject);
             }
