@@ -19,7 +19,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="" />
+    <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,13 +49,13 @@
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -65,6 +72,14 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Desktop/Builkd\FeyTheGame.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\galea\OneDrive\Desktop\Builkd" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -100,7 +115,9 @@
       <workItem from="1603752878949" duration="2412000" />
       <workItem from="1604537204066" duration="2043000" />
       <workItem from="1605211514607" duration="3780000" />
-      <workItem from="1605299103337" duration="20909000" />
+      <workItem from="1605299103337" duration="21646000" />
+      <workItem from="1605655065091" duration="417000" />
+      <workItem from="1605655570269" duration="10909000" />
     </task>
     <servers />
   </component>
@@ -130,13 +147,19 @@
     </state>
     <state x="309" y="208" key="RiderGenerateDialog/3840.0.1463.777/0.0.1920.1040/6400.0.1920.1040@0.0.1920.1040" timestamp="1602560230987" />
     <state x="309" y="208" key="RiderGenerateDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605313467882" />
-    <state x="4081" y="36" key="SettingsEditor" timestamp="1605221469063">
-      <screen x="3840" y="0" width="1463" height="777" />
+    <state x="252" y="499" key="SettingsEditor" timestamp="1605655613708">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="4081" y="36" key="SettingsEditor/3840.0.1463.777/0.0.1920.1040@3840.0.1463.777" timestamp="1605221469063" />
-    <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog" timestamp="1605316701025">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="252" y="499" key="SettingsEditor/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605655613708" />
+    <state x="124" y="125" width="2311" height="1149" key="VCS.FileHistoryDialog" timestamp="1605659510801">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
+    <state x="124" y="125" width="2311" height="1149" key="VCS.FileHistoryDialog/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659510801" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605659463959">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659463959" />
   </component>
 </project>
