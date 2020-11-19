@@ -62,7 +62,8 @@ public class Flying_Enemy : Enemy, IDamage
         }
     }
 
-    public override void WayPointLogic()
+    //TODO: REDO
+    public void WayPointLogica()
     {
         float feys_X_DistanceAway = Mathf.Abs(feyLocation.position.x - transform.position.x);
         float feys_Y_DistanceAway = Mathf.Abs(feyLocation.position.y - transform.position.y);

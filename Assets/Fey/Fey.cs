@@ -123,6 +123,7 @@ public class Fey : MonoBehaviour, IDamage
     }
 
     //check if we are actually on the ground before we try to jump.
+    //TODO Add condition if on top of enemy
     bool OnGround()
     {
         //raycasts on layer 8 (floor) 1<<8
