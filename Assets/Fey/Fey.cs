@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Cinemachine;
 using UnityEngine;
 using UnityEngine.Experimental.Rendering.Universal;
+using UnityEngine.SceneManagement;
 
 public class Fey : MonoBehaviour, IDamage
 {
@@ -26,6 +27,10 @@ public class Fey : MonoBehaviour, IDamage
     private Light2D _feyLight;
     [SerializeField] private float punchForce = 5;
     protected Animator anim;
+    // Level on death
+    [SerializeField] private string level;
+    // colliders for button activation
+    //List<Collider2D> inColliders = new List<Collider2D>();
 
     
     // Start is called before the first frame update
@@ -64,7 +69,9 @@ public class Fey : MonoBehaviour, IDamage
         // Message Kevin for it!!!
         _feyLight.lightCookieSprite = _fey_sprite.sprite;
 
-
+        // keypress E to interact with buttons
+        //if (Input.GetKeyDown((KeyCode.E)))
+            //inColliders.ForEach(n => n.SendMessage("Use", SendMessageOptions.DontRequireReceiver));
     }
 
     //TODO Implement contracted functions
@@ -79,6 +86,7 @@ public class Fey : MonoBehaviour, IDamage
 
         if (Health < 1)
         {
+            //SceneManager.LoadScene(level);
             //TODO we don't want to destroy, this is temporary
             //anim.SetBool("Disabled", true);
 
@@ -153,4 +161,16 @@ public class Fey : MonoBehaviour, IDamage
 
     }
     
+    // keeps track of current colliders
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        //inColliders.Add(col);
+        if (col.tag == "Button")
+            if (Input.GetKeyDown((KeyCode.E)))
+                col.GetComponent<Button>().TurnOn();
+    }
+    void OnTriggerExit2D(Collider2D col)
+    {
+        //inColliders.Remove(col);
+    }
 }

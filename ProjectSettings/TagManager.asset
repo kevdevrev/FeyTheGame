@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Fey
+  - Button
   layers:
   - Default
   - TransparentFX
