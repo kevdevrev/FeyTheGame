@@ -61,7 +61,7 @@ public class Buddy : MonoBehaviour
 
     private void ShootTheBullet()
     {
-        if (Input.GetMouseButtonDown(1) || Input.GetKey(KeyCode.C))
+        if (Input.GetMouseButtonDown(1))
         {
             anim.SetTrigger("MoveRight");
             anim.ResetTrigger("MoveRight");
