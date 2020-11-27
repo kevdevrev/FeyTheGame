@@ -211,7 +211,7 @@ public class Enemy : MonoBehaviour
     //virtual keyword lets us overwrite this.
     public virtual void Attack()
     {
-        Debug.Log("Hitting");
+        //Debug.Log("Hitting");
         anim.SetTrigger("AttackTrigger");
         StartCoroutine(ResetAttackCooldown());
     }

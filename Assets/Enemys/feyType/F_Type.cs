@@ -22,7 +22,7 @@ public class F_Type : Enemy, IDamage
         anim.SetBool("InCombat", true);
         if(Health<1)
         {
-            Debug.Log("Idied!");
+            Debug.Log("I died!");
             anim.SetBool("Disabled",true);
             disabled = true;
             Debug.Log("I am now disabled maybe? " + disabled);

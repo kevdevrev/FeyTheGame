@@ -21,10 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer_Sprite.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone_Sprite.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone_Sprite.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone_Sprite.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,6 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/IDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/PauseAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
@@ -54,6 +51,7 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
       </list>
     </option>
@@ -118,7 +116,8 @@
       <workItem from="1605655065091" duration="417000" />
       <workItem from="1605655570269" duration="11182000" />
       <workItem from="1605818565649" duration="203000" />
-      <workItem from="1606096624853" duration="665000" />
+      <workItem from="1606096624853" duration="862000" />
+      <workItem from="1606163735336" duration="1078000" />
     </task>
     <servers />
   </component>
