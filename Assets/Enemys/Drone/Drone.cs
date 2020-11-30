@@ -14,6 +14,7 @@ public class Drone : Enemy, IDamage
     private int counter;
     private float shootDelay = 0.3f;
     private float shootDelayTimer = 0.3f;
+    [SerializeField] public int bulletCount = 5;
 
     [SerializeField] private Vector2 feyDirection;
     // Start is called before the first frame update
@@ -52,7 +53,7 @@ public class Drone : Enemy, IDamage
     
     private void ShootTheBullet()
     {
-        if (counter < 5 && shootDelayTimer < 0)
+        if (counter < bulletCount && shootDelayTimer < 0)
         {
             counter++;
             anim.SetTrigger("Attack");
@@ -64,7 +65,7 @@ public class Drone : Enemy, IDamage
             bullet.GetComponent<Bullet>().Shoot();
             shootDelayTimer = shootDelay;
         }
-        else if(counter >= 5 && notOnCoolDown == true)
+        else if(counter >= bulletCount && notOnCoolDown == true)
         {
             shootCooldownTimer = shootCooldown;
             notOnCoolDown = false;

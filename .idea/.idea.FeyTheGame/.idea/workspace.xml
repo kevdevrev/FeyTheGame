@@ -20,17 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Bullet.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Bullet.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +122,7 @@
       <workItem from="1606096624853" duration="862000" />
       <workItem from="1606163735336" duration="1078000" />
       <workItem from="1606510114080" duration="616000" />
-      <workItem from="1606761041249" duration="11382000" />
+      <workItem from="1606761041249" duration="11419000" />
     </task>
     <servers />
   </component>
@@ -186,13 +178,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs</url>
-          <line>64</line>
+          <line>65</line>
           <properties documentPath="C:\Users\galea\OneDrive\Documents\Games\FeyTheGame\Assets\Enemys\Drone\Drone.cs" initialLine="64">
             <startOffsets>
-              <option value="2006" />
+              <option value="2065" />
             </startOffsets>
             <endOffsets>
-              <option value="2035" />
+              <option value="2094" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
