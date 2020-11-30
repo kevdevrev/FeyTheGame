@@ -15,21 +15,15 @@ public class Boxer : Enemy, IDamage
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
-        Debug.Log("I took " + dmgTaken);
         Health = Health - dmgTaken;
         // if hit this is the hit response
-        anim.SetTrigger("Hit");
         rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
         inCombat = true;
         anim.SetBool("InCombat", true);
         if(Health<1)
         {
-            Debug.Log("Idied!");
-            anim.SetBool("Disabled",true);
+            anim.SetTrigger("Liberated");
             disabled = true;
-            Debug.Log("I am now disabled maybe? " + disabled);
-            //glove.GetComponent<SpriteRenderer>().enabled=true;
-
         }
     }
     

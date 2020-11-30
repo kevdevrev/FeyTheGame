@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
 
     [SerializeField] float bulletSpeed;
-    [SerializeField] Vector2 bulletDirection;
+    [SerializeField] Vector3 bulletDirection;
     [SerializeField] float destroyDelay;
 
     // Start is called before the first frame update
@@ -40,7 +40,7 @@ public class Bullet : MonoBehaviour
         this.bulletSpeed = speed;
     }
 
-    public void SetBulletDirection(Vector2 direction)
+    public void SetBulletDirection(Vector3 direction)
     {
         // set bullet direction vector
         this.bulletDirection = direction;
@@ -60,21 +60,6 @@ public class Bullet : MonoBehaviour
 
     public void Shoot()
     {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-
-        if (horizontalInput > 0)
-        {
-            //_fey_sprite.flipX = false;
-            bulletDirection.x = 1;
-        }
-        else if (horizontalInput < 0)
-        {
-            //_fey_sprite.flipX = true;
-            bulletDirection.x = -1;
-        }
-        // flip the bullet sprite for the highlight pixels
-        //sprite.flipX = (bulletDirection.x < 0);
-        // give it speed and how long it'll last
         rb2d.velocity = bulletDirection * bulletSpeed;
         destroyTime = destroyDelay;
     }

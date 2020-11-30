@@ -9,30 +9,37 @@ public class Fey : MonoBehaviour, IDamage
 {
     //get Fey's Rigid Body
     private Rigidbody2D _fey_rigid;
+
     //get Fey's Sprite
     public SpriteRenderer _fey_sprite;
+
     //get Fey's animation script
     private Fey_Animation _fey_animation;
+
     //get fey's hitbox manager NO LONGER USED
     //private Fey_HitBoxManager _feyHitBoxManager;
-    [SerializeField]
-    public float fey_speed;
-    [SerializeField]
-    private float jumpForce = 5.0f;
+    [SerializeField] public float fey_speed;
+
+    [SerializeField] private float jumpForce = 5.0f;
+
     //lets our logic know if Fey is able to jump or if it is on cooldown.
     private bool jumpCooldown = false;
+
     //used to handle condition checks if fey is on the ground (jump, spin, etc)
     private bool touchingGround = true;
+
     //handles Fey's custom sprite lighting
     private Light2D _feyLight;
     [SerializeField] private float punchForce = 5;
+
     protected Animator anim;
+
     // Level on death
     [SerializeField] private string level;
     // colliders for button activation
     //List<Collider2D> inColliders = new List<Collider2D>();
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -46,7 +53,7 @@ public class Fey : MonoBehaviour, IDamage
         //_feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
         //get fey light
         _feyLight = transform.GetChild(0).transform.GetChild(2).GetComponent<Light2D>();
-        
+
         anim = GetComponentInChildren<Animator>();
 
 
@@ -60,9 +67,9 @@ public class Fey : MonoBehaviour, IDamage
         {
             _fey_animation.animateAttack();
         }
-        
+
         {
-            
+
         }
 
         // modified engine code, for this to work you need the modified Light2D.cs script!!!
@@ -71,14 +78,15 @@ public class Fey : MonoBehaviour, IDamage
 
         // keypress E to interact with buttons
         //if (Input.GetKeyDown((KeyCode.E)))
-            //inColliders.ForEach(n => n.SendMessage("Use", SendMessageOptions.DontRequireReceiver));
+        //inColliders.ForEach(n => n.SendMessage("Use", SendMessageOptions.DontRequireReceiver));
     }
 
     //TODO Implement contracted functions
     public int Health { get; set; }
+
     public void Damage(int dmgTaken)
     {
-       Debug.Log("I took " + dmgTaken);
+        Debug.Log("I took " + dmgTaken);
         Health = Health - dmgTaken;
         //toggle injured animation
         anim.SetTrigger("Hit");
@@ -92,7 +100,7 @@ public class Fey : MonoBehaviour, IDamage
 
         }
     }
-    
+
     private void FlipFey(float horizontalInput)
     {
         if (horizontalInput > 0)
@@ -106,7 +114,7 @@ public class Fey : MonoBehaviour, IDamage
             _fey_sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
         }
     }
-    
+
     private void Movement()
     {
 
@@ -135,11 +143,14 @@ public class Fey : MonoBehaviour, IDamage
     bool OnGround()
     {
         //raycasts on layer 8 (floor) 1<<8
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, 0.9f, 1 << 8);
+        var currPos = transform.position;
+        RaycastHit2D hit = Physics2D.Raycast(currPos, Vector2.down, 0.9f, 1 << 8);
+        RaycastHit2D hitEnemy = Physics2D.Raycast(currPos, Vector2.down, 0.9f, 1 << 13);
+
         // draws the ray in our scene view
         // Debug.DrawRay(transform.position, Vector2.down, Color.red);
         //This means we hit something, which can only be our layer 8 (floor)
-        if (hit.collider != null)
+        if (hit.collider != null || hitEnemy.collider != null)
         {
             if (jumpCooldown == false)
             {
@@ -151,7 +162,7 @@ public class Fey : MonoBehaviour, IDamage
 
         return false;
     }
-    
+
     //handles our jump cooldown
     IEnumerator ResetJumpRoutine()
     {
@@ -160,7 +171,7 @@ public class Fey : MonoBehaviour, IDamage
         jumpCooldown = false;
 
     }
-    
+
     // keeps track of current colliders
     void OnTriggerEnter2D(Collider2D col)
     {
@@ -169,8 +180,5 @@ public class Fey : MonoBehaviour, IDamage
             if (Input.GetKeyDown((KeyCode.E)))
                 col.GetComponent<Button>().TurnOn();
     }
-    void OnTriggerExit2D(Collider2D col)
-    {
-        //inColliders.Remove(col);
-    }
 }
+

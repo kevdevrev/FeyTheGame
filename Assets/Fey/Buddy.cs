@@ -8,6 +8,10 @@ public class Buddy : MonoBehaviour
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float fireRate = 0.9f;
+    [SerializeField] private Vector2 buddyFace;
+    [SerializeField] private float shootCooldown = 1f;
+    private float shootCooldownTimer = 1f;
+    private bool notOnCoolDown = true;
     private int counter;
     protected Animator anim;
     protected SpriteRenderer _buddy_sprite;
@@ -22,22 +26,15 @@ public class Buddy : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        buddyFace = new Vector2(_buddy_sprite.transform.rotation.x, _buddy_sprite.transform.rotation.y);
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
-        if (counter < 5)
-        {
-            ShootTheBullet();
-            counter++;
-        }
-        else
-        {
-            StartCoroutine(FireCooldown());
-        }
-        DetectIfEnemyNearby(enemys);
+        Debug.Log(counter);
+        ShootTheBullet();
     }
 
-    private GameObject[] DetectIfEnemyNearby(GameObject[] enemys)
+    private void DetectIfEnemyNearby(GameObject[] enemys)
     {
         if (!anim.GetBool("InCombat"))
         {
@@ -50,30 +47,51 @@ public class Buddy : MonoBehaviour
                 {
                     anim.SetBool("InCombat", true);
                     anim.SetTrigger("MoveRight");
-                    return enemys;
+                    return;
                 }
             }
         }
 
         anim.SetBool("InCombat", false);
-        return enemys;
+        return;
     }
 
     private void ShootTheBullet()
     {
-        if (Input.GetMouseButtonDown(1))
+        if (counter < 5)
         {
-            anim.SetTrigger("MoveRight");
-            anim.ResetTrigger("MoveRight");
-            //StartCoroutine(ResetInCombatStatus());
-            anim.SetTrigger("Attack");
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.name = bulletPrefab.name;
-            bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);
-            bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
-            //bullet.GetComponent<Bullet>().SetBulletDirection(new Vector2(_buddy_sprite.transform.localRotation.x, _buddy_sprite.transform.localRotation.y));
-            bullet.GetComponent<Bullet>().Shoot();
-            //Debug.Log("Shooting!");
+            if (Input.GetMouseButtonDown(1))
+            {
+                counter++;
+                anim.SetTrigger("MoveRight");
+                anim.ResetTrigger("MoveRight");
+                //StartCoroutine(ResetInCombatStatus());
+                anim.SetTrigger("Attack");
+                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                bullet.name = bulletPrefab.name;
+                bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);
+                bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
+                //Debug.Log(new Vector2(_buddy_sprite.transform.localRotation.x, _buddy_sprite.transform.localRotation.y));
+
+                bullet.GetComponent<Bullet>().SetBulletDirection(transform.right);
+                bullet.GetComponent<Bullet>().Shoot();
+                //Debug.Log("Shooting!");
+            }
+        }
+        else if(counter >= 5 && notOnCoolDown == true)
+        {
+            shootCooldownTimer = shootCooldown;
+            notOnCoolDown = false;
+        }
+        else
+        {
+            shootCooldownTimer -= Time.deltaTime;
+            if (shootCooldownTimer < 0)
+            {
+                shootCooldownTimer = 3;
+                counter = 0;
+                notOnCoolDown = true;
+            }
         }
     }
     
