@@ -157,7 +157,7 @@ GameObject:
   - component: {fileID: 3955141355086545487}
   m_Layer: 10
   m_Name: Hitbox
-  m_TagString: Untagged
+  m_TagString: Fey
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -419,7 +419,7 @@ MonoBehaviour:
   bulletDamage: 1
   bulletSpeed: 5
   bulletPrefab: {fileID: 4795341918592260117, guid: 4a1b67a1bc9220c4387599e359516cf2, type: 3}
-  fireRate: 0.9
+  shootCooldown: 1
 --- !u!1 &2890537270530088107
 GameObject:
   m_ObjectHideFlags: 0
@@ -449,7 +449,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2890537270530088107}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.15, y: 0.031, z: -5}
+  m_LocalPosition: {x: -5.22, y: -0.11, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 36917561836057583}
@@ -776,7 +776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3479382741814933097}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.15, y: 0.031, z: -5}
+  m_LocalPosition: {x: -5.22, y: -0.11, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7623172245202554517}
@@ -1052,7 +1052,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3850005967888786454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.15, y: 0.031, z: 0}
+  m_LocalPosition: {x: -5.22, y: -0.11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8413564025362035126}
@@ -1075,6 +1075,7 @@ MonoBehaviour:
   fey_speed: 3
   jumpForce: 7
   punchForce: 0
+  level: 
 --- !u!114 &1451218662765321253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1172,7 +1173,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0.014195204, y: -0.101730466}
+  m_Offset: {x: 0.014195204, y: -0.093731046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1183,7 +1184,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6403947, y: 1.2034609}
+  m_Size: {x: 0.6403947, y: 1.1874621}
   m_EdgeRadius: 0
 --- !u!251 &5515674422349846012
 PlatformEffector2D:
@@ -1323,7 +1324,7 @@ GameObject:
   - component: {fileID: 3332038920722104154}
   m_Layer: 11
   m_Name: Buddy_Lighting
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
