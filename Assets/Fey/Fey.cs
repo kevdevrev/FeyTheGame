@@ -94,7 +94,7 @@ public class Fey : MonoBehaviour, IDamage
 
         if (Health < 1)
         {
-            //SceneManager.LoadScene(level);
+            SceneManager.LoadScene(level);
             //TODO we don't want to destroy, this is temporary
             //anim.SetBool("Disabled", true);
 

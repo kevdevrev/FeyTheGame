@@ -5759,7 +5759,7 @@ Transform:
   - {fileID: 1482196171}
   - {fileID: 1966544861}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &253629143
 PrefabInstance:
@@ -6728,6 +6728,10 @@ PrefabInstance:
     - target: {fileID: 179859936804515104, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
       propertyPath: m_LocalPosition.x
       value: -5.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5637885668119171937, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: level
+      value: Level4
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 179859935735326711, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
