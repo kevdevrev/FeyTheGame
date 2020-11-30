@@ -19621,10 +19621,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5918043157682095430, guid: 675298eabc23bf04d975479b6ce137f5, type: 3}
-      propertyPath: bulletCount
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 5918043157995218872, guid: 675298eabc23bf04d975479b6ce137f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.41

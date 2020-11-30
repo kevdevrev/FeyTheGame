@@ -169,6 +169,7 @@ MonoBehaviour:
   bulletSpeed: 1
   bulletPrefab: {fileID: 3063151942936355022, guid: f134814749622184098e515791182427, type: 3}
   shootCooldown: 3
+  bulletCount: 5
   feyDirection: {x: 0, y: 0}
 --- !u!61 &5918043157682095431
 BoxCollider2D:
@@ -245,7 +246,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5918043157995218873}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.41, y: 1.09, z: 0}
   m_LocalScale: {x: 1.4281791, y: 1.4281791, z: 1.4281791}
   m_Children:
