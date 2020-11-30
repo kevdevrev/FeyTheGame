@@ -13,7 +13,7 @@ public class Bullet : MonoBehaviour
     public int damage = 1;
 
     [SerializeField] float bulletSpeed;
-    [SerializeField] Vector3 bulletDirection;
+    [SerializeField] Vector2 bulletDirection;
     [SerializeField] float destroyDelay;
 
     // Start is called before the first frame update
@@ -40,7 +40,7 @@ public class Bullet : MonoBehaviour
         this.bulletSpeed = speed;
     }
 
-    public void SetBulletDirection(Vector3 direction)
+    public void SetBulletDirection(Vector2 direction)
     {
         // set bullet direction vector
         this.bulletDirection = direction;

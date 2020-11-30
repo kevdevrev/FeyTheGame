@@ -7,8 +7,6 @@ public class Buddy : MonoBehaviour
     [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private float fireRate = 0.9f;
-    [SerializeField] private Vector2 buddyFace;
     [SerializeField] private float shootCooldown = 1f;
     private float shootCooldownTimer = 1f;
     private bool notOnCoolDown = true;
@@ -28,7 +26,6 @@ public class Buddy : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        buddyFace = new Vector2(_buddy_sprite.transform.rotation.x, _buddy_sprite.transform.rotation.y);
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
         Debug.Log(counter);
         ShootTheBullet();
@@ -89,8 +86,7 @@ public class Buddy : MonoBehaviour
             if (shootCooldownTimer < 0)
             {
                 shootCooldownTimer = 3;
-                counter = 0;
-                notOnCoolDown = true;
+                counter = 0; notOnCoolDown = true;
             }
         }
     }

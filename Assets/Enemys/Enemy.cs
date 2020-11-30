@@ -34,7 +34,7 @@ public class Enemy : MonoBehaviour
     protected SpriteRenderer sprite;
 
     protected bool inCombat = false;
-    protected Transform feyLocation;
+    public Transform feyLocation;
     
     protected Rigidbody2D rigid;
     [SerializeField]
@@ -216,8 +216,9 @@ public class Enemy : MonoBehaviour
         StartCoroutine(ResetAttackCooldown());
     }
 
-    public virtual void Update()
+    protected virtual void Update()
     {
+        Debug.Log("Calling update");
         if (!disabled)
         {
             //if idle, we want to prevent movement, so we do nothing, so just return

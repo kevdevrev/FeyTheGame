@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3063151942582947813}
   - component: {fileID: 3063151942582947812}
-  m_Layer: 13
+  m_Layer: 14
   m_Name: Sprite Light 2D
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3063151942582947834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.124, y: 1.4098881, z: -1.1971751}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.4281791, y: 1.4281791, z: 1.4281791}
   m_Children: []
   m_Father: {fileID: 3063151942936354997}
@@ -82,12 +82,14 @@ GameObject:
   m_Component:
   - component: {fileID: 3063151942936354997}
   - component: {fileID: 3063151942936355018}
-  - component: {fileID: 3063151942936355019}
   - component: {fileID: 3063151942936355016}
   - component: {fileID: 3063151942936355017}
-  m_Layer: 0
+  - component: {fileID: 6505314008594399034}
+  - component: {fileID: 1628846794430105258}
+  - component: {fileID: 7769850518756415543}
+  m_Layer: 14
   m_Name: floaterBullet
-  m_TagString: Untagged
+  m_TagString: EnemyBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,22 +160,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3063151942936355019
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3063151942936355022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 12aaaf576c9e55648be38801af077b48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
-  bulletSpeed: 0
-  bulletDirection: {x: 0, y: 0}
-  destroyDelay: 0
 --- !u!114 &3063151942936355016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -186,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9cef6d834fdae944b380e1270d7137e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
+  attackCooldown: 0
   damageDealt: 0
 --- !u!210 &3063151942936355017
 SortingGroup:
@@ -199,3 +185,66 @@ SortingGroup:
   m_SortingLayerID: 750507977
   m_SortingLayer: 5
   m_SortingOrder: 40
+--- !u!114 &6505314008594399034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063151942936355022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d61b0ff73023a904e98afc153bd2017a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+  bulletSpeed: 5
+  bulletDirection: {x: 0, y: 0}
+  destroyDelay: 10
+--- !u!50 &1628846794430105258
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063151942936355022}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &7769850518756415543
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3063151942936355022}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.11, y: 0.05}
+    newSize: {x: 0.11, y: 0.05}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.11, y: 0.05}
+  m_EdgeRadius: 0

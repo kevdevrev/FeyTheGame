@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Fey
   - Button
+  - EnemyBullet
   layers:
   - Default
   - TransparentFX

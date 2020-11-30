@@ -20,7 +20,12 @@ public class Combat : MonoBehaviour
                  && this.CompareTag("Player"))
             && !(other.CompareTag("Fey") 
                  && this.CompareTag("Fey"))
-            && !(other.CompareTag("Enemy") && this.CompareTag("Enemy")))
+            && !(other.CompareTag("Enemy") && this.CompareTag("Enemy"))
+            && !(other.CompareTag("EnemyBullet") && this.CompareTag("EnemyBullet"))
+            && !(other.CompareTag("EnemyBullet") && this.CompareTag("Enemy"))
+            && !(other.CompareTag("Enemy") && this.CompareTag("EnemyBullet"))
+            
+            )
         {
 
             //Debug.Log("hit: " + other.name);
