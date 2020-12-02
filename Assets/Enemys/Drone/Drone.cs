@@ -32,7 +32,6 @@ public class Drone : Enemy, IDamage
         base.Update();
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;
         ShootTheBullet();
-        Debug.Log(feyDirection);
     }
     
     public int Health { get; set; }
@@ -56,7 +55,7 @@ public class Drone : Enemy, IDamage
         if (counter < bulletCount && shootDelayTimer < 0)
         {
             counter++;
-            anim.SetTrigger("Attack");
+            anim.SetTrigger("AttackTrigger");
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             bullet.name = bulletPrefab.name;
             bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);

@@ -27,7 +27,7 @@ public class Buddy : MonoBehaviour
     private void Update()
     {
         GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log(counter);
+        //Debug.Log(counter);
         ShootTheBullet();
     }
 

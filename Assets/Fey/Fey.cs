@@ -86,7 +86,6 @@ public class Fey : MonoBehaviour, IDamage
 
     public void Damage(int dmgTaken)
     {
-        Debug.Log("I took " + dmgTaken);
         Health = Health - dmgTaken;
         //toggle injured animation
         anim.SetTrigger("Hit");
@@ -172,13 +171,5 @@ public class Fey : MonoBehaviour, IDamage
 
     }
 
-    // keeps track of current colliders
-    void OnTriggerEnter2D(Collider2D col)
-    {
-        //inColliders.Add(col);
-        if (col.tag == "Button")
-            if (Input.GetKeyDown((KeyCode.E)))
-                col.GetComponent<Button>().TurnOn();
-    }
 }
 

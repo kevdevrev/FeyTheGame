@@ -20,8 +20,32 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Button.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Button.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Door.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Door.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/UsableButton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/UsableButton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOff.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOff.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOn.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOn.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_outline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_some_outline.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_some_outline.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/longDoor.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/longDoor.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +56,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Door/Door.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PauseAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" root0="FORCE_HIGHLIGHTING" />
@@ -46,14 +71,17 @@
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door/Scripts/Button.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door/Door.cs" />
       </list>
     </option>
   </component>
@@ -122,6 +150,7 @@
       <workItem from="1606163735336" duration="1078000" />
       <workItem from="1606510114080" duration="616000" />
       <workItem from="1606761041249" duration="12016000" />
+      <workItem from="1606872572391" duration="3704000" />
     </task>
     <servers />
   </component>
@@ -146,10 +175,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="4025" y="400" key="RiderGenerateDialog" timestamp="1606769609040">
+    <state x="4025" y="400" key="RiderGenerateDialog" timestamp="1606876318112">
       <screen x="3840" y="0" width="1152" height="2000" />
     </state>
-    <state x="4025" y="400" key="RiderGenerateDialog/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606769609040" />
+    <state x="4025" y="400" key="RiderGenerateDialog/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606876318112" />
     <state x="309" y="208" key="RiderGenerateDialog/3840.0.1463.777/0.0.1920.1040/6400.0.1920.1040@0.0.1920.1040" timestamp="1602560230987" />
     <state x="309" y="208" key="RiderGenerateDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605313467882" />
     <state x="252" y="499" key="SettingsEditor" timestamp="1606761658229">
@@ -163,9 +192,10 @@
     <state x="3896" y="179" width="1040" height="1642" key="VCS.FileHistoryDialog/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606770424676" />
     <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
     <state x="124" y="125" width="2311" height="1149" key="VCS.FileHistoryDialog/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659510801" />
-    <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1" timestamp="1606764729610">
+    <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1" timestamp="1606872975159">
       <screen x="3840" y="0" width="1152" height="2000" />
     </state>
+    <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1606872975159" />
     <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606764729610" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605659463959">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -177,13 +207,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs</url>
-          <line>65</line>
+          <line>64</line>
           <properties documentPath="C:\Users\galea\OneDrive\Documents\Games\FeyTheGame\Assets\Enemys\Drone\Drone.cs" initialLine="64">
             <startOffsets>
-              <option value="2065" />
+              <option value="2039" />
             </startOffsets>
             <endOffsets>
-              <option value="2094" />
+              <option value="2068" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

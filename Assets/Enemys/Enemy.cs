@@ -63,7 +63,6 @@ public class Enemy : MonoBehaviour
         // && !anim.GetBool("InCombat") && !anim.GetBool("Chase")
         if (Vector3.Distance(transform.position,pointA.position) <= 0.2)
         {
-            Debug.Log("Heading to + " + pointB.position);
             
             destination = pointB.position;
             //anim.Play("Idle");
@@ -78,7 +77,6 @@ public class Enemy : MonoBehaviour
         //&& !anim.GetBool("InCombat") && !anim.GetBool("Chase")
         else if (Vector3.Distance(transform.position,pointB.position) <= 0)
         {
-            Debug.Log("Heading to + " + pointA.position);
 
             destination = pointA.position;
             
@@ -108,14 +106,14 @@ public class Enemy : MonoBehaviour
         //WayPointLogic();
         //feyDistanceVector = feyDistanceVector * new Vector2(1f, 0.5f);
         //feyDistanceVector.x > maxXDistanceAway && feyDistanceVector.y < maxYDistanceAway)
-        Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > detectionRadius.x);
+        //Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > detectionRadius.x);
         if ((Mathf.Abs(feyDistanceAwayVector.x) > detectionRadius.x
             || Mathf.Abs(feyDistanceAwayVector.y) > detectionRadius.y)
             || (feyDistanceAwayVector.y > yDistanceCondition
             && Mathf.Abs(feyDistanceAwayVector.y) > detectionRadius.y)
             )
         {
-            Debug.Log("WayPointMode");
+            //Debug.Log("WayPointMode");
             inCombat = false;
             anim.SetBool("InCombat", false);
             anim.SetTrigger("Move");
@@ -124,7 +122,6 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            Debug.Log("IN ELSE");
             anim.SetBool("WayPointMode", false);
             if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
             {
@@ -163,13 +160,11 @@ public class Enemy : MonoBehaviour
                 }
             }else if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange)
             {
-                Debug.Log("In Attack Mode");
                 anim.SetBool("Chase", false);
                 anim.SetBool("InCombat", true);
 
                 anim.SetTrigger("Move");
 
-                Debug.Log("Attack on cooldown: " + attackOnCooldown);
 
                 if (!attackOnCooldown)
                     Attack();
@@ -218,7 +213,6 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Update()
     {
-        Debug.Log("Calling update");
         if (!disabled)
         {
             //if idle, we want to prevent movement, so we do nothing, so just return
@@ -234,7 +228,6 @@ public class Enemy : MonoBehaviour
     {
         attackOnCooldown = true;
         //anim.ResetTrigger("AttackTrigger");
-        Debug.Log("In coruten");
         yield return new WaitForSeconds(attackCooldownTimer);
         attackOnCooldown = false;
 

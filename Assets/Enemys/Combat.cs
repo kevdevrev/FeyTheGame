@@ -27,22 +27,29 @@ public class Combat : MonoBehaviour
             
             )
         {
-
-            //Debug.Log("hit: " + other.name);
-        //call our interface in order to access its methods related to the object this is attached to
-        //should be attached to the fight hitbox.
-        IDamage hit = other.GetComponent<IDamage>();
-        if (hit != null)
-        {
-            if (_immunity == false)
-            {
-                hit.Damage(damageDealt);
-                _immunity = true;
-                StartCoroutine(EnemyImmunityCoolDown());
+            IDamage hit = other.GetComponent<IDamage>();
+            if (hit != null){
+                if (this.CompareTag("Button"))
+                {
+                    Debug.Log(this);
+                    hit.Damage(1);
+                }
+                else
+                    {
+                        //Debug.Log("hit: " + other.name);
+                        //call our interface in order to access its methods related to the object this is attached to
+                        //should be attached to the fight hitbox.
+                        if (_immunity == false)
+                        {
+                            hit.Damage(damageDealt);
+                            _immunity = true;
+                            StartCoroutine(EnemyImmunityCoolDown());
+                        }
+                    }
+                }
             }
-        } 
-        }
-    }
+
+    } 
 
     IEnumerator EnemyImmunityCoolDown()
     {
