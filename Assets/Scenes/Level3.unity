@@ -7479,6 +7479,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -5.15
       objectReference: {fileID: 0}
+    - target: {fileID: 5637885668119171937, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: level
+      value: Level3
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 179859935735326711, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
     - {fileID: 179859936804515107, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}

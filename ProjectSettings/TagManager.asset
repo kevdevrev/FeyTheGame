@@ -51,6 +51,9 @@ TagManager:
   - name: Walls
     uniqueID: 4040187959
     locked: 0
+  - name: Floor
+    uniqueID: 2868807599
+    locked: 0
   - name: Platform
     uniqueID: 3645086973
     locked: 0
