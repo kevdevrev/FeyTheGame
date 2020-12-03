@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -26,8 +27,6 @@ public class Buddy : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        GameObject[] enemys = GameObject.FindGameObjectsWithTag("Enemy");
-        //Debug.Log(counter);
         ShootTheBullet();
     }
 
@@ -103,5 +102,14 @@ public class Buddy : MonoBehaviour
     {
         yield return new WaitForSeconds(3f);
         counter = 0;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            anim.SetBool("InCombat", true);
+            anim.SetTrigger("MoveRight");
+        }
     }
 }

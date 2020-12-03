@@ -232,4 +232,15 @@ public class Enemy : MonoBehaviour
         attackOnCooldown = false;
 
     }
+
+    /*
+    bool CanSeePlayer(float aggroDistance)
+    {
+        bool val = false;
+        float castDistance = aggroDistance;
+        Vector2 endPos = cast
+        RaycastHit2D hit = Physics2D.Linecast(transform.position, )
+        return val;
+    }
+    */
 }

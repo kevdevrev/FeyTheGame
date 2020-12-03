@@ -20,31 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Button.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Button.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Door.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/Door.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/UsableButton.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/Scripts/UsableButton.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOff.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/buttonOn.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_outline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_outline.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_some_outline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/door_side_some_outline.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/longDoor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Door/longDoor.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,13 +54,13 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Scripts/Button.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -150,7 +129,7 @@
       <workItem from="1606163735336" duration="1078000" />
       <workItem from="1606510114080" duration="616000" />
       <workItem from="1606761041249" duration="12016000" />
-      <workItem from="1606872572391" duration="3704000" />
+      <workItem from="1606872572391" duration="5789000" />
     </task>
     <servers />
   </component>
@@ -186,16 +165,17 @@
     </state>
     <state x="4081" y="36" key="SettingsEditor/3840.0.1463.777/0.0.1920.1040@3840.0.1463.777" timestamp="1605221469063" />
     <state x="252" y="499" key="SettingsEditor/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1606761658229" />
-    <state x="3896" y="179" width="1040" height="1642" key="VCS.FileHistoryDialog" timestamp="1606770424676">
-      <screen x="3840" y="0" width="1152" height="2000" />
+    <state x="124" y="125" width="2312" height="1150" key="VCS.FileHistoryDialog" timestamp="1606882107393">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="124" y="125" width="2312" height="1150" key="VCS.FileHistoryDialog/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1606882107393" />
     <state x="3896" y="179" width="1040" height="1642" key="VCS.FileHistoryDialog/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606770424676" />
     <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
     <state x="124" y="125" width="2311" height="1149" key="VCS.FileHistoryDialog/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659510801" />
-    <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1" timestamp="1606872975159">
+    <state x="3835" y="1004" width="1163" height="1010" key="dock-window-1" timestamp="1606879562386">
       <screen x="3840" y="0" width="1152" height="2000" />
     </state>
-    <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1606872975159" />
+    <state x="3835" y="1004" width="1163" height="1010" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1606879562386" />
     <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606764729610" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605659463959">
       <screen x="0" y="0" width="2560" height="1400" />
