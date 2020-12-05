@@ -19,14 +19,12 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     protected Transform pointA, pointB;
 
-    [SerializeField] public float maxXDistanceAway = 5f;
-    [SerializeField] public float maxYDistanceAway = 1f;
+
     [SerializeField] private Vector2 detectionRadius;
     protected bool attackOnCooldown = false;
     private float idleTimeCondition = 3f;
-    [SerializeField] public float yDistanceCondition = 3f;
     private Vector3 destination;
-    [SerializeField] private Vector2 feyDistanceAwayVector;
+    private Vector2 feyDistanceAwayVector;
     
     [SerializeField]
     protected float enemyAttackRange;
@@ -40,6 +38,11 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     protected float attackCooldownTimer = 1f;
 
+    [SerializeField] private Transform castPoint;
+    [SerializeField] private float aggroTimeLimit;
+    private float aggroTimer;
+    [SerializeField] private bool isAggrod;
+    private bool isFacingLeft = false;
     protected bool disabled;
     private void Start()
     {
@@ -55,6 +58,16 @@ public class Enemy : MonoBehaviour
         feyLocation = GameObject.FindWithTag("Fey").GetComponent<Transform>();
         rigid = GetComponent<Rigidbody2D>();
         disabled = false;
+        if (sprite.transform.localRotation == Quaternion.Euler(0, 0, 0))
+        {
+            isFacingLeft = false;
+        }
+        else
+        {
+            isFacingLeft = true;
+        }
+
+        aggroTimer = aggroTimeLimit;
     }
     
     public virtual Vector3 WayPointLogic(Vector3 goal)
@@ -72,6 +85,7 @@ public class Enemy : MonoBehaviour
                 idleTimeCondition = 3f;
             }
             sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+            isFacingLeft = false;
             //anim.SetTrigger("Move");
         }
         //&& !anim.GetBool("InCombat") && !anim.GetBool("Chase")
@@ -81,6 +95,7 @@ public class Enemy : MonoBehaviour
             destination = pointA.position;
             
             sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+            isFacingLeft = true;
             if (idleTimeCondition < 0)
             {
                 anim.SetTrigger("Idle");
@@ -104,14 +119,8 @@ public class Enemy : MonoBehaviour
         //check to see if Fey is far away enough to justify walking
         feyDistanceAwayVector = feyLocation.position - transform.position;
         //WayPointLogic();
-        //feyDistanceVector = feyDistanceVector * new Vector2(1f, 0.5f);
-        //feyDistanceVector.x > maxXDistanceAway && feyDistanceVector.y < maxYDistanceAway)
-        //Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > detectionRadius.x);
-        if ((Mathf.Abs(feyDistanceAwayVector.x) > detectionRadius.x
-            || Mathf.Abs(feyDistanceAwayVector.y) > detectionRadius.y)
-            || (feyDistanceAwayVector.y > yDistanceCondition
-            && Mathf.Abs(feyDistanceAwayVector.y) > detectionRadius.y)
-            )
+        if (!isAggrod && (!CanSeePlayer() || (Mathf.Abs(feyDistanceAwayVector.x) > detectionRadius.x
+                             || Mathf.Abs(feyDistanceAwayVector.y) > detectionRadius.y)))
         {
             //Debug.Log("WayPointMode");
             inCombat = false;
@@ -122,66 +131,82 @@ public class Enemy : MonoBehaviour
         }
         else
         {
-            anim.SetBool("WayPointMode", false);
-            if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            
+            isAggrod = true;
+            aggroTimer -= Time.deltaTime;
+            if (aggroTimer < 0)
             {
-                if (feyDistanceAwayVector.x > 0)
-                {
-                    sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
-                }
-                else if (feyDistanceAwayVector.x < 0)
-                {
-                    sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
-                }
+                aggroTimer = aggroTimeLimit;
+                isAggrod = false;
             }
-            //handle being inside attack range
-            /*if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange
-                     && feyDistanceAwayVector.y < yDistanceCondition)*/
-            //handle chasing to get into hit distance
-            Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange);
-            if (Mathf.Abs(feyDistanceAwayVector.x) < detectionRadius.x
-                && Mathf.Abs(feyDistanceAwayVector.y) < detectionRadius.y
-                && Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange)
+
+            if (CanSeePlayer())
             {
-                Debug.Log("In Chase Mode");
-                /*else if (xDistanceAway < maxXDistanceAway && xDistanceAway > enemyAttackRange &&
-                         yDistanceAway < maxYDistanceAway)
-                {*/
-                anim.SetBool("Chase", true);
-                inCombat = true;
-                //tells it to hit
-                anim.SetBool("InCombat", false);
-                //Debug.Log("Fey is nearby lets chase her");
+                anim.SetBool("WayPointMode", false);
                 if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                 {
-                    Vector2 targetLocation = new Vector2(feyLocation.position.x, transform.position.y);
-                    transform.position =
-                        Vector2.MoveTowards(transform.position, targetLocation, speed * Time.deltaTime);
-                }
-            }else if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange)
-            {
-                anim.SetBool("Chase", false);
-                anim.SetBool("InCombat", true);
-
-                anim.SetTrigger("Move");
-
-
-                if (!attackOnCooldown)
-                    Attack();
-            }
-            else
-            {
-                if (destination == pointA.position)
-                {
-                    if(sprite.transform.localRotation != Quaternion.Euler(0, 180, 0))
-                        sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
-                }
-                else if (destination == pointB.position)
-                {
-                    if(sprite.transform.localRotation != Quaternion.Euler(0, 0, 0))
+                    if (feyDistanceAwayVector.x > 0)
+                    {
                         sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                        isFacingLeft = false;
+                    }
+                    else if (feyDistanceAwayVector.x < 0)
+                    {
+                        sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                        isFacingLeft = true;
+                    }
+                }
 
-                }   
+                //handle chasing to get into hit distance
+                Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange);
+                if (Mathf.Abs(feyDistanceAwayVector.x) < detectionRadius.x
+                    && Mathf.Abs(feyDistanceAwayVector.y) < detectionRadius.y
+                    && Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange)
+                {
+                    Debug.Log("In Chase Mode");
+                    anim.SetBool("Chase", true);
+                    inCombat = true;
+                    //tells it to hit
+                    anim.SetBool("InCombat", false);
+                    //Debug.Log("Fey is nearby lets chase her");
+                    if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                    {
+                        Vector2 targetLocation = new Vector2(feyLocation.position.x, transform.position.y);
+                        transform.position =
+                            Vector2.MoveTowards(transform.position, targetLocation, speed * Time.deltaTime);
+                    }
+                }
+                else if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange)
+                {
+                    anim.SetBool("Chase", false);
+                    anim.SetBool("InCombat", true);
+
+                    anim.SetTrigger("Move");
+
+
+                    if (!attackOnCooldown)
+                        Attack();
+                }
+                else
+                {
+                    if (destination == pointA.position)
+                    {
+                        if (sprite.transform.localRotation != Quaternion.Euler(0, 180, 0))
+                        {
+                            sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                            isFacingLeft = true;
+                        }
+                    }
+                    else if (destination == pointB.position)
+                    {
+                        if (sprite.transform.localRotation != Quaternion.Euler(0, 0, 0))
+                        {
+                            sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                            isFacingLeft = false;
+                        }
+
+                    }
+                }
             }
         }
 
@@ -195,10 +220,12 @@ public class Enemy : MonoBehaviour
             if (facingDirection > 0)
             {
                 sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                isFacingLeft = false;
             }
             else if (facingDirection < 0)
             {
                 sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                isFacingLeft = true;
             }
         }
     }
@@ -213,6 +240,8 @@ public class Enemy : MonoBehaviour
 
     protected virtual void Update()
     {
+
+
         if (!disabled)
         {
             //if idle, we want to prevent movement, so we do nothing, so just return
@@ -232,15 +261,39 @@ public class Enemy : MonoBehaviour
         attackOnCooldown = false;
 
     }
-
-    /*
-    bool CanSeePlayer(float aggroDistance)
+    public bool CanSeePlayer()
     {
-        bool val = false;
-        float castDistance = aggroDistance;
-        Vector2 endPos = cast
-        RaycastHit2D hit = Physics2D.Linecast(transform.position, )
-        return val;
+        float direction;
+        if (isFacingLeft)
+        {
+            direction = -1;
+        }
+        else
+        {
+            direction = 1;
+        }
+        //Vector2 endPos = castPoint.position + direction * (Vector3.right * aggroDistance);
+        //RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPos, 1 << 9)
+        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, feyLocation.position, (1 << LayerMask.NameToLayer("Fey")) | (1 << LayerMask.NameToLayer("Floor")));
+        
+        if (hit.collider != null)
+        {
+            if (hit.collider.gameObject.CompareTag("Fey"))
+            {
+                Debug.DrawLine(castPoint.position,hit.point, Color.yellow);
+                return true;
+            }
+            else
+            {
+                Debug.DrawLine(castPoint.position,hit.point, Color.red);
+                return false;
+            }
+        }
+        else
+        {
+            Debug.DrawLine(castPoint.position, feyLocation.position, Color.blue);
+        }
+        
+        return false;
     }
-    */
 }

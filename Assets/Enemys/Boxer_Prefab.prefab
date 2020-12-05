@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1195465217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1195465218}
+  m_Layer: 0
+  m_Name: CastPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1195465218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195465217}
+  m_LocalRotation: {x: -0, y: -0, z: -0.10919873, w: 0.9940199}
+  m_LocalPosition: {x: 0.085, y: 0.066, z: 0}
+  m_LocalScale: {x: 1.0236267, y: 1.0236267, z: 1.0236264}
+  m_Children: []
+  m_Father: {fileID: 3452585649914231669}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1718230646
 GameObject:
   m_ObjectHideFlags: 0
@@ -92,7 +122,7 @@ SortingGroup:
   m_GameObject: {fileID: 1718230646}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 100
 --- !u!1 &3452585649914231668
 GameObject:
@@ -131,6 +161,7 @@ Transform:
   - {fileID: 3452585651357985312}
   - {fileID: 3452585650218559719}
   - {fileID: 1718230647}
+  - {fileID: 1195465218}
   m_Father: {fileID: 3452585650286599164}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -202,13 +233,13 @@ MonoBehaviour:
   waypointSpeed: 2
   pointA: {fileID: 3452585650754008773}
   pointB: {fileID: 3452585650514745566}
-  maxXDistanceAway: 5
-  maxYDistanceAway: 1
   detectionRadius: {x: 4, y: 3}
-  yDistanceCondition: 3
-  feyDistanceAwayVector: {x: 0, y: 0}
   enemyAttackRange: 1
+  feyLocation: {fileID: 0}
   attackCooldownTimer: 1
+  castPoint: {fileID: 1195465218}
+  aggroTimeLimit: 5
+  isAggrod: 0
 --- !u!210 &3452585649914231666
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -218,7 +249,7 @@ SortingGroup:
   m_GameObject: {fileID: 3452585649914231668}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 40
 --- !u!61 &3452585649914231665
 BoxCollider2D:
@@ -404,7 +435,7 @@ SortingGroup:
   m_GameObject: {fileID: 3452585650218559718}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 10
 --- !u!1 &3452585650286599154
 GameObject:
@@ -449,7 +480,7 @@ SortingGroup:
   m_GameObject: {fileID: 3452585650286599154}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 40
 --- !u!1 &3452585650514745565
 GameObject:
@@ -554,7 +585,7 @@ SortingGroup:
   m_GameObject: {fileID: 3452585651357985319}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 10
 --- !u!50 &3452585651357985315
 Rigidbody2D:
