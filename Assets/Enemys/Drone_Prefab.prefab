@@ -161,7 +161,7 @@ MonoBehaviour:
   detectionRadius: {x: 5, y: 5}
   enemyAttackRange: 4
   feyLocation: {fileID: 0}
-  attackCooldownTimer: 1
+  attackCooldownTimer: 0.3
   castPoint: {fileID: 1259814143703455471}
   aggroTimeLimit: 5
   isAggrod: 0

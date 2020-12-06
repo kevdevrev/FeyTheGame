@@ -11,7 +11,6 @@ public class B_Type : Enemy, IDamage
     private float shootCooldownTimer = 1f;
     private bool notOnCoolDown = true;
     private int counter;
-    private float shootDelay = 0.3f;
     private float shootDelayTimer = 0.3f;
     [SerializeField] public int bulletCount = 5;
 
@@ -28,12 +27,18 @@ public class B_Type : Enemy, IDamage
 
     protected override void Update()
     {
-        base.Update();
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;
-        if (CanSeePlayer()){
-            ShootTheBullet();
+        if (!disabled)
+        {
+            //if idle, we want to prevent movement, so we do nothing, so just return
+            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
+            {
+                return;
+            }
+
+            MovementLogic();
+        }
     }
-}
     
     public int Health { get; set; }
     public void Damage(int dmgTaken)
@@ -64,7 +69,7 @@ public class B_Type : Enemy, IDamage
             Vector2 buddyCanOnlyShootForward = new Vector2(feyDirection.x,0);
             bullet.GetComponent<Bullet>().SetBulletDirection(buddyCanOnlyShootForward);
             bullet.GetComponent<Bullet>().Shoot();
-            shootDelayTimer = shootDelay;
+            shootDelayTimer = attackCooldownTimer;
         }
         else if(counter >= bulletCount && notOnCoolDown == true)
         {

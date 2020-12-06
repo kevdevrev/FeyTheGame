@@ -17,6 +17,7 @@
           </e>
           <e p="buddyType" t="Include">
             <e p="B_Type.cs" t="Include" />
+            <e p="B_Type_Bullet.cs" t="Include" />
           </e>
           <e p="Combat.cs" t="Include" />
           <e p="Drone" t="Include">
