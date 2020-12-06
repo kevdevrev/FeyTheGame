@@ -31,8 +31,10 @@ public class Drone : Enemy, IDamage
     {
         base.Update();
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;
-        ShootTheBullet();
+        if (CanSeePlayer()){
+            ShootTheBullet();
     }
+}
     
     public int Health { get; set; }
     public void Damage(int dmgTaken)

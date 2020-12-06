@@ -84,6 +84,36 @@ MonoBehaviour:
   - {x: -0.043134212, y: -0.029869212, z: 0}
   - {x: -0.021915436, y: -0.039331295, z: 0}
   - {x: -0.012938261, y: -0.039331295, z: 0}
+--- !u!1 &1331253156
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1331253157}
+  m_Layer: 0
+  m_Name: CastPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: -5487077368411116049, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1331253157
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1331253156}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.14249992, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2230933668756954522}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2230933669317933868
 GameObject:
   m_ObjectHideFlags: 0
@@ -285,6 +315,7 @@ Transform:
   m_Children:
   - {fileID: 2230933670674053091}
   - {fileID: 858122905}
+  - {fileID: 1331253157}
   m_Father: {fileID: 2230933669830160530}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -367,7 +398,7 @@ SortingGroup:
   m_GameObject: {fileID: 8334994784120194985}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 40
 --- !u!114 &9083438699756622670
 MonoBehaviour:
@@ -386,14 +417,13 @@ MonoBehaviour:
   waypointSpeed: 2
   pointA: {fileID: 2230933669317933869}
   pointB: {fileID: 2230933669741982127}
-  maxXDistanceAway: 5
-  maxYDistanceAway: 2
   detectionRadius: {x: 5, y: 4}
-  yDistanceCondition: 4
-  feyDistanceAwayVector: {x: 0, y: 0}
   enemyAttackRange: 0.9
   feyLocation: {fileID: 0}
   attackCooldownTimer: 2
+  castPoint: {fileID: 1331253157}
+  aggroTimeLimit: 2
+  isAggrod: 0
 --- !u!50 &927729840053730980
 Rigidbody2D:
   serializedVersion: 4
