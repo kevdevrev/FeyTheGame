@@ -20,11 +20,11 @@ public class Enemy : MonoBehaviour
     protected Transform pointA, pointB;
 
 
-    [SerializeField] private Vector2 detectionRadius;
+    [SerializeField] protected Vector2 detectionRadius;
     protected bool attackOnCooldown = false;
-    private float idleTimeCondition = 3f;
-    private Vector3 destination;
-    private Vector2 feyDistanceAwayVector;
+    protected float idleTimeCondition = 3f;
+    protected Vector3 destination;
+    protected Vector2 feyDistanceAwayVector;
     
     [SerializeField]
     protected float enemyAttackRange;
@@ -38,11 +38,11 @@ public class Enemy : MonoBehaviour
     [SerializeField]
     protected float attackCooldownTimer = 1f;
 
-    [SerializeField] private Transform castPoint;
-    [SerializeField] private float aggroTimeLimit;
-    private float aggroTimer;
-    [SerializeField] private bool isAggrod;
-    private bool isFacingLeft = false;
+    [SerializeField] protected Transform castPoint;
+    [SerializeField] protected float aggroTimeLimit;
+    protected float aggroTimer;
+    [SerializeField] protected bool isAggrod;
+    protected bool isFacingLeft = false;
     protected bool disabled;
     private void Start()
     {
@@ -182,7 +182,7 @@ public class Enemy : MonoBehaviour
                     anim.SetBool("InCombat", true);
 
                     anim.SetTrigger("Move");
-
+                    
 
                     if (!attackOnCooldown)
                         Attack();

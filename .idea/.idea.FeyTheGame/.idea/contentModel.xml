@@ -15,6 +15,9 @@
           <e p="Boxer" t="Include">
             <e p="Boxer.cs" t="Include" />
           </e>
+          <e p="buddyType" t="Include">
+            <e p="B_Type.cs" t="Include" />
+          </e>
           <e p="Combat.cs" t="Include" />
           <e p="Drone" t="Include">
             <e p="Bullet_Drone.cs" t="Include" />

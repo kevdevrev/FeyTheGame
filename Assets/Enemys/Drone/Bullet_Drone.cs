@@ -83,7 +83,7 @@ public class Bullet_Drone : MonoBehaviour
     {
         if (!other.CompareTag("Enemy"))
         {
-            if (other.CompareTag("Fey"))
+            if (other.CompareTag("Fey") || other.CompareTag("Terrain"))
             {
                 Destroy(gameObject);
             }

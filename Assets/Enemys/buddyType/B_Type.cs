@@ -2,17 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Drone : Enemy, IDamage
+public class B_Type : Enemy, IDamage
 {
-    [SerializeField] public int bulletDamage;
+ [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float shootCooldown = 1f;
     private float shootCooldownTimer = 1f;
     private bool notOnCoolDown = true;
     private int counter;
-    //private float shootDelay = 0.3f;
+    private float shootDelay = 0.3f;
     private float shootDelayTimer = 0.3f;
     [SerializeField] public int bulletCount = 5;
 
@@ -29,20 +28,65 @@ public class Drone : Enemy, IDamage
 
     protected override void Update()
     {
+        base.Update();
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;
-        if (!disabled)
+        if (CanSeePlayer()){
+            ShootTheBullet();
+    }
+}
+    
+    public int Health { get; set; }
+    public void Damage(int dmgTaken)
+    {
+        Health = Health - dmgTaken;
+        anim.SetTrigger("Hit");
+        rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
+        inCombat = true;
+        anim.SetBool("InCombat", true);
+        if(Health<1)
         {
-            //if idle, we want to prevent movement, so we do nothing, so just return
-            if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle"))
-            {
-                return;
-            }
+            anim.SetBool("Disabled",true);
+            disabled = true;
 
-            MovementLogic();
+        }    
+    }
+    
+    private void ShootTheBullet()
+    {
+        if (counter < bulletCount && shootDelayTimer < 0)
+        {
+            counter++;
+            anim.SetTrigger("AttackTrigger");
+            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+            bullet.name = bulletPrefab.name;
+            bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);
+            bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
+            Vector2 buddyCanOnlyShootForward = new Vector2(feyDirection.x,0);
+            bullet.GetComponent<Bullet>().SetBulletDirection(buddyCanOnlyShootForward);
+            bullet.GetComponent<Bullet>().Shoot();
+            shootDelayTimer = shootDelay;
+        }
+        else if(counter >= bulletCount && notOnCoolDown == true)
+        {
+            shootCooldownTimer = shootCooldown;
+            notOnCoolDown = false;
+        }
+        else if(shootDelayTimer > 0 && notOnCoolDown == true)
+        {
+            shootDelayTimer -= Time.deltaTime;
+        }
+        else
+        {
+            shootCooldownTimer -= Time.deltaTime;
+            if (shootCooldownTimer < 0)
+            {
+                shootCooldownTimer = 3;
+                counter = 0; notOnCoolDown = true;
+            }
         }
     }
-
-    protected void MovementLogic()
+    
+        private void MovementLogic()
     {
         //check to see if Fey is far away enough to justify walking
         feyDistanceAwayVector = feyLocation.position - transform.position;
@@ -99,7 +143,20 @@ public class Drone : Enemy, IDamage
                     //Debug.Log("Fey is nearby lets chase her");
                     if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
                     {
-                        Vector2 targetLocation = new Vector2(feyLocation.position.x, transform.position.y);
+                        Vector2 targetLocation;
+                        // have the buddy go down so he can shoot
+                        //determine if fey is ahead or behind the buddy
+                        // go to fey's level but keep distance for shooting
+                        float dotRes = Vector3.Dot(transform.forward, feyLocation.forward);
+                        if (dotRes >= 0)
+                        {
+                            targetLocation = new Vector2(feyLocation.position.x  + 1.2f, feyLocation.position.y);
+                        }
+                        else
+                        {
+                            targetLocation = new Vector2(feyLocation.position.x - 1.2f, feyLocation.position.y);
+                        }
+
                         transform.position =
                             Vector2.MoveTowards(transform.position, targetLocation, speed * Time.deltaTime);
                     }
@@ -110,7 +167,8 @@ public class Drone : Enemy, IDamage
                     anim.SetBool("InCombat", true);
 
                     anim.SetTrigger("Move");
-                    
+
+
                     if (CanSeePlayer())
                     {
                         ShootTheBullet();
@@ -139,54 +197,5 @@ public class Drone : Enemy, IDamage
             }
         }
 
-    }
-    public int Health { get; set; }
-    public void Damage(int dmgTaken)
-    {
-        Health = Health - dmgTaken;
-        anim.SetTrigger("Hit");
-        rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
-        inCombat = true;
-        anim.SetBool("InCombat", true);
-        if(Health<1)
-        {
-            anim.SetBool("Disabled",true);
-            disabled = true;
-
-        }    
-    }
-    
-    private void ShootTheBullet()
-    {
-        if (counter < bulletCount && shootDelayTimer < 0)
-        {
-            counter++;
-            anim.SetTrigger("AttackTrigger");
-            GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-            bullet.name = bulletPrefab.name;
-            bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);
-            bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
-            bullet.GetComponent<Bullet>().SetBulletDirection(feyDirection);
-            bullet.GetComponent<Bullet>().Shoot();
-            shootDelayTimer = attackCooldownTimer;
-        }
-        else if(counter >= bulletCount && notOnCoolDown == true)
-        {
-            shootCooldownTimer = shootCooldown;
-            notOnCoolDown = false;
-        }
-        else if(shootDelayTimer > 0 && notOnCoolDown == true)
-        {
-            shootDelayTimer -= Time.deltaTime;
-        }
-        else
-        {
-            shootCooldownTimer -= Time.deltaTime;
-            if (shootCooldownTimer < 0)
-            {
-                shootCooldownTimer = 3;
-                counter = 0; notOnCoolDown = true;
-            }
-        }
     }
 }
