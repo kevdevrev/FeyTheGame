@@ -89,20 +89,22 @@ public class Drone : Enemy, IDamage
 
             if (CanSeePlayer())
             {
-                anim.SetBool("WayPointMode", false);
-                if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                float facingDirection = feyLocation.position.x - transform.position.x;
+                Debug.Log(facingDirection);
+                if (facingDirection > 0)
                 {
-                    if (feyDistanceAwayVector.x > 0)
-                    {
-                        sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
-                        isFacingLeft = false;
-                    }
-                    else if (feyDistanceAwayVector.x < 0)
-                    {
-                        sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
-                        isFacingLeft = true;
-                    }
+                    sprite.flipX = false;
+                        //sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    isFacingLeft = false;
                 }
+                else if (facingDirection < 0)
+                {
+                    sprite.flipX = true;
+                        //sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                    isFacingLeft = true;
+                }
+
+                anim.SetBool("WayPointMode", false);
 
                 //handle chasing to get into hit distance
                 //Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange);
@@ -129,6 +131,16 @@ public class Drone : Enemy, IDamage
                     anim.SetBool("InCombat", true);
 
                     anim.SetTrigger("Move");
+                    if (feyDistanceAwayVector.x > 0)
+                    {
+                        sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                        isFacingLeft = false;
+                    }
+                    else if (feyDistanceAwayVector.x < 0)
+                    {
+                        sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                        isFacingLeft = true;
+                    }
                     
                     if (CanSeePlayer())
                     {

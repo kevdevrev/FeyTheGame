@@ -54,41 +54,9 @@ public class Buddy : MonoBehaviour
                 aggroTimer = aggroTimeLimit;
                 isAggrod = false;
                 anim.SetBool("InCombat", false);
-                //anim.SetTrigger("MoveLeft");
             }
         }
     }
-
-    /*private void DetectIfEnemyNearby(GameObject[] enemys)
-    {
-        if (!anim.GetBool("InCombat"))
-        {
-            foreach (GameObject e in enemys)
-            {
-                float xCondition = e.transform.position.x - transform.position.x;
-                float yCondition = e.transform.position.y - transform.position.y;
-                float dist = Vector2.Distance(e.transform.position, transform.position);
-                if (dist < 3)
-                {
-                    Debug.Log("DIST LESS THAN 3");
-                    //TODO shoot a raycast first or change to collider detection
-                    if (CanSeeEnemy(e.transform))
-                    {
-                        Debug.Log("SAW ENEMY");
-                        anim.SetBool("InCombat", true);
-                        anim.SetTrigger("MoveRight");
-                        isAggrod = true;
-
-                    }
-
-                    return;
-                }
-            }
-        }
-
-        anim.SetBool("InCombat", false);
-        return;
-    }*/
 
     public bool CanSeeEnemy(Transform enemyLocation)
     {

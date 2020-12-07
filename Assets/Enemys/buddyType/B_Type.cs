@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Cinemachine;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 
@@ -32,13 +33,35 @@ public class B_Type : Enemy, IDamage
         counter = 0;
         b_Type_sprite = transform.GetComponent<SpriteRenderer>();
         //Get the animation script handler
-        _b_Type_Light = transform.GetChild(1).GetComponent<Light2D>();
+        _b_Type_Light = transform.GetChild(0).GetComponent<Light2D>();
         materialReference = transform.GetComponent<Renderer>();
 
     }
 
     protected override void Update()
     {
+        
+        //check if too close to fey
+        if (Vector3.Distance(transform.position, feyLocation.position) < 1.2f)
+        {
+            Vector2 targetLocation;
+            // have the buddy go down so he can shoot
+            //determine if fey is ahead or behind the buddy
+            // go to fey's level but keep distance for shooting
+            float dotRes = Vector3.Dot(transform.forward, feyLocation.forward);
+            if (dotRes >= 0)
+            {
+                targetLocation = new Vector2(transform.position.x - 1.2f, feyLocation.position.y);
+            }
+            else
+            {
+                targetLocation = new Vector2(transform.position.x + 1.2f, feyLocation.position.y);
+            }
+
+            transform.position =
+                Vector2.MoveTowards(transform.position, targetLocation, speed * Time.deltaTime);
+        }
+
         _b_Type_Light.lightCookieSprite = b_Type_sprite.sprite;
 
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;

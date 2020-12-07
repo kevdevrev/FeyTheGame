@@ -212,7 +212,7 @@ public class Enemy : MonoBehaviour
 
     }
 
-    private void EnemyFaceDirection()
+    protected void EnemyFaceDirection()
     {
         if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
