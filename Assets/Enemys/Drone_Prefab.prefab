@@ -100,7 +100,7 @@ SortingGroup:
   m_Enabled: 1
   m_SortingLayerID: 750507977
   m_SortingLayer: 6
-  m_SortingOrder: 0
+  m_SortingOrder: 40
 --- !u!95 &5918043157682095419
 Animator:
   serializedVersion: 3

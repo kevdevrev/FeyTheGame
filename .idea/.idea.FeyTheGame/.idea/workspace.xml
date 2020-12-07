@@ -22,7 +22,12 @@
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankBlink.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankBlink.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankMoving.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankMoving.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +63,12 @@
         <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Bullet.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -134,7 +140,7 @@
       <workItem from="1606872572391" duration="5789000" />
       <workItem from="1606963344439" duration="569000" />
       <workItem from="1607131510858" duration="6403000" />
-      <workItem from="1607287405793" duration="3902000" />
+      <workItem from="1607287405793" duration="7966000" />
     </task>
     <servers />
   </component>
@@ -177,10 +183,10 @@
     <state x="3896" y="179" width="1040" height="1642" key="VCS.FileHistoryDialog/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606770424676" />
     <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
     <state x="124" y="125" width="2311" height="1149" key="VCS.FileHistoryDialog/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659510801" />
-    <state x="-6" y="-6" width="2572" height="1452" key="dock-window-1" timestamp="1607140728438">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="3992" y="-22" width="1249" height="741" maximized="true" key="dock-window-1" timestamp="1607301979800">
+      <screen x="3840" y="0" width="1152" height="2000" />
     </state>
-    <state x="-6" y="-6" width="2572" height="1452" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607140728438" />
+    <state x="3992" y="-22" width="1249" height="741" maximized="true" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607301979800" />
     <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606764729610" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605659463959">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -195,10 +201,10 @@
           <line>170</line>
           <properties documentPath="C:\Users\galea\OneDrive\Documents\Games\FeyTheGame\Assets\Enemys\Drone\Drone.cs" initialLine="64">
             <startOffsets>
-              <option value="6219" />
+              <option value="6221" />
             </startOffsets>
             <endOffsets>
-              <option value="6237" />
+              <option value="6239" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

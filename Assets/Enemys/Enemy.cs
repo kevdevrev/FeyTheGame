@@ -14,8 +14,8 @@ public class Enemy : MonoBehaviour
     //protected gives access to children
     [SerializeField]
     protected int health;
-    [SerializeField] protected int speed;
-    [SerializeField] protected int waypointSpeed;
+    [SerializeField] protected float speed;
+    [SerializeField] protected float waypointSpeed;
     [SerializeField]
     protected Transform pointA, pointB;
 
@@ -24,7 +24,7 @@ public class Enemy : MonoBehaviour
     protected bool attackOnCooldown = false;
     protected float idleTimeCondition = 3f;
     protected Vector3 destination;
-    protected Vector2 feyDistanceAwayVector;
+    [SerializeField]protected Vector2 feyDistanceAwayVector;
     
     [SerializeField]
     protected float enemyAttackRange;

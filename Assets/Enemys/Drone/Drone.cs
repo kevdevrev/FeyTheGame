@@ -86,7 +86,7 @@ public class Drone : Enemy, IDamage
                 }
 
                 //handle chasing to get into hit distance
-                Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange);
+                //Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange);
                 if (Mathf.Abs(feyDistanceAwayVector.x) < detectionRadius.x
                     && Mathf.Abs(feyDistanceAwayVector.y) < detectionRadius.y
                     && Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange)
