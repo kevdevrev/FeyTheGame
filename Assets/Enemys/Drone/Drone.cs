@@ -10,7 +10,6 @@ public class Drone : Enemy, IDamage
     [SerializeField] protected Material attackMaterial;
     [SerializeField] protected Material liberatedMaterial;
     private Light2D _drone_Light;
-    public SpriteRenderer drone_sprite;
     public Renderer materialReference;
     
     
@@ -32,9 +31,7 @@ public class Drone : Enemy, IDamage
     {
         base.Init();
         Health = base.health;
-        anim = GetComponentInChildren<Animator>();
         counter = 0;
-        drone_sprite = transform.GetComponent<SpriteRenderer>();
         //Get the animation script handler
         _drone_Light = transform.GetChild(1).GetComponent<Light2D>();
         materialReference = transform.GetComponent<Renderer>();
@@ -42,13 +39,26 @@ public class Drone : Enemy, IDamage
 
     protected override void Update()
     {
-        _drone_Light.lightCookieSprite = drone_sprite.sprite;
+        feyDistanceAwayVector = feyLocation.position - transform.position;
+
+        _drone_Light.lightCookieSprite = sprite.sprite;
         if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
         {
+
             materialReference.material = idleMaterial;
         }
 
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;
+        if (feyDistanceAwayVector.x > 0)
+        {
+            transform.LookAt(feyLocation);
+            isFacingLeft = false;
+        }
+        else if (feyDistanceAwayVector.x < 0)
+        {
+            transform.LookAt(feyLocation);
+            isFacingLeft = true;
+        }
         if (!disabled)
         {
             //if idle, we want to prevent movement, so we do nothing, so just return
@@ -90,17 +100,14 @@ public class Drone : Enemy, IDamage
             if (CanSeePlayer())
             {
                 float facingDirection = feyLocation.position.x - transform.position.x;
-                Debug.Log(facingDirection);
-                if (facingDirection > 0)
+                if (feyDistanceAwayVector.x > 0)
                 {
-                    sprite.flipX = false;
-                        //sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
+                    sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
                     isFacingLeft = false;
                 }
-                else if (facingDirection < 0)
+                else if (feyDistanceAwayVector.x < 0)
                 {
-                    sprite.flipX = true;
-                        //sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
+                    sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
                     isFacingLeft = true;
                 }
 
