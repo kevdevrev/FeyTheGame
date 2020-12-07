@@ -1,9 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 
 public class Tank : MonoBehaviour, IDamage
 {
+    [SerializeField] protected Material idleMaterial;
+    [SerializeField] protected Material moveMaterial;
+    [SerializeField] protected Material blinkMaterial;
+    [SerializeField] protected Material liberatedMaterial;
+    
+    
+    
+    
+    
     [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
@@ -45,7 +55,11 @@ public class Tank : MonoBehaviour, IDamage
     [SerializeField] protected bool isAggrod;
     protected bool isFacingLeft = false;
     protected bool disabled;
-    
+    private Light2D _tankLight;
+  
+    //lighting    
+    public SpriteRenderer tank_sprite;
+
     
     public int Health { get; set; }
     public void Damage(int dmgTaken)
@@ -71,6 +85,9 @@ public class Tank : MonoBehaviour, IDamage
     {
         //we put our starting calls into Init so we can override it in our children.
         Init();
+        tank_sprite = transform.GetComponent<SpriteRenderer>();
+        //Get the animation script handler
+        _tankLight = transform.GetChild(1).GetComponent<Light2D>();
     }
 
     public virtual void Init()
@@ -196,6 +213,7 @@ public class Tank : MonoBehaviour, IDamage
     protected virtual void Update()
     {
 
+        _tankLight.lightCookieSprite = tank_sprite.sprite;
 
         if (!disabled)
         {
