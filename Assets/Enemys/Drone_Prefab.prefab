@@ -159,6 +159,7 @@ MonoBehaviour:
   pointA: {fileID: 5918043159001597567}
   pointB: {fileID: 5918043158368822855}
   detectionRadius: {x: 5, y: 5}
+  feyDistanceAwayVector: {x: 0, y: 0}
   enemyAttackRange: 4
   feyLocation: {fileID: 0}
   attackCooldownTimer: 0.3
@@ -234,7 +235,7 @@ GameObject:
   - component: {fileID: 5918043157995218872}
   m_Layer: 13
   m_Name: Drone_Prefab
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

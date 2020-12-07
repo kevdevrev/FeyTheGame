@@ -21,20 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank_Sprite 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank_Sprite 1.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankMoving.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankMoving.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/blinkSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/blinkSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/glow_material_buddy.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/glow_material_buddy.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/glow_material_bullet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/glow_material_bullet.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/laser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene Presets.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene Presets.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -148,7 +137,7 @@
       <workItem from="1606872572391" duration="5789000" />
       <workItem from="1606963344439" duration="569000" />
       <workItem from="1607131510858" duration="6403000" />
-      <workItem from="1607287405793" duration="13402000" />
+      <workItem from="1607287405793" duration="15864000" />
     </task>
     <servers />
   </component>
@@ -196,6 +185,10 @@
     </state>
     <state x="3992" y="-22" width="1249" height="741" maximized="true" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607301979800" />
     <state x="3837" y="1004" width="1162" height="1010" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1606764729610" />
+    <state x="4073" y="483" key="run.anything.popup" timestamp="1607309812045">
+      <screen x="3840" y="0" width="1152" height="2000" />
+    </state>
+    <state x="4073" y="483" key="run.anything.popup/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607309812045" />
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1605659463959">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -10,8 +10,11 @@ public class Buddy : MonoBehaviour
     [SerializeField] protected Material attackMaterial;
     private Light2D _buddy_Light;
     public Renderer materialReference;
-    
-    
+    [SerializeField] protected Transform castPoint;
+    [SerializeField] protected float aggroTimeLimit;
+    [SerializeField]protected float aggroTimer;
+    [SerializeField] protected bool isAggrod;
+
     [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
@@ -21,6 +24,7 @@ public class Buddy : MonoBehaviour
     private int counter;
     protected Animator anim;
     protected SpriteRenderer _buddy_sprite;
+    [SerializeField]protected Vector2 enemyDistanceAwayVector;
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +34,7 @@ public class Buddy : MonoBehaviour
         _buddy_Light = transform.GetChild(0).GetComponent<Light2D>();
         materialReference = transform.GetComponent<Renderer>();
         counter = 0;
+        aggroTimer = aggroTimeLimit;
 
     }
 
@@ -38,9 +43,23 @@ public class Buddy : MonoBehaviour
     {
         _buddy_Light.lightCookieSprite = _buddy_sprite.sprite;
         ShootTheBullet();
+        
+        if (isAggrod == true)
+        {
+            aggroTimer -= Time.deltaTime;
+            Debug.Log("aggrod: true");
+            if (aggroTimer < 0)
+            {
+                Debug.Log("aggrod: false");
+                aggroTimer = aggroTimeLimit;
+                isAggrod = false;
+                anim.SetBool("InCombat", false);
+                //anim.SetTrigger("MoveLeft");
+            }
+        }
     }
 
-    private void DetectIfEnemyNearby(GameObject[] enemys)
+    /*private void DetectIfEnemyNearby(GameObject[] enemys)
     {
         if (!anim.GetBool("InCombat"))
         {
@@ -51,10 +70,17 @@ public class Buddy : MonoBehaviour
                 float dist = Vector2.Distance(e.transform.position, transform.position);
                 if (dist < 3)
                 {
+                    Debug.Log("DIST LESS THAN 3");
                     //TODO shoot a raycast first or change to collider detection
-                    anim.SetBool("InCombat", true);
-                    anim.SetTrigger("MoveRight");
-                    
+                    if (CanSeeEnemy(e.transform))
+                    {
+                        Debug.Log("SAW ENEMY");
+                        anim.SetBool("InCombat", true);
+                        anim.SetTrigger("MoveRight");
+                        isAggrod = true;
+
+                    }
+
                     return;
                 }
             }
@@ -62,8 +88,52 @@ public class Buddy : MonoBehaviour
 
         anim.SetBool("InCombat", false);
         return;
-    }
+    }*/
 
+    public bool CanSeeEnemy(Transform enemyLocation)
+    {
+        float direction;
+        enemyDistanceAwayVector = enemyLocation.position - transform.position;
+        if (enemyDistanceAwayVector.x > 0)
+            {
+                direction = -1;
+
+            }
+            else if (enemyDistanceAwayVector.x < 0)
+            {
+                direction = 1;
+            }
+
+            //Vector2 endPos = castPoint.position + direction * (Vector3.right * aggroDistance);
+        //RaycastHit2D hit = Physics2D.Linecast(castPoint.position, endPos, 1 << 9)
+        RaycastHit2D hit = Physics2D.Linecast(castPoint.position, enemyLocation.position, (1 << LayerMask.NameToLayer("Enemy")) | (1 << LayerMask.NameToLayer("Floor")));
+        
+        if (hit.collider != null)
+        {
+            Debug.Log(hit.collider.gameObject.tag);
+
+            if (hit.collider.gameObject.CompareTag("Enemy"))
+            {
+                Debug.Log("hit enemy");
+                Debug.DrawLine(castPoint.position,hit.point, Color.green);
+                return true;
+            }
+            else
+            {
+                Debug.Log("hit not enemy");
+                Debug.DrawLine(castPoint.position,hit.point, Color.red);
+                return false;
+            }
+        }
+        else
+        {
+            Debug.DrawLine(castPoint.position, enemyLocation.position, Color.blue);
+        }
+        
+        return false;
+    }
+    
+    
     private void ShootTheBullet()
     {
         if (counter < 5)
@@ -127,8 +197,12 @@ public class Buddy : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
-            anim.SetBool("InCombat", true);
-            anim.SetTrigger("MoveRight");
+            if (CanSeeEnemy(other.transform))
+            {
+                isAggrod = true;
+                anim.SetBool("InCombat", true);
+                anim.SetTrigger("MoveRight");
+            }
         }
     }
 }
