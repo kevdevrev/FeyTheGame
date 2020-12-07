@@ -29,7 +29,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5918043157682095425}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -158,7 +158,6 @@ MonoBehaviour:
   idleMaterial: {fileID: 2100000, guid: e02d6e0cc0436564ba441a6b68866bb9, type: 2}
   attackMaterial: {fileID: 2100000, guid: 9d0eb2fb30add5745b9c96de6fe73f84, type: 2}
   liberatedMaterial: {fileID: 2100000, guid: 09135fef5c9f57e45ad9f72ba5f29871, type: 2}
-  drone_sprite: {fileID: 0}
   materialReference: {fileID: 0}
   bulletDamage: 1
   bulletSpeed: 1

@@ -1,20 +1,42 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 
 public class F_Type : Enemy, IDamage
 {
 
+    /*[SerializeField] protected Material blockMaterial;
+    [SerializeField] protected Material liberatedMaterial;
+    [SerializeField] protected Material spinMaterial;*/
+    private Light2D F_Type_Light;
+    
     public override void Init()
     {
         base.Init();
         Health = base.health;
     }
+    void Start()
+    {
+        base.Init();
+        Health = base.health;
+        anim = GetComponentInChildren<Animator>();
+        F_Type_Light = transform.GetChild(0).GetComponent<Light2D>();
+        //materialReference = transform.GetComponent<Renderer>();
+
+    }
+
+    protected void Update(){
+        F_Type_Light.lightCookieSprite = sprite.sprite;
+        base.Update();
+
+}
 
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
-        Debug.Log("I took " + dmgTaken);
+        //materialReference.material = blockMaterial;
         Health = Health - dmgTaken;
         anim.SetTrigger("Hit");
         rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
@@ -22,12 +44,17 @@ public class F_Type : Enemy, IDamage
         anim.SetBool("InCombat", true);
         if(Health<1)
         {
-            Debug.Log("I died!");
             anim.SetBool("Disabled",true);
             disabled = true;
-            Debug.Log("I am now disabled maybe? " + disabled);
-            //glove.GetComponent<SpriteRenderer>().enabled=true;
+            //materialReference.material = liberatedMaterial;
 
         }
+    }
+
+    protected override void Attack()
+    {
+        base.Attack();
+        Debug.Log("material switch");
+        //materialReference.material = spinMaterial;
     }
 }

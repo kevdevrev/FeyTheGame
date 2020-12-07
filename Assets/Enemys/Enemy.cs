@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    
+    [SerializeField] protected Material idleMaterial;
+    public Renderer materialReference;
+
 
     public void ToggleCooldown()
     {
@@ -116,6 +118,7 @@ public class Enemy : MonoBehaviour
     
     private void MovementLogic()
     {
+        //materialReference.material = idleMaterial;
         //check to see if Fey is far away enough to justify walking
         feyDistanceAwayVector = feyLocation.position - transform.position;
         //WayPointLogic();
@@ -231,7 +234,7 @@ public class Enemy : MonoBehaviour
     }
 
     //virtual keyword lets us overwrite this.
-    public virtual void Attack()
+    protected virtual void Attack()
     {
         //Debug.Log("Hitting");
         anim.SetTrigger("AttackTrigger");

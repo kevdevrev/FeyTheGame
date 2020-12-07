@@ -6,11 +6,9 @@ using UnityEngine;
 
 public class Drone : Enemy, IDamage
 {
-    [SerializeField] protected Material idleMaterial;
     [SerializeField] protected Material attackMaterial;
     [SerializeField] protected Material liberatedMaterial;
     private Light2D _drone_Light;
-    public Renderer materialReference;
     
     
     

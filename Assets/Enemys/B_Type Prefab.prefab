@@ -47,9 +47,9 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.5
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000
+  m_ApplyToSortingLayers: 0000000015d16b9b3760d0f0af87feaafd9c43d9f7bd825fc9d7bb2c29189d82
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0
@@ -102,7 +102,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5155771187263612169}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.163, z: 0}
   m_LocalScale: {x: 1.328015, y: 1.328015, z: 1.328015}
   m_Children:
   - {fileID: 42286238}
@@ -129,7 +129,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 162faf6449d2ea946b64b194b4720548, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -149,7 +149,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 750507977
   m_SortingLayer: 6
-  m_SortingOrder: 0
+  m_SortingOrder: 40
   m_Sprite: {fileID: 270475352447284770, guid: 25e38d26a490bae4186d509691f11c33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -181,7 +181,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 4
+  m_Constraints: 5
 --- !u!61 &5155771187263612210
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -259,14 +259,14 @@ MonoBehaviour:
   castPoint: {fileID: 5155771187898010879}
   aggroTimeLimit: 0
   isAggrod: 0
-  blinkMaterial: {fileID: 0}
-  attackMaterial: {fileID: 0}
-  liberatedMaterial: {fileID: 0}
+  blinkMaterial: {fileID: 2100000, guid: 162faf6449d2ea946b64b194b4720548, type: 2}
+  attackMaterial: {fileID: 2100000, guid: 52d7b98671ead4e4595dfb897342c469, type: 2}
+  liberatedMaterial: {fileID: 2100000, guid: a12fcf876fdc08d429ba7a1f21c88d72, type: 2}
   b_Type_sprite: {fileID: 0}
   materialReference: {fileID: 0}
   bulletDamage: 1
   bulletSpeed: 1
-  bulletPrefab: {fileID: 4703567939876828756, guid: 9e1f59d59bed4e94faeafaad5b20e00b, type: 3}
+  bulletPrefab: {fileID: 3063151942936355022, guid: b3445db2a1974c448b39555a815033dd, type: 3}
   shootCooldown: 1
   bulletCount: 5
   feyDirection: {x: 0, y: 0}

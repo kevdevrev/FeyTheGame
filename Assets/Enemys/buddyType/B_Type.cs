@@ -6,12 +6,10 @@ using UnityEngine;
 
 public class B_Type : Enemy, IDamage
 {
-    [SerializeField] protected Material blinkMaterial;
     [SerializeField] protected Material attackMaterial;
     [SerializeField] protected Material liberatedMaterial;
     private Light2D _b_Type_Light;
     public SpriteRenderer b_Type_sprite;
-    public Renderer materialReference;
     
     [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;

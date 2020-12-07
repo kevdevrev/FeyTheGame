@@ -21,16 +21,24 @@
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone_Angry.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone_Angry.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone_bullet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone_bullet.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone_liberated.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/glow_material_drone_liberated.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Laser.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Laser.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Laser.prefab.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Sprite.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/Attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/Attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/blockGlow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/blockGlow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/fTypeBlock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/fTypeBlock.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/fTypeIdle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/fTypeIdle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/fTypeSpin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/fTypeSpin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/f_block.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/f_block.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/follow.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/follow.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/glow_material_F_type.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/glow_material_F_type.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/idle.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -57,7 +65,6 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/IDamage.cs" />
         <option value="$PROJECT_DIR$/Assets/PauseAnimation.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
@@ -70,9 +77,10 @@
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -144,7 +152,8 @@
       <workItem from="1606872572391" duration="5789000" />
       <workItem from="1606963344439" duration="569000" />
       <workItem from="1607131510858" duration="6403000" />
-      <workItem from="1607287405793" duration="22957000" />
+      <workItem from="1607287405793" duration="23552000" />
+      <workItem from="1607367843279" duration="1230000" />
     </task>
     <servers />
   </component>
@@ -187,11 +196,11 @@
     <state x="3896" y="179" width="1040" height="1642" key="VCS.FileHistoryDialog/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607319293166" />
     <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
     <state x="124" y="125" width="2311" height="1149" key="VCS.FileHistoryDialog/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659510801" />
-    <state x="3992" y="-22" width="1249" height="741" key="dock-window-1" timestamp="1607312922012">
-      <screen x="3840" y="0" width="1152" height="2000" />
+    <state x="1273" y="0" width="1293" height="1407" key="dock-window-1" timestamp="1607368828111">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="3992" y="-22" width="1249" height="741" maximized="true" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607301979800" />
-    <state x="3992" y="-22" width="1249" height="741" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607312922012" />
+    <state x="1273" y="0" width="1293" height="1407" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607368828111" />
     <state x="4073" y="483" key="run.anything.popup" timestamp="1607319268043">
       <screen x="3840" y="0" width="1152" height="2000" />
     </state>
