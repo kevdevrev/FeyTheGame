@@ -951,10 +951,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5918043157682095417, guid: 675298eabc23bf04d975479b6ce137f5, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: e02d6e0cc0436564ba441a6b68866bb9, type: 2}
     - target: {fileID: 5918043157995218872, guid: 675298eabc23bf04d975479b6ce137f5, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.07
@@ -1002,10 +998,6 @@ PrefabInstance:
     - target: {fileID: 5918043157995218873, guid: 675298eabc23bf04d975479b6ce137f5, type: 3}
       propertyPath: m_Name
       value: Drone_Prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 7284810011063647715, guid: 675298eabc23bf04d975479b6ce137f5, type: 3}
-      propertyPath: m_Intensity
-      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 675298eabc23bf04d975479b6ce137f5, type: 3}

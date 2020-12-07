@@ -58,7 +58,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e02d6e0cc0436564ba441a6b68866bb9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -472,7 +472,7 @@ MonoBehaviour:
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.5
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 0.1
+  m_Intensity: 0.3
   m_LightVolumeOpacity: 0
   m_ApplyToSortingLayers: 0000000015d16b9b3760d0f0af87feaafd9c43d9f7bd825fc9d7bb2c29189d82
   m_LightCookieSprite: {fileID: 0}
