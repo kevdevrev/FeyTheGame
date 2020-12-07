@@ -1,9 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 
 public class B_Type : Enemy, IDamage
 {
+    [SerializeField] protected Material blinkMaterial;
+    [SerializeField] protected Material attackMaterial;
+    private Light2D _b_Type_Light;
+    public SpriteRenderer b_Type_sprite;
+    public Renderer materialReference;
+    
  [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
@@ -22,11 +29,17 @@ public class B_Type : Enemy, IDamage
         Health = base.health;
         anim = GetComponentInChildren<Animator>();
         counter = 0;
+        b_Type_sprite = transform.GetComponent<SpriteRenderer>();
+        //Get the animation script handler
+        _b_Type_Light = transform.GetChild(1).GetComponent<Light2D>();
+        materialReference = transform.GetComponent<Renderer>();
 
     }
 
     protected override void Update()
     {
+        _b_Type_Light.lightCookieSprite = b_Type_sprite.sprite;
+
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;
         if (!disabled)
         {
@@ -43,6 +56,7 @@ public class B_Type : Enemy, IDamage
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
+        materialReference.material = attackMaterial;
         Health = Health - dmgTaken;
         anim.SetTrigger("Hit");
         rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);

@@ -21,12 +21,21 @@
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/rangedEnemyLiberated.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/rangedEnemyLiberated.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/rangedEnemyLiberatedGlow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/rangedEnemyLiberatedGlow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/tank.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/tank.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankBlink.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankBlink.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank_Sprite 1.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank_Sprite 1.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankMoving.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/tankMoving.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/blinkSprite.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/blinkSprite.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_combat.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy_Sprites/buddy_sprite_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/glow_material_buddy.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/glow_material_buddy.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/glow_material_bullet.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/glow_material_bullet.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/laser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,13 +70,13 @@
         <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
       </list>
     </option>
   </component>
@@ -139,7 +148,7 @@
       <workItem from="1606872572391" duration="5789000" />
       <workItem from="1606963344439" duration="569000" />
       <workItem from="1607131510858" duration="6403000" />
-      <workItem from="1607287405793" duration="9616000" />
+      <workItem from="1607287405793" duration="13402000" />
     </task>
     <servers />
   </component>

@@ -1,10 +1,17 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 
 public class Buddy : MonoBehaviour
 {
+    [SerializeField] protected Material blinkMaterial;
+    [SerializeField] protected Material attackMaterial;
+    private Light2D _buddy_Light;
+    public Renderer materialReference;
+    
+    
     [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
@@ -20,6 +27,8 @@ public class Buddy : MonoBehaviour
     {
         anim = GetComponentInChildren<Animator>();
         _buddy_sprite = GetComponentInChildren<SpriteRenderer>();
+        _buddy_Light = transform.GetChild(0).GetComponent<Light2D>();
+        materialReference = transform.GetComponent<Renderer>();
         counter = 0;
 
     }
@@ -27,6 +36,7 @@ public class Buddy : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        _buddy_Light.lightCookieSprite = _buddy_sprite.sprite;
         ShootTheBullet();
     }
 
@@ -41,8 +51,10 @@ public class Buddy : MonoBehaviour
                 float dist = Vector2.Distance(e.transform.position, transform.position);
                 if (dist < 3)
                 {
+                    //TODO shoot a raycast first or change to collider detection
                     anim.SetBool("InCombat", true);
                     anim.SetTrigger("MoveRight");
+                    
                     return;
                 }
             }
@@ -58,19 +70,25 @@ public class Buddy : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(1))
             {
-                counter++;
+                
+                materialReference.material = attackMaterial;
                 anim.SetTrigger("MoveRight");
                 anim.ResetTrigger("MoveRight");
                 //StartCoroutine(ResetInCombatStatus());
                 anim.SetTrigger("Attack");
-                GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
-                bullet.name = bulletPrefab.name;
-                bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);
-                bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
-                //Debug.Log(new Vector2(_buddy_sprite.transform.localRotation.x, _buddy_sprite.transform.localRotation.y));
+                if (this.anim.GetCurrentAnimatorStateInfo(0).IsName("buddy_combat"))
+                {
+                    counter++;
+                    GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+                    bullet.name = bulletPrefab.name;
+                    bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);
+                    bullet.GetComponent<Bullet>().SetBulletSpeed(bulletSpeed);
+                    //Debug.Log(new Vector2(_buddy_sprite.transform.localRotation.x, _buddy_sprite.transform.localRotation.y));
 
-                bullet.GetComponent<Bullet>().SetBulletDirection(transform.right);
-                bullet.GetComponent<Bullet>().Shoot();
+                    bullet.GetComponent<Bullet>().SetBulletDirection(transform.right);
+                    bullet.GetComponent<Bullet>().Shoot();
+                }
+
                 //Debug.Log("Shooting!");
             }
         }
@@ -78,6 +96,7 @@ public class Buddy : MonoBehaviour
         {
             shootCooldownTimer = shootCooldown;
             notOnCoolDown = false;
+            materialReference.material = blinkMaterial;
         }
         else
         {

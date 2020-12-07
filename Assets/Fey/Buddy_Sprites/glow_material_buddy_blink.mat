@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: glow_material_buddy
+  m_Name: glow_material_buddy_blink
   m_Shader: {fileID: -6465566751694194690, guid: f5d94cc15303b5f4cbf5d8d238561737, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -20,11 +20,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: c90bd29a32e8e61478850ff809af3b0c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 83a7aadbdcf918e478d7b12acc2955b4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 97ccb1ca70b206c4ebe066e5dc076366, type: 3}
+        m_Texture: {fileID: 2800000, guid: 20f8d3cc32c32be49b8a7d1b70e28432, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []

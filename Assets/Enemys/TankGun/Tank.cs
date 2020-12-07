@@ -7,9 +7,11 @@ public class Tank : MonoBehaviour, IDamage
 {
     [SerializeField] protected Material idleMaterial;
     [SerializeField] protected Material moveMaterial;
-    [SerializeField] protected Material blinkMaterial;
+    [SerializeField] protected Material hitMaterial;
     [SerializeField] protected Material liberatedMaterial;
-    
+    private Light2D _tankLight;
+    public SpriteRenderer tank_sprite;
+    public Renderer materialReference;
     
     
     
@@ -55,27 +57,7 @@ public class Tank : MonoBehaviour, IDamage
     [SerializeField] protected bool isAggrod;
     protected bool isFacingLeft = false;
     protected bool disabled;
-    private Light2D _tankLight;
-  
-    //lighting    
-    public SpriteRenderer tank_sprite;
 
-    
-    public int Health { get; set; }
-    public void Damage(int dmgTaken)
-    {
-        Health = Health - dmgTaken;
-        anim.SetTrigger("Hit");
-        //rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
-        inCombat = true;
-        anim.SetBool("InCombat", true);
-        if(Health<1)
-        {
-            anim.SetBool("Disabled",true);
-            disabled = true;
-
-        }    
-    }
     
     public void ToggleCooldown()
     {
@@ -83,11 +65,14 @@ public class Tank : MonoBehaviour, IDamage
     }
     private void Start()
     {
+        Debug.Log(Health);
+        Health = health;
         //we put our starting calls into Init so we can override it in our children.
         Init();
-        tank_sprite = transform.GetComponent<SpriteRenderer>();
+        tank_sprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
         //Get the animation script handler
-        _tankLight = transform.GetChild(1).GetComponent<Light2D>();
+        _tankLight = transform.GetChild(0).transform.GetChild(1).GetComponent<Light2D>();
+        materialReference = transform.GetChild(0).GetComponent<Renderer>();
     }
 
     public virtual void Init()
@@ -110,11 +95,14 @@ public class Tank : MonoBehaviour, IDamage
         aggroTimer = aggroTimeLimit;
     }
     
+    
+    
+    
 
     private void MovementLogic()
     {
         feyDistanceAwayVector = feyLocation.position - transform.position;
-
+        materialReference.material = idleMaterial;
         isAggrod = true;
         aggroTimer -= Time.deltaTime;
         if (aggroTimer < 0)
@@ -170,9 +158,11 @@ public class Tank : MonoBehaviour, IDamage
                         Vector2.MoveTowards(transform.position, targetLocation, speed * Time.deltaTime);
                 }
             }
+            materialReference.material = moveMaterial;
         }
         else if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange)
         {
+            transform.GetComponent<Renderer>().material = idleMaterial;
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);
 
@@ -213,8 +203,16 @@ public class Tank : MonoBehaviour, IDamage
     protected virtual void Update()
     {
 
+        
         _tankLight.lightCookieSprite = tank_sprite.sprite;
 
+        /*if((this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") || this.anim.GetCurrentAnimatorStateInfo(0).IsName("IdleCD"))
+        {
+            transform.GetComponent<Renderer>().material = idleMaterial;
+        }else if((this.anim.GetCurrentAnimatorStateInfo(0).IsName("Move"))
+        {
+            transform.GetComponent<Renderer>().material = idleMaterial;
+        }*/
         if (!disabled)
         {
             //if idle, we want to prevent movement, so we do nothing, so just return
@@ -268,5 +266,27 @@ public class Tank : MonoBehaviour, IDamage
         }
         
         return false;
+    }
+    
+    public int Health { get; set; }
+    public void Damage(int dmgTaken)
+    {
+        materialReference.material = hitMaterial;
+        Health = Health - dmgTaken;
+        Debug.Log(Health);
+        anim.SetTrigger("Hit");
+        //rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
+        inCombat = true;
+        anim.SetBool("InCombat", true);
+        if(Health<1)
+        {
+            anim.SetBool("Disabled",true);
+            disabled = true;
+            if (disabled)
+            {
+                materialReference.material = liberatedMaterial;
+            }
+
+        }    
     }
 }

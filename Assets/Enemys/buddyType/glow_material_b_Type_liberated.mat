@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: glow_material_bullet
+  m_Name: glow_material_b_Type_liberated
   m_Shader: {fileID: -6465566751694194690, guid: f5d94cc15303b5f4cbf5d8d238561737, type: 3}
   m_ShaderKeywords: ETC1_EXTERNAL_ALPHA
   m_LightmapFlags: 4
@@ -20,14 +20,14 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _Emission:
-        m_Texture: {fileID: 2800000, guid: 334e7f93fbe37d64288b34917fc5f605, type: 3}
+        m_Texture: {fileID: 2800000, guid: 83a7aadbdcf918e478d7b12acc2955b4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 591446d0d9d95174c92eba7c851513e6, type: 3}
+        m_Texture: {fileID: 2800000, guid: 25e38d26a490bae4186d509691f11c33, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - _Color: {r: 3.4415908, g: 0.3243384, b: 2.4505568, a: 0}
+    - _Color: {r: 2.6082377, g: 0.2594582, b: 1.8708302, a: 0}
   m_BuildTextureStacks: []
