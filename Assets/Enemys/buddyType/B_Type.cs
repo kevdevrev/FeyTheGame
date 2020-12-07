@@ -55,11 +55,11 @@ public class B_Type : Enemy, IDamage
                 float dotRes = Vector3.Dot(transform.forward, feyLocation.forward);
                 if (dotRes >= 0)
                 {
-                    targetLocation = new Vector2(transform.position.x - 1.2f, feyLocation.position.y + 0.188f);
+                    targetLocation = new Vector2(transform.position.x - 1.2f, feyLocation.position.y + 0.178f);
                 }
                 else
                 {
-                    targetLocation = new Vector2(transform.position.x + 1.2f, feyLocation.position.y + 0.188f);
+                    targetLocation = new Vector2(transform.position.x + 1.2f, feyLocation.position.y + 0.178f);
                 }
 
                 transform.position =
@@ -193,11 +193,11 @@ public class B_Type : Enemy, IDamage
                         float dotRes = Vector3.Dot(transform.forward, feyLocation.forward);
                         if (dotRes >= 0)
                         {
-                            targetLocation = new Vector2(feyLocation.position.x  + 1.2f, feyLocation.position.y + 0.188f);
+                            targetLocation = new Vector2(feyLocation.position.x  + 1.2f, feyLocation.position.y + 0.178f);
                         }
                         else
                         {
-                            targetLocation = new Vector2(feyLocation.position.x - 1.2f, feyLocation.position.y + 0.188f);
+                            targetLocation = new Vector2(feyLocation.position.x - 1.2f, feyLocation.position.y + 0.178f);
                         }
 
                         transform.position =
