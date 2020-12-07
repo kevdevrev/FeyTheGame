@@ -65,10 +65,9 @@ public class Tank : MonoBehaviour, IDamage
     }
     private void Start()
     {
-        Debug.Log(Health);
-        Health = health;
         //we put our starting calls into Init so we can override it in our children.
         Init();
+        Health = health;
         tank_sprite = transform.GetChild(0).GetComponent<SpriteRenderer>();
         //Get the animation script handler
         _tankLight = transform.GetChild(0).transform.GetChild(1).GetComponent<Light2D>();
@@ -173,33 +172,7 @@ public class Tank : MonoBehaviour, IDamage
                 Debug.Log("In attack mode");
         }
     }
-
-    private void EnemyFaceDirection()
-    {
-        if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
-        {
-            float facingDirection = feyLocation.position.x - transform.position.x;
-            if (facingDirection > 0)
-            {
-                sprite.transform.localRotation = Quaternion.Euler(0, 0, 0);
-                isFacingLeft = false;
-            }
-            else if (facingDirection < 0)
-            {
-                sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
-                isFacingLeft = true;
-            }
-        }
-    }
-
-    //virtual keyword lets us overwrite this.
-    public virtual void Attack()
-    {
-        //Debug.Log("Hitting");
-        anim.SetTrigger("AttackTrigger");
-        StartCoroutine(ResetAttackCooldown());
-    }
-
+    
     protected virtual void Update()
     {
 

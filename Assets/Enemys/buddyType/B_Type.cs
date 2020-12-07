@@ -7,11 +7,12 @@ public class B_Type : Enemy, IDamage
 {
     [SerializeField] protected Material blinkMaterial;
     [SerializeField] protected Material attackMaterial;
+    [SerializeField] protected Material liberatedMaterial;
     private Light2D _b_Type_Light;
     public SpriteRenderer b_Type_sprite;
     public Renderer materialReference;
     
- [SerializeField] public int bulletDamage;
+    [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float shootCooldown = 1f;
@@ -66,6 +67,8 @@ public class B_Type : Enemy, IDamage
         {
             anim.SetBool("Disabled",true);
             disabled = true;
+            materialReference.material = liberatedMaterial;
+
 
         }    
     }

@@ -1,10 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine;
 
 
 public class Drone : Enemy, IDamage
 {
+    [SerializeField] protected Material idleMaterial;
+    [SerializeField] protected Material attackMaterial;
+    [SerializeField] protected Material liberatedMaterial;
+    private Light2D _drone_Light;
+    public SpriteRenderer drone_sprite;
+    public Renderer materialReference;
+    
+    
+    
     [SerializeField] public int bulletDamage;
     [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
@@ -24,11 +34,20 @@ public class Drone : Enemy, IDamage
         Health = base.health;
         anim = GetComponentInChildren<Animator>();
         counter = 0;
-
+        drone_sprite = transform.GetComponent<SpriteRenderer>();
+        //Get the animation script handler
+        _drone_Light = transform.GetChild(1).GetComponent<Light2D>();
+        materialReference = transform.GetComponent<Renderer>();
     }
 
     protected override void Update()
     {
+        _drone_Light.lightCookieSprite = drone_sprite.sprite;
+        if (!this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+        {
+            materialReference.material = idleMaterial;
+        }
+
         feyDirection = -1 * (transform.position - feyLocation.position).normalized;
         if (!disabled)
         {
@@ -152,6 +171,7 @@ public class Drone : Enemy, IDamage
         {
             anim.SetBool("Disabled",true);
             disabled = true;
+            materialReference.material = liberatedMaterial;
 
         }    
     }
@@ -162,6 +182,7 @@ public class Drone : Enemy, IDamage
         {
             counter++;
             anim.SetTrigger("AttackTrigger");
+            materialReference.material = attackMaterial;
             GameObject bullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
             bullet.name = bulletPrefab.name;
             bullet.GetComponent<Bullet>().SetDamageValue(bulletDamage);

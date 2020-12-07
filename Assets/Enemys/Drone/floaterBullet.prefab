@@ -128,7 +128,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: f588d6a30215b0e4bace5b281c4b8c14, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183,7 +183,7 @@ SortingGroup:
   m_GameObject: {fileID: 3063151942936355022}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 40
 --- !u!114 &6505314008594399034
 MonoBehaviour:

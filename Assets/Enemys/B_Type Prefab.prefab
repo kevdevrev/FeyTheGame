@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5155771187263612212}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &42286239
 MonoBehaviour:
@@ -105,8 +105,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.328015, y: 1.328015, z: 1.328015}
   m_Children:
-  - {fileID: 5155771187898010879}
   - {fileID: 42286238}
+  - {fileID: 5155771187898010879}
   m_Father: {fileID: 5155771188127511912}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -261,6 +261,7 @@ MonoBehaviour:
   isAggrod: 0
   blinkMaterial: {fileID: 0}
   attackMaterial: {fileID: 0}
+  liberatedMaterial: {fileID: 0}
   b_Type_sprite: {fileID: 0}
   materialReference: {fileID: 0}
   bulletDamage: 1
@@ -376,7 +377,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5155771187263612212}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5155771188127511915
 GameObject:
