@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4798450552379893877}
   m_Layer: 12
   m_Name: laser
-  m_TagString: Player
+  m_TagString: Buddy Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,7 +188,7 @@ GameObject:
   - component: {fileID: 5103129224464945271}
   m_Layer: 12
   m_Name: Sprite Light 2D
-  m_TagString: Untagged
+  m_TagString: Buddy Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

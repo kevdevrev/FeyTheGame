@@ -22,24 +22,13 @@
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/glow_material_boxer.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/glow_material_boxer.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropper.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperIdle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperIdle.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberated.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberated.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberatedGlow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberatedGlow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperSprite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/laser.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/PauseAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,16 +63,17 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Door.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
       </list>
     </option>
   </component>
@@ -155,7 +146,7 @@
       <workItem from="1606963344439" duration="569000" />
       <workItem from="1607131510858" duration="6403000" />
       <workItem from="1607287405793" duration="23552000" />
-      <workItem from="1607367843279" duration="3747000" />
+      <workItem from="1607367843279" duration="8255000" />
     </task>
     <servers />
   </component>
@@ -203,6 +194,23 @@
     </state>
     <state x="3992" y="-22" width="1249" height="741" maximized="true" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607301979800" />
     <state x="1273" y="0" width="1293" height="1407" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607368828111" />
+    <state x="-7" y="-7" width="840" height="1503" maximized="true" key="dock-window-2" timestamp="1607393286695">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-7" y="-7" width="840" height="1503" maximized="true" key="dock-window-2/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607393286695" />
+    <state x="4023" y="-11" width="840" height="1502" maximized="true" key="dock-window-2/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607390364871" />
+    <state x="700" y="0" width="1874" height="1383" key="dock-window-3" timestamp="1607391997487">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="700" y="0" width="1874" height="1383" key="dock-window-3/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607391997487" />
+    <state x="700" y="0" width="1874" height="1383" key="dock-window-4" timestamp="1607391997487">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="700" y="0" width="1874" height="1383" key="dock-window-4/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607391997487" />
+    <state x="3575" y="-22" width="1562" height="1152" maximized="true" key="dock-window-5" timestamp="1607392212816">
+      <screen x="3840" y="0" width="1152" height="2000" />
+    </state>
+    <state x="3575" y="-22" width="1562" height="1152" maximized="true" key="dock-window-5/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607392212816" />
     <state x="4073" y="483" key="run.anything.popup" timestamp="1607319268043">
       <screen x="3840" y="0" width="1152" height="2000" />
     </state>
@@ -211,5 +219,24 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659463959" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs</url>
+          <line>180</line>
+          <properties documentPath="C:\Users\galea\OneDrive\Documents\Games\FeyTheGame\Assets\Enemys\buddyType\B_Type.cs" initialLine="180">
+            <startOffsets>
+              <option value="6585" />
+            </startOffsets>
+            <endOffsets>
+              <option value="6612" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

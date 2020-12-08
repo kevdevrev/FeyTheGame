@@ -16,8 +16,6 @@ public class Tank : MonoBehaviour, IDamage
     
     
     
-    [SerializeField] public int bulletDamage;
-    [SerializeField] public int bulletSpeed;
     [SerializeField] private GameObject bulletPrefab;
     [SerializeField] private float shootCooldown = 1f;
     private float shootCooldownTimer = 1f;
@@ -94,7 +92,34 @@ public class Tank : MonoBehaviour, IDamage
         aggroTimer = aggroTimeLimit;
     }
     
-    
+    private void ShootTheMissle()
+    {
+        if (counter < bulletCount && shootDelayTimer < 0)
+        {
+            counter++;
+            anim.SetTrigger("AttackTrigger");
+            GameObject bullet = Instantiate(bulletPrefab, castPoint.position, Quaternion.identity);
+            shootDelayTimer = attackCooldownTimer;
+        }
+        else if(counter >= bulletCount && notOnCoolDown == true)
+        {
+            shootCooldownTimer = shootCooldown;
+            notOnCoolDown = false;
+        }
+        else if(shootDelayTimer > 0 && notOnCoolDown == true)
+        {
+            shootDelayTimer -= Time.deltaTime;
+        }
+        else
+        {
+            shootCooldownTimer -= Time.deltaTime;
+            if (shootCooldownTimer < 0)
+            {
+                shootCooldownTimer = 3;
+                counter = 0; notOnCoolDown = true;
+            }
+        }
+    }
     
     
 
@@ -131,7 +156,7 @@ public class Tank : MonoBehaviour, IDamage
                 && Mathf.Abs(feyDistanceAwayVector.y) < detectionRadius.y
                 && Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange)
             {
-                Debug.Log("In Chase Mode");
+                //Debug.Log("In Chase Mode");
                 anim.SetBool("Chase", true);
                 inCombat = true;
                 //tells it to hit
@@ -161,22 +186,30 @@ public class Tank : MonoBehaviour, IDamage
         }
         else if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange)
         {
+           // Debug.Log("IN COMBAT MODE");
             transform.GetComponent<Renderer>().material = idleMaterial;
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);
 
-            anim.SetTrigger("Move");
-
-
-            if (!attackOnCooldown)
-                Debug.Log("In attack mode");
+            anim.SetTrigger("Attack");
+            
+            if (CanSeePlayer())
+            {
+                ShootTheMissle();
+            }
         }
+      //  Debug.Log("fey distance away" + feyDistanceAwayVector.x);
+       // Debug.Log("enemy attack range" + enemyAttackRange);
+
     }
     
     protected virtual void Update()
     {
 
-        
+        if (CanSeePlayer())
+        {
+            ShootTheMissle();
+        }
         _tankLight.lightCookieSprite = tank_sprite.sprite;
 
         /*if((this.anim.GetCurrentAnimatorStateInfo(0).IsName("Idle") || this.anim.GetCurrentAnimatorStateInfo(0).IsName("Attack") || this.anim.GetCurrentAnimatorStateInfo(0).IsName("IdleCD"))

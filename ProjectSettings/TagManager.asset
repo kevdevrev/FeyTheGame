@@ -9,6 +9,7 @@ TagManager:
   - Button
   - EnemyBullet
   - Terrain
+  - Buddy Bullet
   layers:
   - Default
   - TransparentFX

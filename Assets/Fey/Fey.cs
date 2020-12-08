@@ -87,6 +87,7 @@ public class Fey : MonoBehaviour, IDamage
     public void Damage(int dmgTaken)
     {
         Health = Health - dmgTaken;
+        Debug.Log("Health: " + Health);
         //toggle injured animation
         anim.SetTrigger("Hit");
         _fey_rigid.AddForce(new Vector2(punchForce, punchForce), ForceMode2D.Impulse);
