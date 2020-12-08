@@ -228,15 +228,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bcdb22ce4c410340aca290a7e1232ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleMaterial: {fileID: 0}
+  materialReference: {fileID: 0}
   health: 10
   speed: 2
   waypointSpeed: 2
   pointA: {fileID: 3452585650754008773}
   pointB: {fileID: 3452585650514745566}
   detectionRadius: {x: 4, y: 3}
+  feyDistanceAwayVector: {x: 0, y: 0}
   enemyAttackRange: 1
   feyLocation: {fileID: 0}
-  attackCooldownTimer: 1
+  attackCooldownTimer: 4
   castPoint: {fileID: 1195465218}
   aggroTimeLimit: 5
   isAggrod: 0
@@ -492,9 +495,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3452585650514745566}
   m_Layer: 0
-  m_Name: pointB
+  m_Name: pointB_Boxer
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -506,7 +509,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3452585650514745565}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.522, y: -0.027, z: 0}
+  m_LocalPosition: {x: 0.522, y: -0.084, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3452585650286599164}
@@ -522,9 +525,9 @@ GameObject:
   m_Component:
   - component: {fileID: 3452585650754008773}
   m_Layer: 0
-  m_Name: pointA
+  m_Name: pointA_Boxer
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

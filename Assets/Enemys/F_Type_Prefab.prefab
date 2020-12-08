@@ -451,9 +451,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9083498689844001687}
   m_Layer: 0
-  m_Name: pointB
+  m_Name: pointB_FType
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -553,9 +553,9 @@ GameObject:
   m_Component:
   - component: {fileID: 9083498691602034965}
   m_Layer: 0
-  m_Name: pointA
+  m_Name: pointA_FType
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

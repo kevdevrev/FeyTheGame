@@ -142,6 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 360d390d7a6e7a34498b7631a0cb078b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleMaterial: {fileID: 2100000, guid: e02d6e0cc0436564ba441a6b68866bb9, type: 2}
+  materialReference: {fileID: 0}
   health: 3
   speed: 2
   waypointSpeed: 2
@@ -155,10 +157,8 @@ MonoBehaviour:
   castPoint: {fileID: 1259814143703455471}
   aggroTimeLimit: 5
   isAggrod: 0
-  idleMaterial: {fileID: 2100000, guid: e02d6e0cc0436564ba441a6b68866bb9, type: 2}
   attackMaterial: {fileID: 2100000, guid: 9d0eb2fb30add5745b9c96de6fe73f84, type: 2}
   liberatedMaterial: {fileID: 2100000, guid: 09135fef5c9f57e45ad9f72ba5f29871, type: 2}
-  materialReference: {fileID: 0}
   bulletDamage: 1
   bulletSpeed: 1
   bulletPrefab: {fileID: 3063151942936355022, guid: f134814749622184098e515791182427, type: 3}
@@ -260,9 +260,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5918043158368822855}
   m_Layer: 0
-  m_Name: pointB
+  m_Name: pointB_Drone
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -374,9 +374,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5918043159001597567}
   m_Layer: 0
-  m_Name: pointA
+  m_Name: pointA_Drone
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

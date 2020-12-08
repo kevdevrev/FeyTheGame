@@ -20,8 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/B_Type Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/glow_material_boxer.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/glow_material_boxer.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropper.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropper.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperIdle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperIdle.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberated.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberated.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberatedGlow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberatedGlow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperSprite.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperSprite.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +56,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/PauseAnimation.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fey/Buddy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -61,8 +80,9 @@
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" />
       </list>
     </option>
   </component>
@@ -135,7 +155,7 @@
       <workItem from="1606963344439" duration="569000" />
       <workItem from="1607131510858" duration="6403000" />
       <workItem from="1607287405793" duration="23552000" />
-      <workItem from="1607367843279" duration="1915000" />
+      <workItem from="1607367843279" duration="3747000" />
     </task>
     <servers />
   </component>

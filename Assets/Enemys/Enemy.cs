@@ -79,7 +79,7 @@ public class Enemy : MonoBehaviour
         if (Vector3.Distance(transform.position,pointA.position) <= 0.2)
         {
             
-            destination = pointB.position;
+            destination = new Vector3(pointB.position.x, transform.position.y, transform.position.z);
             //anim.Play("Idle");
             if (idleTimeCondition < 0)
             {
@@ -94,7 +94,7 @@ public class Enemy : MonoBehaviour
         else if (Vector3.Distance(transform.position,pointB.position) <= 0)
         {
 
-            destination = pointA.position;
+            destination = new Vector3(pointA.position.x, transform.position.y, transform.position.z);
             
             sprite.transform.localRotation = Quaternion.Euler(0, 180, 0);
             isFacingLeft = true;

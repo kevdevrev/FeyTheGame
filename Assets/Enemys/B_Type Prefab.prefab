@@ -246,6 +246,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4de75183b9766104e8230143131ef541, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleMaterial: {fileID: 0}
+  materialReference: {fileID: 0}
   health: 1
   speed: 3
   waypointSpeed: 4
@@ -259,11 +261,9 @@ MonoBehaviour:
   castPoint: {fileID: 5155771187898010879}
   aggroTimeLimit: 0
   isAggrod: 0
-  blinkMaterial: {fileID: 2100000, guid: 162faf6449d2ea946b64b194b4720548, type: 2}
   attackMaterial: {fileID: 2100000, guid: 52d7b98671ead4e4595dfb897342c469, type: 2}
   liberatedMaterial: {fileID: 2100000, guid: a12fcf876fdc08d429ba7a1f21c88d72, type: 2}
   b_Type_sprite: {fileID: 0}
-  materialReference: {fileID: 0}
   bulletDamage: 1
   bulletSpeed: 1
   bulletPrefab: {fileID: 3063151942936355022, guid: b3445db2a1974c448b39555a815033dd, type: 3}
@@ -299,9 +299,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5155771187787137510}
   m_Layer: 0
-  m_Name: Point A
+  m_Name: PointA_BType
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -314,7 +314,7 @@ Transform:
   m_GameObject: {fileID: 5155771187787137529}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.9578, y: 1.9578, z: 1.9578}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5155771188127511912}
   m_RootOrder: 1
@@ -329,9 +329,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5155771187881836185}
   m_Layer: 0
-  m_Name: Point B
+  m_Name: PointB_BType
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -344,7 +344,7 @@ Transform:
   m_GameObject: {fileID: 5155771187881836184}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 1.268899, y: 0, z: 0}
-  m_LocalScale: {x: 1.9578, y: 1.9578, z: 1.9578}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5155771188127511912}
   m_RootOrder: 2
