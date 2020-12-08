@@ -47,10 +47,10 @@ public class Buddy : MonoBehaviour
         if (isAggrod == true)
         {
             aggroTimer -= Time.deltaTime;
-            Debug.Log("aggrod: true");
+            //Debug.Log("aggrod: true");
             if (aggroTimer < 0)
             {
-                Debug.Log("aggrod: false");
+             //   Debug.Log("aggrod: false");
                 aggroTimer = aggroTimeLimit;
                 isAggrod = false;
                 anim.SetBool("InCombat", false);
@@ -150,7 +150,7 @@ public class Buddy : MonoBehaviour
     IEnumerator ResetInCombatStatus()
     {
         //anim.ResetTrigger("AttackTrigger");
-        Debug.Log("In coruten");
+        //Debug.Log("In coruten");
         yield return new WaitForSeconds(4f);
         anim.SetBool("InCombat", false);
 

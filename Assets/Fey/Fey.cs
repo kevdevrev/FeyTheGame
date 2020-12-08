@@ -31,6 +31,7 @@ public class Fey : MonoBehaviour, IDamage
     //handles Fey's custom sprite lighting
     private Light2D _feyLight;
     [SerializeField] private float punchForce = 5;
+    [SerializeField] private int health = 5;
 
     protected Animator anim;
 
@@ -55,7 +56,7 @@ public class Fey : MonoBehaviour, IDamage
         _feyLight = transform.GetChild(0).transform.GetChild(2).GetComponent<Light2D>();
 
         anim = GetComponentInChildren<Animator>();
-
+        Health = health;
 
     }
 
@@ -94,7 +95,8 @@ public class Fey : MonoBehaviour, IDamage
 
         if (Health < 1)
         {
-            SceneManager.LoadScene(level);
+            //SceneManager.LoadScene(level);
+            Debug.Log("FEY DIED!!!!!!!");
             //TODO we don't want to destroy, this is temporary
             //anim.SetBool("Disabled", true);
 

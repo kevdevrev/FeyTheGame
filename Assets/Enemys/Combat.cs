@@ -5,8 +5,7 @@ using UnityEngine;
 public class Combat : MonoBehaviour
 {
     [SerializeField]
-    public float attackCooldown = 1f;
-
+    public float immunityTimePeriod = 1f;
     [SerializeField] public int damageDealt;
     //cooldown before object can take damage again
     private bool _immunity = false;
@@ -42,6 +41,7 @@ public class Combat : MonoBehaviour
                         if (_immunity == false)
                         {
                             hit.Damage(damageDealt);
+                            
                             _immunity = true;
                             StartCoroutine(EnemyImmunityCoolDown());
                         }
@@ -53,7 +53,7 @@ public class Combat : MonoBehaviour
 
     IEnumerator EnemyImmunityCoolDown()
     {
-        yield return new WaitForSeconds(attackCooldown);
+        yield return new WaitForSeconds(immunityTimePeriod);
         _immunity = false;
     }
 }

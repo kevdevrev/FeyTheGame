@@ -161,12 +161,12 @@ public class Enemy : MonoBehaviour
                 }
 
                 //handle chasing to get into hit distance
-                Debug.Log(Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange);
+                //(Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange);
                 if (Mathf.Abs(feyDistanceAwayVector.x) < detectionRadius.x
                     && Mathf.Abs(feyDistanceAwayVector.y) < detectionRadius.y
                     && Mathf.Abs(feyDistanceAwayVector.x) > enemyAttackRange)
                 {
-                    Debug.Log("In Chase Mode");
+                  //  Debug.Log("In Chase Mode");
                     anim.SetBool("Chase", true);
                     inCombat = true;
                     //tells it to hit

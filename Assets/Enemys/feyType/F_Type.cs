@@ -54,7 +54,7 @@ public class F_Type : Enemy, IDamage
     protected override void Attack()
     {
         base.Attack();
-        Debug.Log("material switch");
+        //Debug.Log("material switch");
         //materialReference.material = spinMaterial;
     }
 }

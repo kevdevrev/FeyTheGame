@@ -72,10 +72,10 @@ public class Crusher : MonoBehaviour, IDamage
             else
             {
                 StartCoroutine(ResetMaterial());
-                notOnInvince = false;
             }
+            notOnInvince = false;
         }
-    }
+    }    
     IEnumerator ResetMaterial()
     {
         yield return new WaitForSeconds(materialTimer);

@@ -26,6 +26,7 @@
           </e>
           <e p="dropper" t="Include">
             <e p="Crusher.cs" t="Include" />
+            <e p="Crusher_Arm.cs" t="Include" />
           </e>
           <e p="Enemy.cs" t="Include" />
           <e p="feyType" t="Include">
