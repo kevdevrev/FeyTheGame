@@ -22,13 +22,7 @@
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/laser.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +68,7 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" />
       </list>
     </option>
   </component>
@@ -146,7 +141,8 @@
       <workItem from="1606963344439" duration="569000" />
       <workItem from="1607131510858" duration="6403000" />
       <workItem from="1607287405793" duration="23552000" />
-      <workItem from="1607367843279" duration="8255000" />
+      <workItem from="1607367843279" duration="8898000" />
+      <workItem from="1607396103839" duration="87000" />
     </task>
     <servers />
   </component>
