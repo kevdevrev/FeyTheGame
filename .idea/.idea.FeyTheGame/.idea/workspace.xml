@@ -20,9 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/crusher_attack_idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/crusher_attack_idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/crusher_idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/dropper/crusher_idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/crusher_liberated.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/crusher_liberated.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperIdle_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperIdle_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberated2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberated2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberatedGlow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropperLiberatedGlow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/dropper_attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/dropper/dropper_attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Renderer/Shader Graphs_Dissolve.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Renderer/Shader Graphs_Dissolve.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,12 +75,12 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" />
       </list>
     </option>
@@ -142,7 +155,8 @@
       <workItem from="1607131510858" duration="6403000" />
       <workItem from="1607287405793" duration="23552000" />
       <workItem from="1607367843279" duration="8898000" />
-      <workItem from="1607396103839" duration="87000" />
+      <workItem from="1607396103839" duration="703000" />
+      <workItem from="1607455262068" duration="4459000" />
     </task>
     <servers />
   </component>
