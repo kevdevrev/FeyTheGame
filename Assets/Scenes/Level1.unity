@@ -19887,6 +19887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Presets
       objectReference: {fileID: 0}
+    - target: {fileID: 2057153346751947047, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: immunityTimePeriod
+      value: 1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 2171152694465677433, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
       propertyPath: health
       value: 30
@@ -19966,6 +19970,30 @@ PrefabInstance:
     - target: {fileID: 6563209680427295738, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563209680443649165, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563209680443649165, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563209680443649165, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563209680443649165, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563209680443649165, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -184
+      objectReference: {fileID: 0}
+    - target: {fileID: 6563209680443649165, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -52
       objectReference: {fileID: 0}
     - target: {fileID: 7157755405844366853, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
       propertyPath: m_TagString
