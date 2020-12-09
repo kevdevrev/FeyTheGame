@@ -20,19 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/laser.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/laser.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/laserGlow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/laserGlow.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MoveScenes2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MoveScenes2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene Presets.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene Presets.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +159,7 @@
       <workItem from="1607396103839" duration="703000" />
       <workItem from="1607455262068" duration="6604000" />
       <workItem from="1607467226529" duration="10474000" />
-      <workItem from="1607482318187" duration="4128000" />
+      <workItem from="1607482318187" duration="4378000" />
     </task>
     <servers />
   </component>

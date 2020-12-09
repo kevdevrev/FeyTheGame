@@ -267,8 +267,8 @@ MonoBehaviour:
   bulletDamage: 1
   bulletSpeed: 1
   bulletPrefab: {fileID: 3063151942936355022, guid: b3445db2a1974c448b39555a815033dd, type: 3}
-  shootCooldown: 1
-  bulletCount: 5
+  shootCooldown: 4
+  bulletCount: 3
   feyDirection: {x: 0, y: 0}
 --- !u!95 &403689248
 Animator:
