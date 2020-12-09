@@ -19,6 +19,11 @@ public class LastMinutePatchToUseAnimatorFunction : MonoBehaviour
 
     }
 
+    private void startGame()
+    {
+        parent.gameStart = true;
+    }
+
     // Update is called once per frame
     void Update()
     {

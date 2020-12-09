@@ -35,6 +35,7 @@ public class Fey : MonoBehaviour, IDamage
     [SerializeField] private bool wasDead = true;
     [SerializeField] private bool hasBuddy = false;
 
+    public bool gameStart = false;
     protected Animator anim;
 
     // Level on death
@@ -46,7 +47,7 @@ public class Fey : MonoBehaviour, IDamage
     // Start is called before the first frame update
     void Start()
     {
-
+        gameStart = false;
         //assign Fey's rigid Body
         _fey_rigid = GetComponent<Rigidbody2D>();
         //assign Fey's Sprite
@@ -68,12 +69,15 @@ public class Fey : MonoBehaviour, IDamage
         else
         {
             Health = PlayerInfo.Instance.health;
+            gameStart = true;
         }
 
         if (hasBuddy)
         {
             activateBuddy();
         }
+        
+        
 
     }
 
@@ -85,14 +89,17 @@ public class Fey : MonoBehaviour, IDamage
     // Update is called once per frame
     void Update()
     {
-        Movement();
-        if (Input.GetMouseButtonDown(0) && OnGround() == true)
+        if (gameStart)
         {
-            _fey_animation.animateAttack();
-        }
+            Movement();
+            if (Input.GetMouseButtonDown(0) && OnGround() == true)
+            {
+                _fey_animation.animateAttack();
+            }
 
-        {
+            {
 
+            }
         }
 
         // modified engine code, for this to work you need the modified Light2D.cs script!!!
