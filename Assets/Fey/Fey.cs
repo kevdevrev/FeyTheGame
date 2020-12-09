@@ -94,7 +94,7 @@ public class Fey : MonoBehaviour, IDamage
         }
         else
         {
-            Health = PlayerInfo.Instance.health;
+            Health = health;
             gameStart = true;
             SavePlayer();
 
@@ -106,7 +106,8 @@ public class Fey : MonoBehaviour, IDamage
             SavePlayer();
 
         }
-        
+        Health = health;
+
 
 
     }
