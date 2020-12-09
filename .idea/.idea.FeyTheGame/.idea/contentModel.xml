@@ -31,6 +31,7 @@
             <e p="Crusher_Arm.cs" t="Include" />
           </e>
           <e p="Enemy.cs" t="Include" />
+          <e p="EnemySupportScript.cs" t="Include" />
           <e p="feyType" t="Include">
             <e p="F_Type.cs" t="Include" />
           </e>

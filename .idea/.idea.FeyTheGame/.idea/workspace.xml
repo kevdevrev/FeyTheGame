@@ -20,7 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/boxer_attack.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/boxer_attack.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey_Sprites/alive_anim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey_Sprites/alive_anim.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/laser.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/laser.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +43,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Bullet.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/HealthBar 1/Powerups/battery.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$USER_HOME$/AppData/Local/Temp/HealthBar.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/HealthBar 1/HealthBar.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fey/LastMinutePatchToUseAnimatorFunction.cs" root0="FORCE_HIGHLIGHTING" />
@@ -63,8 +71,6 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher_Arm.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey_Animation.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/LastMinutePatchToUseAnimatorFunction.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
@@ -83,6 +89,9 @@
         <option value="$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/InitGame.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/EnemySupportScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
       </list>
     </option>
   </component>
@@ -160,6 +169,7 @@
       <workItem from="1607455262068" duration="6604000" />
       <workItem from="1607467226529" duration="10474000" />
       <workItem from="1607482318187" duration="4974000" />
+      <workItem from="1607541671938" duration="3519000" />
     </task>
     <servers />
   </component>
@@ -202,11 +212,11 @@
     <state x="3896" y="179" width="1040" height="1642" key="VCS.FileHistoryDialog/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607319293166" />
     <state x="93" y="93" width="1733" height="853" key="VCS.FileHistoryDialog/3840.0.1463.777/0.0.1920.1040@0.0.1920.1040" timestamp="1605316701025" />
     <state x="124" y="125" width="2311" height="1149" key="VCS.FileHistoryDialog/3840.0.2048.1104/0.0.2560.1400@0.0.2560.1400" timestamp="1605659510801" />
-    <state x="1273" y="0" width="1293" height="1407" key="dock-window-1" timestamp="1607368828111">
+    <state x="1335" y="0" width="1123" height="1502" key="dock-window-1" timestamp="1607544333433">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="3992" y="-22" width="1249" height="741" maximized="true" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@0.0.2560.1400" timestamp="1607301979800" />
-    <state x="1273" y="0" width="1293" height="1407" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607368828111" />
+    <state x="1335" y="0" width="1123" height="1502" key="dock-window-1/3840.0.1152.2000/0.0.2560.1400@3840.0.1152.2000" timestamp="1607544333433" />
     <state x="-7" y="-7" width="840" height="1503" maximized="true" key="dock-window-2" timestamp="1607393286695">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>

@@ -43,7 +43,20 @@ public class Fey : MonoBehaviour, IDamage
     [SerializeField] private string level;
     // colliders for button activation
     //List<Collider2D> inColliders = new List<Collider2D>();
+    [SerializeField] public float immunityTimePeriod = 1f;
+    public bool _immunity = false;
 
+
+    public void tookDamage()
+    {
+        _immunity = true;
+        StartCoroutine(ImmunityCoolDown());
+    }
+    IEnumerator ImmunityCoolDown()
+    {
+        yield return new WaitForSeconds(immunityTimePeriod);
+        _immunity = false;
+    }
 
     // Start is called before the first frame update
     void Start()

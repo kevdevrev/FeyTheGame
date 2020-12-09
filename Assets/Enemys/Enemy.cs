@@ -46,6 +46,23 @@ public class Enemy : MonoBehaviour
     [SerializeField] protected bool isAggrod;
     protected bool isFacingLeft = false;
     protected bool disabled;
+    
+    
+    [SerializeField] public float immunityTimePeriod = 1f;
+    public bool _immunity = false;
+
+
+    public void tookDamage()
+    {
+        _immunity = true;
+        StartCoroutine(ImmunityCoolDown());
+    }
+    IEnumerator ImmunityCoolDown()
+    {
+        yield return new WaitForSeconds(immunityTimePeriod);
+        _immunity = false;
+    }
+    
     private void Start()
     {
         //we put our starting calls into Init so we can override it in our children.
@@ -91,7 +108,7 @@ public class Enemy : MonoBehaviour
             //anim.SetTrigger("Move");
         }
         //&& !anim.GetBool("InCombat") && !anim.GetBool("Chase")
-        else if (Vector3.Distance(transform.position,pointB.position) <= 0)
+        else if (Vector3.Distance(transform.position,pointB.position) <= 0.2)
         {
 
             destination = new Vector3(pointA.position.x, transform.position.y, transform.position.z);
