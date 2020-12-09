@@ -197,6 +197,13 @@ public class Fey : MonoBehaviour, IDamage
     {
         PlayerPrefs.SetInt("wasDead", wasDead?1:0);
         PlayerPrefs.SetInt("hasBuddy", hasBuddy?1:0);
+        PlayerPrefs.SetInt("Health", Health);
+        PlayerInfo.Instance.wasDead = wasDead;
+        PlayerInfo.Instance.hasBuddy = hasBuddy;
+        Debug.Log("test 1: " + PlayerInfo.Instance.health);
+        Debug.Log("health 1:" + Health);
+        PlayerInfo.Instance.health = Health;
+        Debug.Log("test 2: " + PlayerInfo.Instance.health);
 
     }
     private void FlipFey(float horizontalInput)
