@@ -11618,6 +11618,14 @@ PrefabInstance:
       propertyPath: level
       value: Level3
       objectReference: {fileID: 0}
+    - target: {fileID: 2177546372958932587, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2177546372958932587, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[4]
+      value: 1602403831
+      objectReference: {fileID: 0}
     - target: {fileID: 3429304815951226003, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
       propertyPath: m_audioClip
       value: 
