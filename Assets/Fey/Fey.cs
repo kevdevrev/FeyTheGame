@@ -30,10 +30,11 @@ public class Fey : MonoBehaviour, IDamage
 
     //handles Fey's custom sprite lighting
     private Light2D _feyLight;
+    private HealthBar _feyHealthBar;
     [SerializeField] private float punchForce = 5;
-    [SerializeField] private int health = 5;
-    [SerializeField] private bool wasDead = true;
-    [SerializeField] private bool hasBuddy = false;
+    [SerializeField] public int health;
+    [SerializeField] private bool wasDead;
+    [SerializeField] private bool hasBuddy;
 
     public bool gameStart = false;
     protected Animator anim;
@@ -47,6 +48,12 @@ public class Fey : MonoBehaviour, IDamage
     // Start is called before the first frame update
     void Start()
     {
+        wasDead = PlayerPrefs.GetInt("wasDead")==1;
+        hasBuddy = PlayerPrefs.GetInt("hasBuddy")==1;
+        Health = PlayerPrefs.GetInt("Health");
+        Debug.Log("was dead: " + wasDead);
+        Debug.Log("had buddy: " + hasBuddy);
+        Debug.Log("Health: " + Health);
         gameStart = false;
         //assign Fey's rigid Body
         _fey_rigid = GetComponent<Rigidbody2D>();
@@ -58,26 +65,36 @@ public class Fey : MonoBehaviour, IDamage
         //_feyHitBoxManager = transform.GetChild(0).GetComponent<Fey_HitBoxManager>();
         //get fey light
         _feyLight = transform.GetChild(0).transform.GetChild(2).GetComponent<Light2D>();
-
+        _feyHealthBar = transform.GetChild(1).transform.GetChild(0).GetComponent<HealthBar>();
         anim = GetComponentInChildren<Animator>();
+        _feyHealthBar.setMaxHP(health);
         if (wasDead)
         {
+            Debug.Log("WAS DEAD");
             anim.SetBool("wasDead", true);
+            
             wasDead = false;
             Health = health;
+            Debug.Log("health 2:" + Health);
+            SavePlayer();
+
         }
         else
         {
             Health = PlayerInfo.Instance.health;
             gameStart = true;
+            SavePlayer();
+
         }
 
         if (hasBuddy)
         {
             activateBuddy();
+            SavePlayer();
+
         }
         
-        
+
 
     }
 
@@ -89,8 +106,12 @@ public class Fey : MonoBehaviour, IDamage
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("was dead: " + wasDead);
+        Debug.Log("had buddy: " + hasBuddy);
+        Debug.Log("Health: " + Health);
         if (gameStart)
         {
+            wasDead = false;
             Movement();
             if (Input.GetMouseButtonDown(0) && OnGround() == true)
             {
@@ -113,6 +134,7 @@ public class Fey : MonoBehaviour, IDamage
 
     public void restartStage()
     {
+        SavePlayer();
         SceneManager.LoadScene(level);
 
     }
@@ -125,9 +147,15 @@ public class Fey : MonoBehaviour, IDamage
         {
             activateBuddy();
             hasBuddy = true;
+            SavePlayer();
         }else if (dmgTaken == -2)
         {
-            //increase hp
+            Debug.Log("Healing");
+            if (Health + 5 < health)
+            {
+                Health = Health + 5;
+            }
+
         }
         else
         {
@@ -148,12 +176,21 @@ public class Fey : MonoBehaviour, IDamage
 
             }
         }
+
+        _feyHealthBar.updateHP();
     }
     public void SavePlayer()
     {
+        PlayerPrefs.SetInt("wasDead", wasDead?1:0);
+        PlayerPrefs.SetInt("hasBuddy", hasBuddy?1:0);
+        PlayerPrefs.SetInt("Health", Health);
         PlayerInfo.Instance.wasDead = wasDead;
         PlayerInfo.Instance.hasBuddy = hasBuddy;
+        Debug.Log("test 1: " + PlayerInfo.Instance.health);
+        Debug.Log("health 1:" + Health);
         PlayerInfo.Instance.health = Health;
+        Debug.Log("test 2: " + PlayerInfo.Instance.health);
+
     }
     private void FlipFey(float horizontalInput)
     {

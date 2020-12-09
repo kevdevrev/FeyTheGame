@@ -11,6 +11,7 @@ public class MoveScenes2D : MonoBehaviour
     {
         if(other.CompareTag("Fey"))
         {
+            other.GetComponent<Fey>().SavePlayer();
             SceneManager.LoadScene(level);
         }
     }

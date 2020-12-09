@@ -10,10 +10,8 @@ public class PlayerInfo : MonoBehaviour
     public bool wasDead;
     void Awake ()
     {
-        wasDead = true;
-        hasBuddy = false;
-        health = 100;
-        if (Instance == null)
+        DontDestroyOnLoad(this.gameObject);
+        /*if (Instance == null)
         {
             DontDestroyOnLoad(gameObject);
             Instance = this;
@@ -21,6 +19,17 @@ public class PlayerInfo : MonoBehaviour
         else if (Instance != this)
         {
             Destroy (gameObject);
+        }*/
+        
+        if (!Instance)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            //Duplicate GameManager created every time the scene is loaded
+            Destroy(gameObject);
         }
     }
 }
