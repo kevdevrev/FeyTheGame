@@ -46,6 +46,7 @@ public class Fey : MonoBehaviour, IDamage
     // Start is called before the first frame update
     void Start()
     {
+
         //assign Fey's rigid Body
         _fey_rigid = GetComponent<Rigidbody2D>();
         //assign Fey's Sprite
@@ -58,8 +59,27 @@ public class Fey : MonoBehaviour, IDamage
         _feyLight = transform.GetChild(0).transform.GetChild(2).GetComponent<Light2D>();
 
         anim = GetComponentInChildren<Animator>();
-        Health = health;
+        if (wasDead)
+        {
+            anim.SetTrigger("Resurrect");
+            wasDead = false;
+            Health = health;
+        }
+        else
+        {
+            Health = PlayerInfo.Instance.health;
+        }
 
+        if (hasBuddy)
+        {
+            activateBuddy();
+        }
+
+    }
+
+    public void activateBuddy()
+    {
+        gameObject.transform.GetChild(0).gameObject.transform.GetChild(0).gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -89,7 +109,7 @@ public class Fey : MonoBehaviour, IDamage
         SceneManager.LoadScene(level);
 
     }
-    //TODO Implement contracted functions
+    //TODO Implement contracted functionsW
     public int Health { get; set; }
 
     public void Damage(int dmgTaken)
