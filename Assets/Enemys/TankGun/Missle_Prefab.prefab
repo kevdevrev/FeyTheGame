@@ -155,7 +155,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   health: 3
-  speed: 2
+  speed: 5
   rotateSpeed: 100
   destroyDelay: 10
   damage: 10
@@ -171,5 +171,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9cef6d834fdae944b380e1270d7137e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 0
   damageDealt: 5

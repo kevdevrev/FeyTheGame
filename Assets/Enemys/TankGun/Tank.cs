@@ -30,6 +30,7 @@ public class Tank : MonoBehaviour, IDamage
     [SerializeField]
     protected int health;
     [SerializeField] protected float speed;
+    [SerializeField] protected float oldSpeed;
 
     [SerializeField] protected Vector2 detectionRadius;
     protected bool attackOnCooldown = false;
@@ -187,7 +188,7 @@ public class Tank : MonoBehaviour, IDamage
         else if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange)
         {
            // Debug.Log("IN COMBAT MODE");
-            transform.GetComponent<Renderer>().material = idleMaterial;
+            sprite.material = idleMaterial;
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);
 
@@ -205,7 +206,6 @@ public class Tank : MonoBehaviour, IDamage
     
     protected virtual void Update()
     {
-
         if (CanSeePlayer())
         {
             ShootTheMissle();
