@@ -587,8 +587,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  wasDead: 0
   hasBuddy: 0
+  wasDead: 0
 --- !u!4 &380161951
 Transform:
   m_ObjectHideFlags: 0
