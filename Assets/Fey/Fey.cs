@@ -84,6 +84,11 @@ public class Fey : MonoBehaviour, IDamage
         //inColliders.ForEach(n => n.SendMessage("Use", SendMessageOptions.DontRequireReceiver));
     }
 
+    public void restartStage()
+    {
+        SceneManager.LoadScene(level);
+
+    }
     //TODO Implement contracted functions
     public int Health { get; set; }
 

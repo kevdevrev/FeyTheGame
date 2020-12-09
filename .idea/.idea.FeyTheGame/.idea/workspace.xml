@@ -22,9 +22,8 @@
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey_Sprite.controller" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +41,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fey/LastMinutePatchToUseAnimatorFunction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -75,6 +75,7 @@
         <option value="$PROJECT_DIR$/Assets/Fey/Fey_Animation.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/LastMinutePatchToUseAnimatorFunction.cs" />
       </list>
     </option>
   </component>
@@ -150,7 +151,7 @@
       <workItem from="1607367843279" duration="8898000" />
       <workItem from="1607396103839" duration="703000" />
       <workItem from="1607455262068" duration="6604000" />
-      <workItem from="1607467226529" duration="2971000" />
+      <workItem from="1607467226529" duration="3685000" />
     </task>
     <servers />
   </component>
