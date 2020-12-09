@@ -100,7 +100,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9cef6d834fdae944b380e1270d7137e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
   damageDealt: 1
 --- !u!1 &3825437502510555523
 GameObject:
@@ -148,6 +147,7 @@ GameObject:
   - component: {fileID: 2827279966873988745}
   - component: {fileID: 4800282457910934621}
   - component: {fileID: 2742508990797337931}
+  - component: {fileID: 2410822131839035745}
   m_Layer: 13
   m_Name: F_Type_Sprite
   m_TagString: Enemy
@@ -249,7 +249,7 @@ SortingGroup:
   m_GameObject: {fileID: 6361520161232738180}
   m_Enabled: 1
   m_SortingLayerID: 750507977
-  m_SortingLayer: 5
+  m_SortingLayer: 6
   m_SortingOrder: 40
 --- !u!114 &6191792146110153571
 MonoBehaviour:
@@ -263,18 +263,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc50e978c10f11e4fb0c52ce9192a1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleMaterial: {fileID: 0}
+  materialReference: {fileID: 0}
   health: 10
   speed: 3
   waypointSpeed: 2
   pointA: {fileID: 3825437500987665152}
   pointB: {fileID: 3825437502510555522}
-  maxXDistanceAway: 5
-  maxYDistanceAway: 2
   detectionRadius: {x: 5, y: 4}
-  yDistanceCondition: 4
   feyDistanceAwayVector: {x: 0, y: 0}
   enemyAttackRange: 0.9
+  feyLocation: {fileID: 0}
   attackCooldownTimer: 2
+  castPoint: {fileID: 0}
+  aggroTimeLimit: 0
+  isAggrod: 0
+  immunityTimePeriod: 1
+  _immunity: 0
 --- !u!50 &2827279966873988745
 Rigidbody2D:
   serializedVersion: 4
@@ -348,6 +353,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.32957304, y: 0.54818356}
   m_EdgeRadius: 0
+--- !u!114 &2410822131839035745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6361520161232738180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9cef6d834fdae944b380e1270d7137e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageDealt: 0
 --- !u!1 &7619200872921084813
 GameObject:
   m_ObjectHideFlags: 0
