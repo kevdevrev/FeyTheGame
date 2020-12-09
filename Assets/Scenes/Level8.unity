@@ -803,7 +803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a444452f27306ba46b3ffa2696d45cf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  level: Level8
+  level: Tank Level Flat
 --- !u!61 &118948425
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -83991,6 +83991,14 @@ PrefabInstance:
     - target: {fileID: 6615519039733647378, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
       propertyPath: field of view
       value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190692851326861195, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a71dc0a6a7161104a975ba43614ca0da, type: 3}
+    - target: {fileID: 9190692851326861195, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}

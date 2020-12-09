@@ -7503,6 +7503,14 @@ PrefabInstance:
       propertyPath: level
       value: Level3
       objectReference: {fileID: 0}
+    - target: {fileID: 9190692851326861195, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c4fabc86dd48add4c87ace2d8f5e5c64, type: 3}
+    - target: {fileID: 9190692851326861195, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 179859935735326711, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
     - {fileID: 179859936804515107, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}

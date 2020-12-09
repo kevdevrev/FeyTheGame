@@ -6083,19 +6083,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc50e978c10f11e4fb0c52ce9192a1ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  idleMaterial: {fileID: 0}
+  materialReference: {fileID: 0}
   health: 10
   speed: 3
   waypointSpeed: 2
   pointA: {fileID: 42478100}
   pointB: {fileID: 42478099}
-  maxXDistanceAway: 5
-  maxYDistanceAway: 2
   detectionRadius: {x: 5, y: 4}
-  yDistanceCondition: 4
   feyDistanceAwayVector: {x: 0, y: 0}
   enemyAttackRange: 0.9
   feyLocation: {fileID: 0}
   attackCooldownTimer: 2
+  castPoint: {fileID: 0}
+  aggroTimeLimit: 0
+  isAggrod: 0
 --- !u!210 &752149379
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -6767,7 +6769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9cef6d834fdae944b380e1270d7137e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCooldown: 1
+  immunityTimePeriod: 1
   damageDealt: 1
 --- !u!61 &1609658828
 BoxCollider2D:
@@ -6906,6 +6908,14 @@ PrefabInstance:
       propertyPath: level
       value: Level4
       objectReference: {fileID: 0}
+    - target: {fileID: 9190692851326861195, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9190692851326861195, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c4fabc86dd48add4c87ace2d8f5e5c64, type: 3}
     m_RemovedComponents:
     - {fileID: 179859935735326711, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
     - {fileID: 179859936804515107, guid: 801771a8ca9ee7a49aeaf25c6a4431bc, type: 3}
