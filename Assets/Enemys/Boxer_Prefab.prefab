@@ -244,6 +244,9 @@ MonoBehaviour:
   castPoint: {fileID: 1195465218}
   aggroTimeLimit: 5
   isAggrod: 0
+  hurtMaterial: {fileID: 2100000, guid: 5c9554ddc8934894c8b866c4ec13968f, type: 2}
+  prevMaterial: {fileID: 0}
+  materialTimer: 1
 --- !u!210 &3452585649914231666
 SortingGroup:
   m_ObjectHideFlags: 0

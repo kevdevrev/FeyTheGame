@@ -22,15 +22,7 @@
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Combat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/F_Type_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/Dissolve_Crusher.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/dropper/Dissolve_Crusher.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Buddy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
@@ -51,6 +43,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Fey/Buddy.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -79,6 +72,8 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Fey_Animation.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
       </list>
     </option>
@@ -155,7 +150,7 @@
       <workItem from="1607367843279" duration="8898000" />
       <workItem from="1607396103839" duration="703000" />
       <workItem from="1607455262068" duration="6604000" />
-      <workItem from="1607467226529" duration="62000" />
+      <workItem from="1607467226529" duration="2971000" />
     </task>
     <servers />
   </component>

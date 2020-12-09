@@ -32,6 +32,8 @@ public class Fey : MonoBehaviour, IDamage
     private Light2D _feyLight;
     [SerializeField] private float punchForce = 5;
     [SerializeField] private int health = 5;
+    [SerializeField] private bool wasDead = true;
+    [SerializeField] private bool hasBuddy = false;
 
     protected Animator anim;
 
@@ -102,7 +104,12 @@ public class Fey : MonoBehaviour, IDamage
 
         }
     }
-
+    public void SavePlayer()
+    {
+        PlayerInfo.Instance.wasDead = wasDead;
+        PlayerInfo.Instance.hasBuddy = hasBuddy;
+        PlayerInfo.Instance.health = Health;
+    }
     private void FlipFey(float horizontalInput)
     {
         if (horizontalInput > 0)

@@ -47,6 +47,7 @@
           <e p="Fey_Animation.cs" t="Include" />
           <e p="Fey_Attack.cs" t="Include" />
           <e p="Fey_HitBoxManager.cs" t="Include" />
+          <e p="PlayerInfo.cs" t="Include" />
         </e>
         <e p="MainMenu" t="Include">
           <e p="MainMenuController.cs" t="Include" />
