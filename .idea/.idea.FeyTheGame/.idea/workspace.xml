@@ -20,7 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
+>>>>>>> parent of b580c5d... fINAL SCENE
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +79,7 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
         <option value="$PROJECT_DIR$/Assets/HealthBar 1/Powerups/battery.cs" />
         <option value="$PROJECT_DIR$/Assets/HealthBar 1/HealthBar.cs" />
         <option value="$PROJECT_DIR$/Assets/Scenes/MoveScenes2D.cs" />
@@ -85,8 +91,11 @@
         <option value="$PROJECT_DIR$/Assets/UI/Dialogue Box/ActivateDialouge.cs" />
         <option value="$PROJECT_DIR$/Assets/UI/Dialogue Box/Dialouge_Triggers.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
         <option value="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" />
+=======
+>>>>>>> parent of b580c5d... fINAL SCENE
       </list>
     </option>
   </component>
@@ -164,7 +173,11 @@
       <workItem from="1607455262068" duration="6604000" />
       <workItem from="1607467226529" duration="10474000" />
       <workItem from="1607482318187" duration="4974000" />
+<<<<<<< HEAD
       <workItem from="1607541671938" duration="7896000" />
+=======
+      <workItem from="1607541671938" duration="5761000" />
+>>>>>>> parent of b580c5d... fINAL SCENE
     </task>
     <servers />
   </component>
