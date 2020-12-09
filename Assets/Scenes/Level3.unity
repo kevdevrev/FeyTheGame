@@ -11918,6 +11918,72 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1437338760
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 244591299816999335, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_Text
+      value: 'Buddy: We better act quickly and find the control room, or we can count
+        on a lot of enemies coming our way!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 244591299816999335, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.048494816
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_RootOrder
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165599, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_Name
+      value: DialougeTrigger (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
 --- !u!1001 &1525659531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12185,6 +12251,71 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aac7304d45299e74eb2ac1dfe50574b2, type: 3}
+--- !u!1001 &1662271516
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 244591299816999335, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_Text
+      value: 'Buddy: Uhh... I think you just off the factory''s security alarm!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 244591299816999335, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.51747
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.048494816
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_RootOrder
+      value: 44
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165595, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2259813775790165599, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
+      propertyPath: m_Name
+      value: DialougeTrigger
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 11c67d1c9e69fa84c90f21050312af41, type: 3}
 --- !u!1001 &1700932167
 PrefabInstance:
   m_ObjectHideFlags: 0
