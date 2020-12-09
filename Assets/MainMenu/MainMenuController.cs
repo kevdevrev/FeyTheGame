@@ -23,14 +23,14 @@ public class MainMenuController : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            _fey_animation.animateAttack();
+           // _fey_animation.animateAttack();
         }
     }
 
     // Set up build indexes in file -> build settings. This will go to next index when start button is pressed.
     public  void PlayGame()
     {
-        _fey_animation.animateAttack();
+        //_fey_animation.animateAttack();
         StartCoroutine(StartLoadTime());
     }
 
