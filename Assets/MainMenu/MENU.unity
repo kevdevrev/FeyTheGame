@@ -255,6 +255,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 48529677}
   m_CullTransparentMesh: 0
+--- !u!20 &58309172 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1517904854070937017, guid: 69bca28fa7c5d8d48a2391cf40e6c571, type: 3}
+  m_PrefabInstance: {fileID: 252870135}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &129511504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1766,7 +1771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 1000
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -1784,8 +1789,8 @@ Canvas:
   m_GameObject: {fileID: 1402418246}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 58309172}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1793,7 +1798,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
+  m_SortingLayerID: 750507977
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1402418250
@@ -2656,11 +2661,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2699899186001057070, guid: df8da926e9624f641a84e99faae342cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -978
+      value: -418
       objectReference: {fileID: 0}
     - target: {fileID: 2699899186001057070, guid: df8da926e9624f641a84e99faae342cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -329
+      value: -19
       objectReference: {fileID: 0}
     - target: {fileID: 2699899186001057070, guid: df8da926e9624f641a84e99faae342cd, type: 3}
       propertyPath: m_LocalPosition.z
