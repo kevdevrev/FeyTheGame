@@ -20,12 +20,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Button.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Door/Button.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Door/Door.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Door/button_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Door/button_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/LastMinutePatchToUseAnimatorFunction.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/LastMinutePatchToUseAnimatorFunction.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/Fey_Sprites/alive_anim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Fey_Sprites/alive_anim.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/dumpsterBuddy.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fey/dumpsterBuddy.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Scene Presets.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Scene Presets.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/testScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/testScene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,26 +68,28 @@
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Flying_Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Bullet.cs" />
         <option value="$PROJECT_DIR$/Assets/Door/Scripts/Button.cs" />
-        <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
-        <option value="$PROJECT_DIR$/Assets/Door/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type_Bullet.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Bullet_Drone.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Missle2.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher_Arm.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Buddy.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Enemys/Combat.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/Fey_Animation.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/PlayerInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
         <option value="$PROJECT_DIR$/Assets/Fey/LastMinutePatchToUseAnimatorFunction.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door/Button.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door/BuddyTrash.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Door/ButtonWithTwoTriggers.cs" />
+        <option value="$PROJECT_DIR$/Assets/Fey/Fey.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Boxer/Boxer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/Drone/Drone.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/dropper/Crusher.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type.cs" />
+        <option value="$PROJECT_DIR$/Assets/Enemys/TankGun/Tank.cs" />
       </list>
     </option>
   </component>
@@ -153,7 +165,7 @@
       <workItem from="1607367843279" duration="8898000" />
       <workItem from="1607396103839" duration="703000" />
       <workItem from="1607455262068" duration="6604000" />
-      <workItem from="1607467226529" duration="5863000" />
+      <workItem from="1607467226529" duration="9055000" />
     </task>
     <servers />
   </component>
@@ -232,13 +244,13 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Enemys/buddyType/B_Type.cs</url>
-          <line>180</line>
+          <line>183</line>
           <properties documentPath="C:\Users\galea\OneDrive\Documents\Games\FeyTheGame\Assets\Enemys\buddyType\B_Type.cs" initialLine="180">
             <startOffsets>
-              <option value="6585" />
+              <option value="6679" />
             </startOffsets>
             <endOffsets>
-              <option value="6612" />
+              <option value="6706" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />

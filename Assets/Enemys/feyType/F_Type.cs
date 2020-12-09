@@ -36,18 +36,21 @@ public class F_Type : Enemy, IDamage
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
-        //materialReference.material = blockMaterial;
-        Health = Health - dmgTaken;
-        anim.SetTrigger("Hit");
-        rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
-        inCombat = true;
-        anim.SetBool("InCombat", true);
-        if(Health<1)
+        if (dmgTaken > 0)
         {
-            anim.SetBool("Disabled",true);
-            disabled = true;
-            //materialReference.material = liberatedMaterial;
+            //materialReference.material = blockMaterial;
+            Health = Health - dmgTaken;
+            anim.SetTrigger("Hit");
+            rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
+            inCombat = true;
+            anim.SetBool("InCombat", true);
+            if (Health < 1)
+            {
+                anim.SetBool("Disabled", true);
+                disabled = true;
+                //materialReference.material = liberatedMaterial;
 
+            }
         }
     }
 

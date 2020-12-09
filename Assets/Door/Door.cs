@@ -17,7 +17,7 @@ public class Door : MonoBehaviour, IDamage
     public void Damage(int dmgTaken)
     {
         Debug.Log("Ive been a door!");
-        if (dmgTaken == 1)
+        if (dmgTaken == -1)
         {
             anim.SetTrigger("Open_Door");
         }

@@ -55,25 +55,29 @@ public class Crusher : MonoBehaviour, IDamage
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
-        if (notOnInvince == true)
+        if (dmgTaken > 0)
         {
-            Debug.Log("Im been hit and im a CRUSEHR");
-            Health = Health - dmgTaken;
-            prevMaterial = sprite.material;
-            sprite.material = hurtMaterial;
+            if (notOnInvince == true)
+            {
+                Debug.Log("Im been hit and im a CRUSEHR");
+                Health = Health - dmgTaken;
+                prevMaterial = sprite.material;
+                sprite.material = hurtMaterial;
 
-            //anim.SetTrigger("Hit");
-            if (Health < 1)
-            {
-                sprite.material = liberatedMaterial;
-                anim.SetBool("Disabled", true);
-                disabled = true;
+                //anim.SetTrigger("Hit");
+                if (Health < 1)
+                {
+                    sprite.material = liberatedMaterial;
+                    anim.SetBool("Disabled", true);
+                    disabled = true;
+                }
+                else
+                {
+                    StartCoroutine(ResetMaterial());
+                }
+
+                notOnInvince = false;
             }
-            else
-            {
-                StartCoroutine(ResetMaterial());
-            }
-            notOnInvince = false;
         }
     }    
     IEnumerator ResetMaterial()

@@ -121,19 +121,32 @@ public class Fey : MonoBehaviour, IDamage
 
     public void Damage(int dmgTaken)
     {
-        Health = Health - dmgTaken;
-        Debug.Log("Health: " + Health);
-        //toggle injured animation
-        anim.SetTrigger("Hit");
-        _fey_rigid.AddForce(new Vector2(punchForce, punchForce), ForceMode2D.Impulse);
-
-        if (Health < 1)
+        if (dmgTaken == -1)
         {
-            //SceneManager.LoadScene(level);
-            Debug.Log("FEY DIED!!!!!!!");
-            //TODO we don't want to destroy, this is temporary
-            //anim.SetBool("Disabled", true);
+            activateBuddy();
+            hasBuddy = true;
+        }else if (dmgTaken == -2)
+        {
+            //increase hp
+        }
+        else
+        {
+            Health = Health - dmgTaken;
+            Debug.Log("Health: " + Health);
+            //toggle injured animation
+            anim.SetTrigger("Hit");
+            _fey_rigid.AddForce(new Vector2(punchForce, punchForce), ForceMode2D.Impulse);
 
+            if (Health < 1)
+            {
+                gameStart = false;
+                //SceneManager.LoadScene(level);
+                Debug.Log("FEY DIED!!!!!!!");
+                anim.SetTrigger("Dead");
+                //TODO we don't want to destroy, this is temporary
+                //anim.SetBool("Disabled", true);
+
+            }
         }
     }
     public void SavePlayer()

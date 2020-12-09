@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Button : MonoBehaviour, IDamage
+public class BuddyTrash : MonoBehaviour, IDamage
 {
     protected Animator anim;
-    [SerializeField] protected GameObject target;
     
     public void Start()
     {
@@ -17,12 +16,10 @@ public class Button : MonoBehaviour, IDamage
     public int Health { get; set; }
     public void Damage(int dmgTaken)
     {
-        Debug.Log("Hit Button");
-        anim.SetTrigger("Button_Activate");
-        IDamage hit = target.GetComponent<IDamage>();
-        if (hit != null)
+        Debug.Log("Ive been a door!");
+        if (dmgTaken == -1)
         {
-            hit.Damage(-1);
+            anim.SetTrigger("Empty");
         }
     }
 }

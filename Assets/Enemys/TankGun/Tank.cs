@@ -275,24 +275,28 @@ public class Tank : MonoBehaviour, IDamage
     }
     
     public int Health { get; set; }
+
     public void Damage(int dmgTaken)
     {
-        materialReference.material = hitMaterial;
-        Health = Health - dmgTaken;
-        Debug.Log(Health);
-        anim.SetTrigger("Hit");
-        //rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
-        inCombat = true;
-        anim.SetBool("InCombat", true);
-        if(Health<1)
+        if (dmgTaken > 0)
         {
-            anim.SetBool("Disabled",true);
-            disabled = true;
-            if (disabled)
+            materialReference.material = hitMaterial;
+            Health = Health - dmgTaken;
+            Debug.Log(Health);
+            anim.SetTrigger("Hit");
+            //rigid.AddForce(new Vector2(15f + rigid.mass, 15f + rigid.mass), ForceMode2D.Impulse);
+            inCombat = true;
+            anim.SetBool("InCombat", true);
+            if (Health < 1)
             {
-                materialReference.material = liberatedMaterial;
-            }
+                anim.SetBool("Disabled", true);
+                disabled = true;
+                if (disabled)
+                {
+                    materialReference.material = liberatedMaterial;
+                }
 
-        }    
+            }
+        }
     }
 }

@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Button : MonoBehaviour, IDamage
+public class ButtonWithTwoTriggers : MonoBehaviour, IDamage
 {
     protected Animator anim;
-    [SerializeField] protected GameObject target;
-    
+    [SerializeField] protected GameObject[] targets;
+    private int numTargets;
     public void Start()
     {
         anim = GetComponent<Animator>();
@@ -15,14 +15,18 @@ public class Button : MonoBehaviour, IDamage
     }
     
     public int Health { get; set; }
+    
     public void Damage(int dmgTaken)
     {
         Debug.Log("Hit Button");
         anim.SetTrigger("Button_Activate");
-        IDamage hit = target.GetComponent<IDamage>();
-        if (hit != null)
+        for(int i = 0; i < targets.Length; i++)
         {
-            hit.Damage(-1);
+            IDamage hit = targets[i].GetComponent<IDamage>();
+            if (hit != null)
+            {
+                hit.Damage(-1);
+            } 
         }
     }
 }
