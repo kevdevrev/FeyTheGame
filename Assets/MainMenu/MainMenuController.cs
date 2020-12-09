@@ -8,9 +8,9 @@ using UnityEngine.Audio;
 
 public class MainMenuController : MonoBehaviour
 {
-    public GameObject mainMenu;
-    public GameObject optionsMenu;
-    public AudioMixer audioMixer;
+    [SerializeField] public GameObject mainMenu;
+    [SerializeField] public GameObject optionsMenu;
+    [SerializeField] public AudioMixer audioMixer;
     private Fey_Animation _fey_animation;
 
     private void Start()

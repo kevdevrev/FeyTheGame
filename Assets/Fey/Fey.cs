@@ -44,7 +44,7 @@ public class Fey : MonoBehaviour, IDamage
     // colliders for button activation
     //List<Collider2D> inColliders = new List<Collider2D>();
     [SerializeField] public float immunityTimePeriod = 1f;
-    public bool _immunity = false;
+    [SerializeField]public bool _immunity = false;
 
 
     public void tookDamage()
@@ -165,7 +165,10 @@ public class Fey : MonoBehaviour, IDamage
         }else if (dmgTaken == -2)
         {
             Debug.Log("Healing");
-            if (Health + 5 < health)
+            if (Health + 5 >= health)
+            {
+                Health = health;
+            }else
             {
                 Health = Health + 5;
             }
@@ -197,13 +200,6 @@ public class Fey : MonoBehaviour, IDamage
     {
         PlayerPrefs.SetInt("wasDead", wasDead?1:0);
         PlayerPrefs.SetInt("hasBuddy", hasBuddy?1:0);
-        PlayerPrefs.SetInt("Health", Health);
-        PlayerInfo.Instance.wasDead = wasDead;
-        PlayerInfo.Instance.hasBuddy = hasBuddy;
-        Debug.Log("test 1: " + PlayerInfo.Instance.health);
-        Debug.Log("health 1:" + Health);
-        PlayerInfo.Instance.health = Health;
-        Debug.Log("test 2: " + PlayerInfo.Instance.health);
 
     }
     private void FlipFey(float horizontalInput)

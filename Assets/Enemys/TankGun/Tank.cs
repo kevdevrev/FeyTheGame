@@ -43,7 +43,7 @@ public class Tank : MonoBehaviour, IDamage
     protected SpriteRenderer sprite;
 
     protected bool inCombat = false;
-    public Transform feyLocation;
+    [SerializeField]public Transform feyLocation;
     
     protected Rigidbody2D rigid;
     [SerializeField]
