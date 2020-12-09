@@ -108,6 +108,14 @@
             <e p="EmojiOne Attribution.txt" t="Include" />
           </e>
         </e>
+        <e p="UI" t="Include">
+          <e p="Dialogue Box" t="Include">
+            <e p="Dialogue.cs" t="Include" />
+            <e p="DialogueManager.cs" t="Include" />
+            <e p="DialogueTrigger.cs" t="Include" />
+            <e p="Dialouge_Triggers.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="FeyTheGame.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
