@@ -5960,6 +5960,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 4138955232482059087, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: level
+      value: Level4
+      objectReference: {fileID: 0}
     - target: {fileID: 5809529891811895543, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
       propertyPath: m_LocalPosition.x
       value: -28.2

@@ -21229,6 +21229,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.23
       objectReference: {fileID: 0}
+    - target: {fileID: 8331008387226878567, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8331008387226878567, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
+      propertyPath: m_ApplyToSortingLayers.Array.data[4]
+      value: -1426159697
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 294cf0ab02900a54aae50fa752a1b550, type: 3}
 --- !u!1 &2057153346787657453 stripped
