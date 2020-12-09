@@ -86,7 +86,6 @@ GameObject:
   - component: {fileID: 6505314008594399034}
   - component: {fileID: 1628846794430105258}
   - component: {fileID: 7769850518756415543}
-  - component: {fileID: 8579767594238702829}
   m_Layer: 14
   m_Name: floaterBullet
   m_TagString: EnemyBullet
@@ -185,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61b0ff73023a904e98afc153bd2017a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 1
+  damage: 2
   bulletSpeed: 5
   bulletDirection: {x: 0, y: 0}
   destroyDelay: 10
@@ -236,16 +235,3 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.11, y: 0.05}
   m_EdgeRadius: 0
---- !u!114 &8579767594238702829
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3063151942936355022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9cef6d834fdae944b380e1270d7137e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageDealt: 1

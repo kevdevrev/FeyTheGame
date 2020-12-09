@@ -20,13 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f074c467-dff2-4446-80f0-da3ab772de80" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FeyTheGame/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/feyType/F_Type_Prefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fey/Scene Presets.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fey/Scene Presets.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/MENU.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/MENU.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainMenu/MainMenuController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Enemys/Drone/floaterBullet.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +164,7 @@
       <workItem from="1607455262068" duration="6604000" />
       <workItem from="1607467226529" duration="10474000" />
       <workItem from="1607482318187" duration="4974000" />
-      <workItem from="1607541671938" duration="7326000" />
+      <workItem from="1607541671938" duration="7896000" />
     </task>
     <servers />
   </component>
