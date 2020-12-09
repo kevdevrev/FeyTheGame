@@ -61,7 +61,7 @@ public class Fey : MonoBehaviour, IDamage
         anim = GetComponentInChildren<Animator>();
         if (wasDead)
         {
-            anim.SetTrigger("Resurrect");
+            anim.SetBool("wasDead", true);
             wasDead = false;
             Health = health;
         }
