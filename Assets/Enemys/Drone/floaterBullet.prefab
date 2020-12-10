@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9cef6d834fdae944b380e1270d7137e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageDealt: 0
+  damageDealt: 2
 --- !u!114 &6505314008594399034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d61b0ff73023a904e98afc153bd2017a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 2
+  damage: 3
   bulletSpeed: 5
   bulletDirection: {x: 0, y: 0}
   destroyDelay: 10
