@@ -1952,7 +1952,7 @@ Transform:
   m_LocalScale: {x: 1.8290787, y: 1.8290787, z: 1.8290787}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &576884405
 PrefabInstance:
@@ -61411,7 +61411,7 @@ Transform:
   - {fileID: 48190437}
   - {fileID: 350595807}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1529088193
 GameObject:
@@ -85747,6 +85747,14 @@ PrefabInstance:
     - target: {fileID: 5690949799062134632, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
       propertyPath: level
       value: Level7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6025001760350075765, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a71dc0a6a7161104a975ba43614ca0da, type: 3}
+    - target: {fileID: 6025001760350075765, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7128778196578711788, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
       propertyPath: m_LocalPosition.x
