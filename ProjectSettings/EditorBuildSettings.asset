@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 92541a15456ddaf4d93c9e44fdc0d957
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level2.unity
     guid: f1950d4c1a71dfa4e967b9e836931aa1
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Level3.unity
     guid: e9485ed3b2a347249b9541c3b482707b
   - enabled: 1
@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tank Level Flat.unity
     guid: 081426689123fe247b5799ee01005f4f
+  - enabled: 1
+    path: Assets/Scenes/FinalScene.unity
+    guid: f647aceda9a12ae498b8bc3019b83f09
   m_configObjects: {}

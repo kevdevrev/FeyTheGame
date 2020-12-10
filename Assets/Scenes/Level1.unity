@@ -21395,6 +21395,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3136291423813843507, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 3136291423813843507, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 4019363712323124278, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -21403,9 +21411,25 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4174640252837110567, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 4174640252837110567, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
+      objectReference: {fileID: 0}
     - target: {fileID: 4218546548225663789, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
       propertyPath: m_Name
       value: Scene Presets
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755052995701550623, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -5.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755052995701550623, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 7128778196578711788, guid: d98e4eaff9b673b4094d347dc0f45de4, type: 3}
       propertyPath: m_LocalPosition.x
