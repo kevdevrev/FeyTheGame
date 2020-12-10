@@ -25,8 +25,15 @@ public class Buddy : MonoBehaviour
     protected Animator anim;
     protected SpriteRenderer _buddy_sprite;
     [SerializeField]protected Vector2 enemyDistanceAwayVector;
+    public Fey parent;
 
     // Start is called before the first frame update
+    private void Awake()
+    {
+        parent = gameObject.GetComponentInParent<Fey>();
+
+    }
+
     void Start()
     {
         anim = GetComponentInChildren<Animator>();
@@ -163,13 +170,19 @@ public class Buddy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Enemy"))
+        if (parent.gameStart)
         {
-            if (CanSeeEnemy(other.transform))
+            if (other.CompareTag("Enemy"))
             {
-                isAggrod = true;
-                anim.SetBool("InCombat", true);
-                anim.SetTrigger("MoveRight");
+                if (CanSeeEnemy(other.transform))
+                {
+                    isAggrod = true;
+                    if (anim != null)
+                    {
+                        anim.SetBool("InCombat", true);
+                        anim.SetTrigger("MoveRight");
+                    }
+                }
             }
         }
     }

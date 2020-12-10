@@ -126,7 +126,7 @@ public class Tank : MonoBehaviour, IDamage
     private void MovementLogic()
     {
         feyDistanceAwayVector = feyLocation.position - transform.position;
-        materialReference.material = idleMaterial;
+        sprite.material = idleMaterial;
         isAggrod = true;
         aggroTimer -= Time.deltaTime;
         if (aggroTimer < 0)
@@ -187,11 +187,11 @@ public class Tank : MonoBehaviour, IDamage
         else if (Mathf.Abs(feyDistanceAwayVector.x) < enemyAttackRange)
         {
            // Debug.Log("IN COMBAT MODE");
-            transform.GetComponent<Renderer>().material = idleMaterial;
+            sprite.material = idleMaterial;
             anim.SetBool("Chase", false);
             anim.SetBool("InCombat", true);
 
-            anim.SetTrigger("Attack");
+            anim.SetTrigger("AttackTrigger");
             
             if (CanSeePlayer())
             {

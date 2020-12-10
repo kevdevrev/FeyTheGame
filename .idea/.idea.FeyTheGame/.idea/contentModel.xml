@@ -36,6 +36,7 @@
             <e p="F_Type.cs" t="Include" />
           </e>
           <e p="IDamage.cs" t="Include" />
+          <e p="InitGame.cs" t="Include" />
           <e p="TankGun" t="Include">
             <e p="Missle.cs" t="Include" />
             <e p="Missle2.cs" t="Include" />
@@ -74,7 +75,6 @@
           </e>
         </e>
         <e p="Scenes" t="Include">
-          <e p="InitGame.cs" t="Include" />
           <e p="MoveScenes2D.cs" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">

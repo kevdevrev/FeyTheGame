@@ -47,13 +47,16 @@ public class Combat : MonoBehaviour
                         fey.tookDamage();
                     }
                 }
-                else if (other.CompareTag("Enemy"))
+                else if (other.CompareTag("Enemy") && gameObject.layer != 16)
                 { 
                     Enemy enemy = other.GetComponent<Enemy>();
-                    if (!enemy._immunity)
+                    if(enemy != null){
+                        if (!enemy._immunity)
                     {
                         hit.Damage(damageDealt);
                         enemy.tookDamage();
+                    }
+                        
                     }
                 }
                 else if (other.CompareTag("EnemyBullet"))
